@@ -3,7 +3,7 @@
 | Identificación del proyecto
 |-----------
 | Fundamentos de Ingeniería de Software
-ID M4A - Docente: Martín Solari Buela.
+ID M4C - Docente: Martín Solari Buela.
 Estudiantes: Romina Arour, Maximiliano Giménez.
 
 [Letra](letra.md)
