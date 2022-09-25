@@ -8,11 +8,23 @@ Estudiantes: Romina Arour, Maximiliano Giménez.
 
 # Repositorio Git 
 
+
 # Versionado
 
 # Elicitación
+## Entrevista
+## Ingenieria Inversa
+## Investigacion
+
+# Caracterizacion de Usuarios / User Personas
 
 # Especificación
+## Reqquerimientos Funcionales
+## Requerimientos No Funcionales
+
+# User Stories / Historias de Usuarios
+
+# Casos de Uso / Use Cases
 
 # Validación y verificación
 
