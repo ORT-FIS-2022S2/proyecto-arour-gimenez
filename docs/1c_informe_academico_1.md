@@ -107,8 +107,14 @@ También se puede encontrar los datos mas específicos sobre los partidos, muest
 ![User Persona 2](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/user%20persona2.PNG)
 # Especificación
 ## Requerimientos Funcionales
+## RF1: Permitir agregar / quitar gastos.
+ - **Actor:** Usuario.
+ - **Descripción:** 
+ - **Prioridad:** 
 ## Requerimientos No Funcionales
-
+* **RNF1:**
+* **RNF2:**
+* **RNF3:**
 # User Stories / Historias de Usuarios
 
 # Casos de Uso / Use Cases  
@@ -175,6 +181,13 @@ También se puede encontrar los datos mas específicos sobre los partidos, muest
 
 
 # Validación y verificación
+|Nro. Req.|R1|R2|R3|R4|R5|R6|
+|---------|--|--|--|--|--|--|
+|¿Es viable? (Factible de ser hecho)|Si|Si|Si|Si|Si|Si|
+|¿Es consistente? (No se contradice con los otros req.)|Si|Si|Si|Si|Si|Si|
+|¿Es preciso y no ambiguo?|Si|Si|Si|Si|Si|Si|
+|¿Tiene una prioridad?|Si|Si|Si|Si|Si|Si|
+|¿Se identifica claramente el origen?|Si|Si|Si|Si|Si|Si|
 
 # Reflexión
 
