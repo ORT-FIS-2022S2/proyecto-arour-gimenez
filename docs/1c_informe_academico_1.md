@@ -105,6 +105,8 @@ También se puede encontrar los datos mas específicos sobre los partidos, muest
 [Página para imágenes libre de copyright](https://www.pexels.com/)
 ![User Persona 1](https://user-images.githubusercontent.com/96496417/192169590-f1a64334-7d00-48d8-adfb-773da32b6cdd.PNG)
 ![User Persona 2](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/user%20persona2.PNG)
+# Modelo conceptual del problema
+![15](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/15.jpg)
 # Especificación
 ## Requerimientos Funcionales
 En todos los requerimientos funcionales el actor va a ser el usuario.
