@@ -51,11 +51,13 @@ Por otro lado, se muestran los goleadores con un máximo de 10 jugadores a mostr
 <li> Con el uso de la aplicación pudimos notar que se muestra publicidad al navegar entre los apartados de la misma.
 </ul>
 
-## Investigacion
-[pag de la fifa con info del mundial](https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022)
+## Investigación
+[Página de la FIFA con información del mundial](https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022)
+La página oficial de la FIFA tiene una sección dedicada al mundial en Qatar de 2022 que brinda entrevistas, noticias, Top 5 de jugadores de varios países para tener en cuenta, junto con los grupos formados y que selecciones que participan del evento.
+También se puede encontrar los datos mas específicos sobre los partidos, muestran un calendario con las fechas y que partido hay en que día, junto los países que participan del mismo, y junto con estos también aclaran en que estadio será.
 # Caracterizacion de Usuarios / User Personas
-[pagina para hacerlo](https://app.xtensio.com/design/xyz6n4zx)
-[pagina para imagenes libre de copyright](https://www.pexels.com/)
+[Página para hacerlo](https://app.xtensio.com/design/xyz6n4zx)
+[pagina para imágenes libre de copyright](https://www.pexels.com/)
 ![Uner Persona 1](https://user-images.githubusercontent.com/96496417/192169590-f1a64334-7d00-48d8-adfb-773da32b6cdd.PNG)
 ![User Persona 2](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/user%20persona2.PNG)
 # Especificación
@@ -67,38 +69,38 @@ Por otro lado, se muestran los goleadores con un máximo de 10 jugadores a mostr
 # Casos de Uso / Use Cases  
 ## Caso de uso 1:  
 ---
-### **Título:**  Elegir una seleccion de futbol
+### **Título:**  Elegir una selección de futbol
   
 ### **Actor:** Hincha  
 
 ### **Curso normal:**
 
-| Accion de los actores | Respuesta del sistema |
+| Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1.Hincha abre la aplicacion | 2.El sistema mustra en Inicio un recuadro para elegir selecciones|
-|2.Elige una seleccion |4.Muestra los proximos partidos a jugar de la seleccion elegida por orden cronologico|  
+|1. Hincha abre la aplicación | 2. El sistema muestra en Inicio un recuadro para elegir selecciones|
+|3.Elige una selección |4. Muestra los proximos partidos a jugar de la selección elegida por orden cronológico|  
      
 
 ---
   ## Caso de uso 2:  
 ---
-### **Título:**  Hacer pronostico de ganador
+### **Título:**  Hacer pronóstico de ganador
   
 ### **Actor:** Hincha  
 
 ### **Curso normal:**
 
-| Accion de los actores | Respuesta del sistema |
+| Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1.El hincha selecciona un partido| 2.El sistema despliega una ventana con la informacion del partido y una seccion para marcar un ganador|
-|3.Selecciona un ganador posible| 4.Marca la opcion seleccionada|
-|5.Hace click en la flecha| 6.Vuelve a la pagina de Inicio|
+|1.El hincha selecciona un partido| 2. El sistema despliega una ventana con la información del partido y una sección para marcar un ganador|
+|3. Selecciona un ganador posible| 4. Marca la opción seleccionada|
+|5. Hace click en la flecha| 6. Vuelve a la página de Inicio|
 
 ### **Curso alternativo:**  
-| Accion de los actores | Respuesta del sistema |
+| Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1.El hincha selecciona un partido| 2.El sistema despliega una ventana con la informacion del partido y una seccion para marcar un ganador|
-|3.Hace click en la flecha| 4.Vuelve a la pagina de Inicio|
+|1. El hincha selecciona un partido| 2. El sistema despliega una ventana con la información del partido y una sección para marcar un ganador|
+|3. Hace click en la flecha| 4.Vuelve a la página de Inicio|
 
 ---
   ## Caso de uso 3:  
@@ -109,22 +111,22 @@ Por otro lado, se muestran los goleadores con un máximo de 10 jugadores a mostr
 
 ### **Curso normal:**
 
-| Accion de los actores | Respuesta del sistema |
+| Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1.El hincha ingresa a la seccion Tablas| 2.El sistema despliega todas las tablas de grupos ordenada por orden alfabetico|
+|1. El hincha ingresa a la sección Tablas| 2. El sistema despliega todas las tablas de grupos ordenada por orden alfabético|
 
 ---
   ## Caso de uso 4:  
 ---
-### **Título:**  Ver pronosticos realizados 
+### **Título:**  Ver pronósticos realizados 
   
 ### **Actor:** Hincha  
 
 ### **Curso normal:**
 
-| Accion de los actores | Respuesta del sistema |
+| Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1.El hincha ingresa a la seccion Pronosticos| 2.El sistema mustra los pronosticos realizados hasta el momento|
+|1. El hincha ingresa a la seccion Pronósticos| 2.El sistema muestra los pronósticos realizados hasta el momento|
 
 
 # Validación y verificación
