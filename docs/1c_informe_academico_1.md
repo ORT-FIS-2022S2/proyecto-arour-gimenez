@@ -63,23 +63,37 @@ También decidimos analizar la página oficial de la FIFA, ya que contiene la in
 </ul>
 
 ### Imagenes de "Mundial Resultados 2022" 
-Imagen 1: ![1]()
-Imagen 2: ![2]()
-Imagen 3: ![3]()
-Imagen 4: ![4]()
-Imagen 5: ![5]()
-Imagen 6: ![6]()
-Imagen 7: ![7]()
-Imagen 8: ![8]()
+Imagen 1:  
+![1]()
+Imagen 2:  
+![2]()
+Imagen 3:  
+![3]()
+Imagen 4:  
+![4]()
+Imagen 5:  
+![5]()
+Imagen 6:  
+![6]()
+Imagen 7:  
+![7]()
+Imagen 8:  
+![8]()
 ### Imagenes de "www.fifa.com"
-Imagen 1: ![1]()
-Imagen 2: ![2]()
-Imagen 3: ![3]()
-Imagen 4: ![4]()
-Imagen 5: ![5]()
-Imagen 6: ![6]()
-Imagen 7: ![7]()
-Imagen 8: ![8]()
+Imagen 1:  
+![1](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/1.png)
+Imagen 2:  
+![2](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/2.png)
+Imagen 3:  
+![3](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/3.png)
+Imagen 4:  
+![4](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/4.png)
+Imagen 5:  
+![5](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/5.png)
+Imagen 6:  
+![6](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/6.png)
+Imagen 7:  
+![7](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/7.png)
 
 ## Investigación
 [Página de la FIFA con información del mundial](https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022)
