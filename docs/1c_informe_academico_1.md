@@ -147,6 +147,10 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 |1. Hincha abre la aplicación | 2. El sistema muestra en Inicio un recuadro para elegir selecciones|
 |3. Elige una selección |4. Muestra los próximos partidos a jugar de la selección elegida por orden cronológico|  
      
+![14](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/14.jpg)  
+
+![13](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/13.jpg)  
+
 
 ---
   ## Caso de uso 2:  
@@ -169,6 +173,8 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 |1. El hincha selecciona un partido| 2. El sistema despliega una ventana con la información del partido y una sección para marcar un ganador|
 |3. Hace click en la flecha| 4.Vuelve a la página de Inicio|
 
+![12](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/12.jpg)  
+
 ---
   ## Caso de uso 3:  
 ---
@@ -182,6 +188,7 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 | --------------------- | --------------------- |
 |1. El hincha ingresa a la sección Tablas| 2. El sistema despliega todas las tablas de grupos ordenada por orden alfabético|
 
+![10](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/10.jpg)
 ---
   ## Caso de uso 4:  
 ---
@@ -195,6 +202,7 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 | --------------------- | --------------------- |
 |1. El hincha ingresa a la sección Pronósticos| 2. El sistema muestra los pronósticos realizados hasta el momento|
 
+![11](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/11.jpg)  
 
 # Validación y verificación
 |Nro. Req.|R1|R2|R3|R4|R5|R6|
