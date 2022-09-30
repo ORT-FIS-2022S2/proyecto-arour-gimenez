@@ -10,15 +10,15 @@ Estudiantes: Romina Arour, Maximiliano Giménez.
 Para este proyecto usamos el repositorio creado por los docentes del curso, y lo clonamos en cada maquina asi cada uno se quedaba con repositorio local.
 Utilizamos los comandos de git aprendidos/utilizados en clase, que también se encuentran en la bibliografía de la materia, específicamente los del libro Pro Git de Chacon.
 Los que más usamos fueron:  
-**git clone (url)** Clona repositorio remoto a que quede como repositorio local
-**git add .**  Hace que los datos modificados entren a staging (para luego hacer commit)
-**git commit -m "mensaje"** Hace commit junto con comentario detallando los cambios hechos
-**git push** Actualiza repositorio remoto
-**git pull** Actualiza repositorio local 
-**git branch (nombre branch)** Crea una rama nueva
-**git checkout (nombre branch)** Se cambia de rama
-**git log** Muestra registrio de los commits hechos
-**git status** Muestra si hay cambios listos para hacer commit o si falta agregarlos al estado de staging
+**git clone (url)** Clona repositorio remoto a que quede como repositorio local  
+**git add .**  Hace que los datos modificados entren a staging (para luego hacer commit)  
+**git commit -m "mensaje"** Hace commit junto con comentario detallando los cambios hechos  
+**git push** Actualiza repositorio remoto  
+**git pull** Actualiza repositorio local   
+**git branch (nombre branch)** Crea una rama nueva  
+**git checkout (nombre branch)** Se cambia de rama  
+**git log** Muestra registrio de los commits hechos  
+**git status** Muestra si hay cambios listos para hacer commit o si falta agregarlos al estado de staging  
 
 
 # Versionado
@@ -51,10 +51,23 @@ Por otro lado, se muestran los goleadores con un máximo de 10 jugadores a mostr
 <li> Con el uso de la aplicación pudimos notar que se muestra publicidad al navegar entre los apartados de la misma.
 </ul>
 
+También decidimos analizar la pagina oficial de la FIFA, ya que contiene la información que necesitábamos para hacer nuestro proyecto y tener en cuenta como funcionaria para tener en cuenta en el nuestro.
+### Conclusiones de aplicar Ingeniería inversa en "www.fifa.com" 
+<ul>
+<li> En la cabecera se muestran varias secciones relacionadas a football mismo, pero como nos centraremos en la del mundial fuimos directo a la que decía “competitions”, donde se muestra (al ubicar el cursor encima de la palabra) las distintas opciones y ahí seleccionamos “FIFA World Cup Qatar 2022”
+<li> Se abre en la misma ventana otra pagina que muestra un countdown de cuando empieza el torneo. Si se baja más hay una sección con artículos sobre entrevistas y otra sección sobre jugadores a los que recomiendan prestar atención (Top 5 de distintos países). Luego de eso se muestran los distintos grupos, cada uno con los países que le perteneces acompañados por su bandera. Enseguida por debajo de esa parte encontramos en la siguiente sección “Matches & Groups” donde te redirigen a otra página.
+<li> en esta otra pagina esta toda la información sobre horarios días partidos y estadios del mundial. Lo primero que se ve es un calendario a lo largo mostrando día por día (marcado esta la categoría “matches”), y según que día esta seleccionado muestra si hay partidos o no. Si los hay aclara la fecha (en formato día, mes y año) y luego muestra bien a la izquierda en que estadio será, y mas a la derecha están los nombres y banderas de los países que compiten junto con la hora del evento. Si se apreta sobre esa sección con la información te lleva a otra página con más detalles del mismo.
+<li> si se apreta en la categoría “tables” muestran los países ordenados por los grupos en una tabla, junto con datos numéricos sobre los partidos.
+<li> en cambio si vamos a la ultima categoría, “teams”, aparecen todos los países que participan, ordenados alfabéticamente y con imagen de su bandera.
+<li> No se muestra publicidad al navegar entre las distintas partes de la página de la FIFA
+</ul>
+
+
 ## Investigación
 [Página de la FIFA con información del mundial](https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022)
 La página oficial de la FIFA tiene una sección dedicada al mundial en Qatar de 2022 que brinda entrevistas, noticias, Top 5 de jugadores de varios países para tener en cuenta, junto con los grupos formados y que selecciones que participan del evento.
 También se puede encontrar los datos mas específicos sobre los partidos, muestran un calendario con las fechas y que partido hay en que día, junto los países que participan del mismo, y junto con estos también aclaran en que estadio será.
+[Acá un link hacia un resumen oficial de la FIFA sobre fechas y partidos del mundial, mostrado de una forma muy visual](https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf)
 # Caracterizacion de Usuarios / User Personas
 [Página para hacerlo](https://app.xtensio.com/design/xyz6n4zx)
 [pagina para imágenes libre de copyright](https://www.pexels.com/)
