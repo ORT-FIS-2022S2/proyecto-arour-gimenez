@@ -107,10 +107,26 @@ También se puede encontrar los datos mas específicos sobre los partidos, muest
 ![User Persona 2](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/user%20persona2.PNG)
 # Especificación
 ## Requerimientos Funcionales
-## RF1: Permitir agregar / quitar gastos.
+En todos los requerimientos funcionales el actor va a ser el usuario.
+## RF1: Elegir Selección Futbol.
  - **Actor:** Usuario.
- - **Descripción:** 
- - **Prioridad:** 
+ - **Descripción:** El Sistema debe permitirle al usuario elegir entre la lista d e selecciones disponibles el que le interese, y luego mostrarle los próximos partidos en el que participa.
+ - **Prioridad:** Alta
+
+## RF2: Pronóstico Ganador.
+ - **Actor:** Usuario.
+ - **Descripción:** El sistema debe permitirle al usuario debe de poder elegir un partido y luego seleccionar cual de las 2 selcciones será el posible ganador.
+ - **Prioridad:** Alta
+
+## RF3: Tabla Grupos.
+ - **Actor:** Usuario.
+ - **Descripción:** El usuario tiene la opción de ir a la sección de tablas, donde el sistema le tendria que luego mostrar los grupos ordenados de forma alfabética.
+ - **Prioridad:** Alta
+
+## RF4: .
+ - **Actor:** Usuario.
+ - **Descripción:** El usuario tendría que poder ir a la sección de pronosticos y el sistema le debe de mostrar las predicciones hechas hasta ese momento.
+ - **Prioridad:** Alta
 ## Requerimientos No Funcionales
 * **RNF1:**
 * **RNF2:**
