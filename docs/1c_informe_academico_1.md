@@ -43,7 +43,7 @@ Buscamos una aplicacion similiar a lo que queremos llegar como aplicacion final 
 <li> En la seccion de Partidos se pude ver todos los partidos a jugar de cada jornada, estos estan ordenados en orden cronologico </li>
 <li> En la seccion de Tablas se puede observar por un lado los grupos (A,B,C,etc), con las selecciones que lo integran y al lado de cada seleccion se mustran los puntos, diferencia de goles y los partidos jugados, ademas esta informacion se puede ampliar para que tambien se muestren los partidos ganados, los perdidos, los empatados y los goles.
 Por otro lado se mustran los goleadores con un maximo de 10 jugadores a mostrar y sus respectivos goles. Esta informacion suponemos que se ira actualizando partido a partido.
-<li> En la seccion Inicio en la parte de Partidos se pude ver alguno partidos a jugar y en la parte de Tabla se puede ver la misma interfaz de Tablas.
+<li> En la seccion Inicio en la parte de Partidos se pude ver algunos partidos a jugar y en la parte de Tabla se puede ver la misma interfaz de Tablas.
 <li> En la parte de Ajustes entre bastantes ajustes que se pueden realizar, se puede activar notificaciones sobre los partidos que sean del interes del usuario.
 <li> Con el uso de la aplicaion pudimos notar que se mustra publicidad al navegar entre los apartados de la misma.
 </ul>
@@ -60,7 +60,68 @@ Por otro lado se mustran los goleadores con un maximo de 10 jugadores a mostrar 
 
 # User Stories / Historias de Usuarios
 
-# Casos de Uso / Use Cases
+# Casos de Uso / Use Cases  
+## Caso de uso 1:  
+---
+### **Título:**  Elegir una seleccion de futbol
+  
+### **Actor:** Hincha  
+
+### **Curso normal:**
+
+| Accion de los actores | Respuesta del sistema |
+| --------------------- | --------------------- |
+|1.Hincha abre la aplicacion | 2.El sistema mustra en Inicio un recuadro para elegir selecciones|
+|2.Elige una seleccion |4.Muestra los proximos partidos a jugar de la seleccion elegida por orden cronologico|  
+     
+
+---
+  ## Caso de uso 2:  
+---
+### **Título:**  Hacer pronostico de ganador
+  
+### **Actor:** Hincha  
+
+### **Curso normal:**
+
+| Accion de los actores | Respuesta del sistema |
+| --------------------- | --------------------- |
+|1.El hincha selecciona un partido| 2.El sistema despliega una ventana con la informacion del partido y una seccion para marcar un ganador|
+|3.Selecciona un ganador posible| 4.Marca la opcion seleccionada|
+|5.Hace click en la flecha| 6.Vuelve a la pagina de Inicio|
+
+### **Curso alternativo:**  
+| Accion de los actores | Respuesta del sistema |
+| --------------------- | --------------------- |
+|1.El hincha selecciona un partido| 2.El sistema despliega una ventana con la informacion del partido y una seccion para marcar un ganador|
+|3.Hace click en la flecha| 4.Vuelve a la pagina de Inicio|
+
+---
+  ## Caso de uso 3:  
+---
+### **Título:**  Ver tabla de grupos 
+  
+### **Actor:** Hincha  
+
+### **Curso normal:**
+
+| Accion de los actores | Respuesta del sistema |
+| --------------------- | --------------------- |
+|1.El hincha ingresa a la seccion Tablas| 2.El sistema despliega todas las tablas de grupos ordenada por orden alfabetico|
+
+---
+  ## Caso de uso 4:  
+---
+### **Título:**  Ver pronosticos realizados 
+  
+### **Actor:** Hincha  
+
+### **Curso normal:**
+
+| Accion de los actores | Respuesta del sistema |
+| --------------------- | --------------------- |
+|1.El hincha ingresa a la seccion Pronosticos| 2.El sistema mustra los pronosticos realizados hasta el momento|
+
 
 # Validación y verificación
 
