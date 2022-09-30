@@ -45,7 +45,7 @@ Buscamos una aplicación similar a lo que queremos llegar como aplicación final
 <li> Esta aplicación no necesita de ningún registro de usuario para poder ver su contenido</li>
 <li> En la sección de Partidos se pude ver todos los partidos a jugar de cada jornada, estos están ordenados en orden cronológico </li>
 <li> En la sección de Tablas se puede observar por un lado los grupos (A,B,C,etc), con las selecciones que lo integran y al lado de cada selección se muestran los puntos, diferencia de goles y los partidos jugados, además esta información se puede ampliar para que también se muestren los partidos ganados, los perdidos, los empatados y los goles.
-Por otro lado, se muestran los goleadores con un máximo de 10 jugadores a mostrar y sus respectivos goles. Esta información suponemos que se ira actualizando partido a partido.
+Por otro lado, hay una tabla de goleadores con un máximo de 10 jugadores a mostrar y sus respectivos goles. Esta información suponemos que se ira actualizando partido a partido.
 <li> En la sección Inicio en la parte de Partidos se pude ver algunos partidos a jugar y en la parte de Tabla se puede ver la misma interfaz de Tablas.
 <li> En la parte de Ajustes entre bastantes ajustes que se pueden realizar, se puede activar notificaciones sobre los partidos que sean del interés del usuario.
 <li> Con el uso de la aplicación pudimos notar que se muestra publicidad al navegar entre los apartados de la misma.
@@ -64,21 +64,18 @@ También decidimos analizar la página oficial de la FIFA, ya que contiene la in
 
 ### Imagenes de "Mundial Resultados 2022" 
 Imagen 1:  
-![1]()
+![16](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/16.jpg)
 Imagen 2:  
-![2]()
+![17](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/17.jpg)
 Imagen 3:  
-![3]()
+![18](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/18.jpg)
 Imagen 4:  
-![4]()
+![19](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/19.jpg)
 Imagen 5:  
-![5]()
+![20](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/20.jpg)
 Imagen 6:  
-![6]()
-Imagen 7:  
-![7]()
-Imagen 8:  
-![8]()
+![21](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/21.jpg)
+
 ### Imagenes de "www.fifa.com"
 Imagen 1:  
 ![1](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/1.png)
@@ -136,8 +133,9 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 # User Stories / Historias de Usuarios
 
 # Casos de Uso / Use Cases  
-## Caso de uso 1:  
 ---
+## Caso de uso 1:  
+
 ### **Título:**  Elegir una selección de futbol
   
 ### **Actor:** Hincha  
@@ -156,7 +154,7 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 
 ---
   ## Caso de uso 2:  
----
+
 ### **Título:**  Hacer pronóstico de ganador
   
 ### **Actor:** Hincha  
@@ -179,7 +177,7 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 
 ---
   ## Caso de uso 3:  
----
+
 ### **Título:**  Ver tabla de grupos 
   
 ### **Actor:** Hincha  
@@ -190,10 +188,11 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 | --------------------- | --------------------- |
 |1. El hincha ingresa a la sección Tablas| 2. El sistema despliega todas las tablas de grupos ordenada por orden alfabético|
 
-![10](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/10.jpg)
+![10](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/10.jpg)  
+
 ---
   ## Caso de uso 4:  
----
+
 ### **Título:**  Ver pronósticos realizados 
   
 ### **Actor:** Hincha  
