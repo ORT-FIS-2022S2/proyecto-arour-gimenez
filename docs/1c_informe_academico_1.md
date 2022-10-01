@@ -43,11 +43,12 @@ Buscamos una aplicación similar a lo que queremos llegar como aplicación final
 <ul>
 <li> Secciones principales: Partidos, Tablas, Inicio, Ajustes. </li>  
 <li> Esta aplicación no necesita de ningún registro de usuario para poder ver su contenido</li>
-<li> En la sección de Partidos se pude ver todos los partidos a jugar de cada jornada, estos están ordenados en orden cronológico </li>
-<li> En la sección de Tablas se puede observar por un lado los grupos (A,B,C,etc), con las selecciones que lo integran y al lado de cada selección se muestran los puntos, diferencia de goles y los partidos jugados, además esta información se puede ampliar para que también se muestren los partidos ganados, los perdidos, los empatados y los goles.
-Por otro lado, hay una tabla de goleadores con un máximo de 10 jugadores a mostrar y sus respectivos goles. Esta información suponemos que se ira actualizando partido a partido.
-<li> En la sección Inicio en la parte de Partidos se pude ver algunos partidos a jugar y en la parte de Tabla se puede ver la misma interfaz de Tablas.
-<li> En la parte de Ajustes entre bastantes ajustes que se pueden realizar, se puede activar notificaciones sobre los partidos que sean del interés del usuario.
+<li> En la sección de Partidos se pude ver todos los partidos a jugar de cada jornada, estos están ordenados en orden cronológico (Imagen 5). </li>
+<li> En la sección de Tablas se puede observar por un lado los grupos (A,B,C,etc), con las selecciones que lo integran y al lado de cada selección se muestran los puntos, diferencia de goles y los partidos jugados (Imagen 2), además esta información se puede ampliar para que también se muestren los partidos ganados, los perdidos, los empatados y los goles (Imagen 3).  
+ 
+Por otro lado, hay una tabla de goleadores con un máximo de 10 jugadores a mostrar y sus respectivos goles (Imagen 4). Esta información suponemos que se ira actualizando partido a partido.
+<li> En la sección Inicio en la parte de Partidos se pude ver algunos partidos a jugar (Imagen 1) y en la parte de Tabla se puede ver la misma interfaz de Tablas.
+<li> En la parte de Ajustes entre bastantes ajustes que se pueden realizar, se puede activar notificaciones sobre los partidos que sean del interés del usuario (Imagen 6).
 <li> Con el uso de la aplicación pudimos notar que se muestra publicidad al navegar entre los apartados de la misma.
 </ul>
 
@@ -64,17 +65,23 @@ También decidimos analizar la página oficial de la FIFA, ya que contiene la in
 
 ### Imagenes de "Mundial Resultados 2022" 
 Imagen 1:  
-![16](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/16.jpg)
+<img src="https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/16.jpg" alt="16" width="300"/>  
+
 Imagen 2:  
-![17](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/17.jpg)
+<img src="https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/17.jpg" alt="17" width="300"/>  
+
 Imagen 3:  
-![18](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/18.jpg)
+<img src="https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/18.jpg" alt="18" width="300"/>  
+
 Imagen 4:  
-![19](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/19.jpg)
+<img src="https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/19.jpg" alt="19" width="300"/>  
+
 Imagen 5:  
-![20](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/20.jpg)
+<img src="https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/20.jpg" alt="20" width="300"/>  
+
 Imagen 6:  
-![21](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/21.jpg)
+<img src="https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/21.jpg" alt="21" width="300"/>
+
 
 ### Imagenes de "www.fifa.com"
 Imagen 1:  
