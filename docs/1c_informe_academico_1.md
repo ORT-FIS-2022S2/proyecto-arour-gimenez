@@ -134,9 +134,26 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
  - **Descripción:** El usuario tendría que poder ir a la sección de pronosticos y el sistema le debe de mostrar las predicciones hechas hasta ese momento.
  - **Prioridad:** Alta
 ## Requerimientos No Funcionales
-* **RNF1:**
-* **RNF2:**
-* **RNF3:**
+* **RNF1: Color**   
+  Descripcion: El sistema debe utilizar como color primario Green 900 y Light Blue 700 como color segundario.  
+  Prioridad: Alta.  
+
+* **RNF2: Tipo de fuente**  
+  Descripcion: La tipografia debe ser Roboto.  
+  Prioridad: Alta.  
+
+* **RNF3: Iconos**
+  Descripcion: Debe utilizar el formato filled para los iconos.  
+  Prioridad: Alta.  
+
+* **RNF4: Sistema responsive**  
+  Descripcion: El sistema debe ser accesible y adaptable en cualquier dispositivo.
+  Prioridad: Alta.  
+
+* **RNF5: Persistencia**  
+  Descripcion: Se debe poder guardar la configuracion realizada por el hincha.
+  Prioridad: Media.  
+  
 # User Stories / Historias de Usuarios
 
 # Casos de Uso / Use Cases  
