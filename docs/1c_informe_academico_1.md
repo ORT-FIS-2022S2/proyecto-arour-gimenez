@@ -147,11 +147,11 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
   Prioridad: Alta.  
 
 * **RNF4: Sistema responsive**  
-  Descripción: El sistema debe ser accesible y adaptable en cualquier dispositivo.
+  Descripción: El sistema debe ser accesible y adaptable en cualquier dispositivo.  
   Prioridad: Alta.  
 
 * **RNF5: Persistencia**  
-  Descripción: Se debe poder guardar la configuracion realizada por el hincha.
+  Descripción: Se debe poder guardar la configuracion realizada por el hincha.  
   Prioridad: Media.  
   
 # User Stories / Historias de Usuarios
@@ -257,6 +257,23 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 
 ## Detalle del trabajo individual
 
-Fecha, actividad, esfuerzo, responsable
+Fecha, actividad, esfuerzo, responsable.  
+
+|Fecha| Actividad| Esfuerzo|Responable|  
+|-----|----------|---------|----------|  
+|     |Entrevistas|        |          |  
+|     |Ingenieria Inversa| |          |  
+|     |Investigacion|      |          |  
+|     |User prsonas|       |          |  
+|     |Modelo conceptual del problema|         |          |  
+|     |Requerimientos funcionales|             |          |  
+|     |Requerimientos no funcionales|          |          |  
+|     |User stories|       |          |  
+|     |Use cases|          |          |  
+|     |Bocetos de IU|      |          |  
+|     |Validacion|         |          |  
+|     |Verificacion|       |          |  
+
+  
 
 ## Técnicas aplicadas y aprendizajes
