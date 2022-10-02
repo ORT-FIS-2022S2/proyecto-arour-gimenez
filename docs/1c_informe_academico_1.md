@@ -255,6 +255,10 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 |Verificable|Si|Si|Si|Si|Si|Si|Si|Si|Si|
 
 ## Validación
+Le mostramos a varios usuarios el prototipo, con los bocetos de interfaz y pudimos concluir que haria falta:  
+1. Poner una barra en la parte inferiror que contenga informacion actualizada de los resultados de todos los partidos jugados.  
+2. Poder comparar su pronostico con el resultado una vez que haya terminado el partido.
+3. En la parte de partidos ademas de la informacion de la fecha y hora, tambien poner en que cancha se va a jugar.  
 
 # Reflexión
 ## Detalle del trabajo individual 
