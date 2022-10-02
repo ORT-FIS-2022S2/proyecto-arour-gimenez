@@ -31,7 +31,7 @@ Hicimos entrevistas a 3 personas con diferente conocimiento sobre cómo va a ser
 
 En base a las entrevistas vimos que la forma de obtención de la información es a través de la comunicación entre conocidos (siendo amigos, familia, compañeros de estudio/trabajo) o directamente por internet.
 
-Como observación pudimos notar que si lo buscaban en internet seguían pasos similares. Todos iban dirécto a Google y escribían "partido de Uruguay mundial", "Partido mundial Qatar", "Uruguay vs", etc, y luego de eso todos iban al primer resultado que aparecía en el buscador.
+Como observación pudimos notar que si lo buscaban en internet seguían pasos similares. Todos iban directo a Google y escribían "partido de Uruguay mundial", "Partido mundial Qatar", "Uruguay vs", etc, y luego de eso todos iban al primer resultado que aparecía en el buscador.
 
 También se observó como todos los entrevistados tenían un mayor interés en la selección Uruguaya en comparación con los otros, y no todos tenían inclinación a saber sobre otras selecciones.  
 
@@ -52,11 +52,11 @@ Por otro lado, hay una tabla de goleadores con un máximo de 10 jugadores a most
 <li> Con el uso de la aplicación pudimos notar que se muestra publicidad al navegar entre los apartados de la misma.
 </ul>
 
-También decidimos analizar la página oficial de la FIFA, ya que contiene la información que necesitábamos para hacer nuestro proyecto y tener en cuenta como funcionaria para tener en cuenta en el nuestro.
+También decidimos analizar la página oficial de la FIFA, ya que contiene la información que necesitábamos para hacer nuestro proyecto y tener en cuenta como funcionaria para el nuestro.
 ### Conclusiones de aplicar Ingeniería inversa en "www.fifa.com" 
 <ul>
 <li> En la cabecera se muestran varias secciones relacionadas a football mismo, pero como nos centraremos en la del mundial fuimos directo a la que decía “competitions”, donde se muestra (al ubicar el cursor encima de la palabra) las distintas opciones y ahí seleccionamos “FIFA World Cup Qatar 2022” (Imagen 1)
-<li> Se abre en la misma ventana otra página que muestra un countdown de cuando empieza el torneo (Imagen 2). Si se baja más hay una sección con artículos sobre entrevistas y otra sección sobre jugadores a los que recomiendan prestar atención (Top 5 de distintos países). Luego de eso se muestran los distintos grupos, cada uno con los países que le perteneces acompañados por su bandera (Imagen 3). Enseguida por debajo de esa parte encontramos en la siguiente sección “Matches & Groups” donde te redirigen a otra página (Imagen 4).
+<li> Se abre en la misma ventana otra página que muestra una cuenta regresiva de cuando empieza el torneo (Imagen 2). Si se baja más hay una sección con artículos sobre entrevistas y otra sección sobre jugadores a los que recomiendan prestar atención (Top 5 de distintos países). Luego de eso se muestran los distintos grupos, cada uno con los países que le perteneces acompañados por su bandera (Imagen 3). Enseguida por debajo de esa parte encontramos en la siguiente sección “Matches & Groups” donde te redirigen a otra página (Imagen 4).
 <li> En esta otra página esta toda la información sobre horarios días partidos y estadios del mundial. Lo primero que se ve es un calendario a lo largo mostrando día por día (marcado esta la categoría “matches”), y según que día esta seleccionado muestra si hay partidos o no. Si los hay aclara la fecha (en formato día, mes y año) y luego muestra bien a la izquierda en que estadio será, y mas a la derecha están los nombres y banderas de los países que compiten junto con la hora del evento (Imagen 5). Si se apreta sobre esa sección con la información te lleva a otra página con más detalles del mismo.
 <li> Si se apreta en la categoría “tables” muestran los países ordenados por los grupos en una tabla, junto con datos numéricos sobre los partidos. (Imagen 6)
 <li> En cambio si vamos a la última categoría, “teams”, aparecen todos los países que participan, ordenados alfabéticamente y con imagen de su bandera. (Imagen 7)
@@ -121,7 +121,7 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 
 ### RF2: Pronóstico Ganador.
  - **Actor:** Usuario.
- - **Descripción:** El sistema debe permitirle al usuario debe de poder elegir un partido y luego seleccionar cual de las 2 selecciones será el posible ganador.
+ - **Descripción:** El sistema debe permitirle al usuario debe de poder elegir un partido y luego seleccionar cuál de las 2 selecciones será el posible ganador.
  - **Prioridad:** Alta
 
 ### RF3: Tabla Grupos.
@@ -139,7 +139,7 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
   Prioridad: Alta.  
 
 * **RNF2: Tipo de fuente**  
-  Descripción: La tipografia debe ser Roboto.  
+  Descripción: La tipografía debe ser Roboto.  
   Prioridad: Alta.  
 
 * **RNF3: Iconos**
@@ -151,14 +151,14 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
   Prioridad: Alta.  
 
 * **RNF5: Persistencia**  
-  Descripción: Se debe poder guardar la configuracion realizada por el hincha.  
+  Descripción: Se debe poder guardar la configuración realizada por el hincha.  
   Prioridad: Media.  
   
 # User Stories / Historias de Usuarios
 ### Historia usuario 1.
 **Título:** Elegir Selección Futbol.
 
-**Como** Como Usuario quiero poder elegir la selección de futbol que me interesa así puedo ver cuáles son los proximos partidos en los que participa.
+**Como** Como Usuario quiero poder elegir la selección de futbol que me interesa así puedo ver cuáles son los próximos partidos en los que participa.
 
 **Criterios de aceptación:** Ninguna.
 
@@ -249,7 +249,7 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 |Viable / Factible|Si|Si|Si|Si|Si|Si|Si|Si|Si|
 |Consistencia|Si|Si|Si|Si|Si|Si|Si|Si|Si|
 |Preciso / No Ambiguo|Si|Si|Si|Si|Si|Si|Si|Si|Si|
-|Prioriedad|Si|Si|Si|Si|Si|Si|Si|Si|Si|
+|Prioridad|Si|Si|Si|Si|Si|Si|Si|Si|Si|
 |Verificable|Si|Si|Si|Si|Si|Si|Si|Si|Si|
 
 # Reflexión
