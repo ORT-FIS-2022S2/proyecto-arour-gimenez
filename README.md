@@ -48,7 +48,7 @@ Buscamos una aplicación similar a lo que queremos llegar como aplicación final
 ### Conclusiones de aplicar Ingeniería inversa en "Mundial Resultados 2022"  
 <ul>
 <li> Secciones principales: Partidos, Tablas, Inicio, Ajustes. </li>  
-<li> Esta aplicación no necesita de ningún registro de usuario para poder ver su contenido</li>
+<li> Esta aplicación no necesita de ningún registro de usuario para poder ver su contenido.</li>
 <li> En la sección de Partidos se pude ver todos los partidos a jugar de cada jornada, estos están ordenados en orden cronológico (Imagen 5). </li>
 <li> En la sección de Tablas se puede observar por un lado los grupos (A,B,C,etc), con las selecciones que lo integran y al lado de cada selección se muestran los puntos, diferencia de goles y los partidos jugados (Imagen 2), además esta información se puede ampliar para que también se muestren los partidos ganados, los perdidos, los empatados y los goles (Imagen 3).  
  
@@ -121,17 +121,17 @@ También se puede encontrar los datos mas específicos sobre los partidos, muest
 ## Requerimientos Funcionales
 En todos los requerimientos funcionales el actor va a ser el usuario.
 ### RF1: Elegir Selección Futbol.
- - **Actor:** Usuario.
+ - **Actor:** Usuario.  
  - **Descripción:** El Sistema debe permitirle al usuario elegir entre la lista de selecciones disponibles el que le interese, y luego mostrarle los próximos partidos en el que participa.
- - **Prioridad:** Alta
+ - **Prioridad:** Alta  
 
 ### RF2: Pronóstico Ganador.
- - **Actor:** Usuario.
- - **Descripción:** El sistema debe permitirle al usuario debe de poder elegir un partido y luego seleccionar cuál de las 2 selecciones será el posible ganador.
- - **Prioridad:** Alta
+ - **Actor:** Usuario.  
+ - **Descripción:** El sistema debe permitirle al usuario poder elegir un partido y luego seleccionar cuál de las 2 selecciones será el posible ganador.
+ - **Prioridad:** Alta  
 
 ### RF3: Tabla Grupos.
- - **Actor:** Usuario.
+ - **Actor:** Usuario.  
  - **Descripción:** El usuario tiene la opción de ir a la sección de tablas, donde el sistema le tendría que luego mostrar los grupos ordenados de forma alfabética.
  - **Prioridad:** Alta
 
@@ -141,7 +141,7 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
  - **Prioridad:** Alta
 ## Requerimientos No Funcionales
 * **RNF1: Color**   
-  Descripción: El sistema debe utilizar como color primario Green 900 y Light Blue 700 como color segundario.  
+  Descripción: El sistema debe utilizar como color primario Green 900 y Light Blue 700 como color secundario.  
   Prioridad: Alta.  
 
 * **RNF2: Tipo de fuente**  
@@ -157,21 +157,21 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
   Prioridad: Alta.  
 
 * **RNF5: Persistencia**  
-  Descripción: Se debe poder guardar la configuración realizada por el hincha.  
+  Descripción: Se debe poder guardar la configuración realizada por el usuario.  
   Prioridad: Media.  
   
 # User Stories / Historias de Usuarios
 ### Historia usuario 1.
 **Título:** Elegir Selección Futbol.
 
-**Como** Como Usuario quiero poder elegir la selección de futbol que me interesa así puedo ver cuáles son los próximos partidos en los que participa.
+**Como** Usuario quiero poder elegir la selección de futbol que me interesa así puedo ver cuáles son los próximos partidos en los que participa.
 
 **Criterios de aceptación:** Ninguna.
 
 ## Historia usuario 2.
 **Título:** Hacer Pronostico.
 
-**Como** Como Usuario quiero ser capaz de registrar mi predicción de cada partido así luego puedo revisar si predije bien o no.
+**Como** Usuario quiero ser capaz de registrar mi predicción de cada partido así luego puedo revisar si predije bien o no.
 
 **Criterios de aceptación:** Debe guardarse el registro y el usuario tiene que volver a entrar luego del partido para revisar si la predicción fue correcta o no.
 
@@ -182,13 +182,13 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 
 ### **Título:**  Elegir una selección de futbol
   
-### **Actor:** Hincha  
+### **Actor:** Usuario  
 
 ### **Curso normal:**
 
 | Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1. Hincha abre la aplicación | 2. El sistema muestra en Inicio un recuadro para elegir selecciones|
+|1. Usuario abre la aplicación | 2. El sistema muestra en Inicio un recuadro para elegir selecciones|
 |3. Elige una selección |4. Muestra los próximos partidos a jugar de la selección elegida por orden cronológico|  
      
 ![14](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/14.jpg)  
@@ -201,20 +201,20 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 
 ### **Título:**  Hacer pronóstico de ganador
   
-### **Actor:** Hincha  
+### **Actor:** Usuario  
 
 ### **Curso normal:**
 
 | Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1. El hincha selecciona un partido| 2. El sistema despliega una ventana con la información del partido y una sección para marcar un ganador|
+|1. El usuario selecciona un partido| 2. El sistema despliega una ventana con la información del partido y una sección para marcar un ganador|
 |3. Selecciona un ganador posible| 4. Marca la opción seleccionada|
 |5. Hace click en la flecha| 6. Vuelve a la página de Inicio|
 
 ### **Curso alternativo:**  
 | Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1. El hincha selecciona un partido| 2. El sistema despliega una ventana con la información del partido y una sección para marcar un ganador|
+|1. El usuario selecciona un partido| 2. El sistema despliega una ventana con la información del partido y una sección para marcar un ganador|
 |3. Hace click en la flecha| 4.Vuelve a la página de Inicio|
 
 ![12](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/12.jpg)  
@@ -224,13 +224,13 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 
 ### **Título:**  Ver tabla de grupos 
   
-### **Actor:** Hincha  
+### **Actor:** Usuario  
 
 ### **Curso normal:**
 
 | Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1. El hincha ingresa a la sección Tablas| 2. El sistema despliega todas las tablas de grupos ordenada por orden alfabético|
+|1. El usuario ingresa a la sección Tablas| 2. El sistema despliega todas las tablas de grupos ordenada por orden alfabético|
 
 ![10](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/10.jpg)  
 
@@ -239,13 +239,13 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 
 ### **Título:**  Ver pronósticos realizados 
   
-### **Actor:** Hincha  
+### **Actor:** Usuario  
 
 ### **Curso normal:**
 
 | Acción de los actores | Respuesta del sistema |
 | --------------------- | --------------------- |
-|1. El hincha ingresa a la sección Pronósticos| 2. El sistema muestra los pronósticos realizados hasta el momento|
+|1. El usuario ingresa a la sección Pronósticos| 2. El sistema muestra los pronósticos realizados hasta el momento|
 
 ![11](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/11.jpg)  
 
