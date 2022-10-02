@@ -261,7 +261,11 @@ Le mostramos a varios usuarios el prototipo, con los bocetos de interfaz y pudim
 3. En la parte de partidos además de la información de la fecha y hora, también poner en que cancha se va a jugar.  
 4. Luego de marcar la predicción, mostrar porcentaje de cuantos votaron a ambos equipos.
 5. Posibilidades de ver que jugadores participarían en que selección para cada partido.
-6. En tablas, ordenar las selecciones dentro de cada grupo segun el que tiene mas puntos.
+6. Cuando se muestren los resultados finales de cada partido, mostrar quienes metieron los goles, y aclarar si hubo expulsiones.
+7. Que la tabla de resultados actuales se pueda comparar con una tabla de los pronosticos hechos por los usuarios.
+8. En tabla de pronósticos agregar opción de empate para los 3 primeros partidos.
+9. Antes de realizar el pronóstico, mostrar cual va ganando.
+Como se puede notar, hubo mucha sugerencia más hacia el lado de hacer las predicciones en si.
 # Reflexión
 ## Detalle del trabajo individual 
 Trabajamos bastante juntos, pero más cerca de la fecha de entrega nos dividimos algunas de las actividades y nos consultábamos lo que íbamos avanzando y si faltaba agregar algo o no.
