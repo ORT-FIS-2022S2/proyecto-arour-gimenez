@@ -100,13 +100,13 @@ Imagen 7:
 ![7](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/7.png)
 
 ## Investigación
-[Página de la FIFA con información del mundial](https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022)
-La página oficial de la FIFA tiene una sección dedicada al mundial en Qatar de 2022 que brinda entrevistas, noticias, Top 5 de jugadores de varios países para tener en cuenta, junto con los grupos formados y que selecciones que participan del evento.
-También se puede encontrar los datos mas específicos sobre los partidos, muestran un calendario con las fechas y que partido hay en que día, junto los países que participan del mismo, y junto con estos también aclaran en que estadio será.
+[Página de la FIFA con información del mundial](https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022)  
+La página oficial de la FIFA tiene una sección dedicada al mundial en Qatar de 2022 que brinda entrevistas, noticias, Top 5 de jugadores de varios países para tener en cuenta, junto con los grupos formados y que selecciones que participan del evento.  
+También se puede encontrar los datos mas específicos sobre los partidos, muestran un calendario con las fechas y que partido hay en que día, junto los países que participan del mismo, y junto con estos también aclaran en que estadio será.  
 [Acá un link hacia un resumen oficial de la FIFA sobre fechas y partidos del mundial, mostrado de una forma muy visual](https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf)
 # Caracterización de Usuarios / User Personas
-[Página para hacerlo](https://app.xtensio.com/design/xyz6n4zx)
-[Página para imágenes libre de copyright](https://www.pexels.com/)
+[Página donde tomamos formato](https://app.xtensio.com/design/xyz6n4zx)  
+[Página para imágenes libre de copyright que usamos](https://www.pexels.com/)
 ![User Persona 1](https://user-images.githubusercontent.com/96496417/192169590-f1a64334-7d00-48d8-adfb-773da32b6cdd.PNG)
 ![User Persona 2](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/user%20persona2.PNG)
 # Modelo conceptual del problema
@@ -114,22 +114,22 @@ También se puede encontrar los datos mas específicos sobre los partidos, muest
 # Especificación
 ## Requerimientos Funcionales
 En todos los requerimientos funcionales el actor va a ser el usuario.
-## RF1: Elegir Selección Futbol.
+### RF1: Elegir Selección Futbol.
  - **Actor:** Usuario.
  - **Descripción:** El Sistema debe permitirle al usuario elegir entre la lista de selecciones disponibles el que le interese, y luego mostrarle los próximos partidos en el que participa.
  - **Prioridad:** Alta
 
-## RF2: Pronóstico Ganador.
+### RF2: Pronóstico Ganador.
  - **Actor:** Usuario.
  - **Descripción:** El sistema debe permitirle al usuario debe de poder elegir un partido y luego seleccionar cual de las 2 selecciones será el posible ganador.
  - **Prioridad:** Alta
 
-## RF3: Tabla Grupos.
+### RF3: Tabla Grupos.
  - **Actor:** Usuario.
  - **Descripción:** El usuario tiene la opción de ir a la sección de tablas, donde el sistema le tendría que luego mostrar los grupos ordenados de forma alfabética.
  - **Prioridad:** Alta
 
-## RF4: Pronósticos Realizados.
+### RF4: Pronósticos Realizados.
  - **Actor:** Usuario.
  - **Descripción:** El usuario tendría que poder ir a la sección de pronosticos y el sistema le debe de mostrar las predicciones hechas hasta ese momento.
  - **Prioridad:** Alta
@@ -244,36 +244,30 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 ![11](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/11.jpg)  
 
 # Validación y verificación
-|Nro. Req.|R1|R2|R3|R4|R5|R6|
-|---------|--|--|--|--|--|--|
-|¿Es viable? (Factible de ser hecho)|Si|Si|Si|Si|Si|Si|
-|¿Es consistente? (No se contradice con los otros req.)|Si|Si|Si|Si|Si|Si|
-|¿Es preciso y no ambiguo?|Si|Si|Si|Si|Si|Si|
-|¿Tiene una prioridad?|Si|Si|Si|Si|Si|Si|
-|¿Se identifica claramente el origen?|Si|Si|Si|Si|Si|Si|
+|Requerimiento|RF1|RF2|RF3|RF4|RNF1|RNF2|RNF3|RNF4|RNF5|
+|---------|--|--|--|--|--|--|--|--|--|
+|Viable / Factible|Si|Si|Si|Si|Si|Si|Si|Si|Si|
+|Consistencia|Si|Si|Si|Si|Si|Si|Si|Si|Si|
+|Preciso / No Ambiguo|Si|Si|Si|Si|Si|Si|Si|Si|Si|
+|Prioriedad|Si|Si|Si|Si|Si|Si|Si|Si|Si|
+|Verificable|Si|Si|Si|Si|Si|Si|Si|Si|Si|
 
 # Reflexión
-
-
-## Detalle del trabajo individual
-
-Fecha, actividad, esfuerzo, responsable.  
+## Detalle del trabajo individual 
 
 |Fecha| Actividad| Esfuerzo|Responable|  
 |-----|----------|---------|----------|  
-|     |Entrevistas|        |          |  
-|     |Ingenieria Inversa| |          |  
-|     |Investigacion|      |          |  
-|     |User prsonas|       |          |  
-|     |Modelo conceptual del problema|         |          |  
-|     |Requerimientos funcionales|             |          |  
-|     |Requerimientos no funcionales|          |          |  
-|     |User stories|       |          |  
-|     |Use cases|          |          |  
-|     |Bocetos de IU|      |          |  
-|     |Validacion|         |          |  
-|     |Verificacion|       |          |  
-
-  
+|25 Setiembre|Entrevistas|        |Ambos|  
+|27 Setiembre|Ingeniería Inversa| |Ambos|  
+|30 Setiembre|Investigación|      |Romina|  
+|25 Setiembre|User personas|       |Ambos|  
+|30 Setiembre|Modelo conceptual del problema|         |Maximiliano|  
+|30 Setiembre|Requerimientos funcionales|             |Romina|  
+|1 Octubre|Requerimientos no funcionales|          |Maximiliano|  
+|1 Octubre|User stories|       |Romina|  
+|30 Setiembre|Use cases|          |Maximiliano|  
+|30 Setiembre|Bocetos de IU|      |Maximiliano|  
+|2 Octubre|Validación|         |Ambos|  
+|2 Octubre|Verificación|       |Ambos|  
 
 ## Técnicas aplicadas y aprendizajes
