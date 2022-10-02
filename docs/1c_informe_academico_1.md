@@ -244,6 +244,8 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 ![11](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/11.jpg)  
 
 # Validación y verificación
+
+## Verificación
 |Requerimiento|RF1|RF2|RF3|RF4|RNF1|RNF2|RNF3|RNF4|RNF5|
 |---------|--|--|--|--|--|--|--|--|--|
 |Viable / Factible|Si|Si|Si|Si|Si|Si|Si|Si|Si|
@@ -252,8 +254,11 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 |Prioridad|Si|Si|Si|Si|Si|Si|Si|Si|Si|
 |Verificable|Si|Si|Si|Si|Si|Si|Si|Si|Si|
 
+## Validación
+
 # Reflexión
 ## Detalle del trabajo individual 
+Trabajamos bastante juntos, pero más cerca de la fecha de entrega nos dividimos algunas de las actividades y nos consultábamos lo que íbamos avanzando y si faltaba agregar algo o no.
 
 |Fecha| Actividad| Esfuerzo|Responable|  
 |-----|----------|---------|----------|  
@@ -271,3 +276,5 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 |2 Octubre|Verificación|       |Ambos|  
 
 ## Técnicas aplicadas y aprendizajes
+Utilizamos varios conceptos dados en clase y la gran mayoría los aplicamos para esta entrega, entre ellas lo aprendido sobre git y github, técnicas de elicitación, todo lo que tiene que ver con User Stories, Use Cases y User Profiles, etc.  
+El hecho de que el proyecto lo hicimos en equipo nos ayudó bastante a tener una segunda opinión cuando sugeríamos ideas e implementaciones que pensábamos hacer, y nos facilitó bastante en la parte de hacer entrevistas para reunir varias personas con diferentes conocimiento sobre el tema del proyecto (el Mundial).
