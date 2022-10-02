@@ -55,7 +55,7 @@ Por otro lado, hay una tabla de goleadores con un máximo de 10 jugadores a most
 También decidimos analizar la página oficial de la FIFA, ya que contiene la información que necesitábamos para hacer nuestro proyecto y tener en cuenta como funcionaria para el nuestro.
 ### Conclusiones de aplicar Ingeniería inversa en "www.fifa.com" 
 <ul>
-<li> En la cabecera se muestran varias secciones relacionadas a football mismo, pero como nos centraremos en la del mundial fuimos directo a la que decía “competitions”, donde se muestra (al ubicar el cursor encima de la palabra) las distintas opciones y ahí seleccionamos “FIFA World Cup Qatar 2022” (Imagen 1)
+<li> En la cabecera se muestran varias secciones relacionadas a futbol mismo, pero como nos centraremos en la del mundial fuimos directo a la que decía “competitions”, donde se muestra (al ubicar el cursor encima de la palabra) las distintas opciones y ahí seleccionamos “FIFA World Cup Qatar 2022” (Imagen 1)
 <li> Se abre en la misma ventana otra página que muestra una cuenta regresiva de cuando empieza el torneo (Imagen 2). Si se baja más hay una sección con artículos sobre entrevistas y otra sección sobre jugadores a los que recomiendan prestar atención (Top 5 de distintos países). Luego de eso se muestran los distintos grupos, cada uno con los países que le perteneces acompañados por su bandera (Imagen 3). Enseguida por debajo de esa parte encontramos en la siguiente sección “Matches & Groups” donde te redirigen a otra página (Imagen 4).
 <li> En esta otra página esta toda la información sobre horarios días partidos y estadios del mundial. Lo primero que se ve es un calendario a lo largo mostrando día por día (marcado esta la categoría “matches”), y según que día esta seleccionado muestra si hay partidos o no. Si los hay aclara la fecha (en formato día, mes y año) y luego muestra bien a la izquierda en que estadio será, y mas a la derecha están los nombres y banderas de los países que compiten junto con la hora del evento (Imagen 5). Si se apreta sobre esa sección con la información te lleva a otra página con más detalles del mismo.
 <li> Si se apreta en la categoría “tables” muestran los países ordenados por los grupos en una tabla, junto con datos numéricos sobre los partidos. (Imagen 6)
@@ -255,29 +255,31 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 |Verificable|Si|Si|Si|Si|Si|Si|Si|Si|Si|
 
 ## Validación
-Le mostramos a varios usuarios el prototipo, con los bocetos de interfaz y pudimos concluir que haria falta:  
-1. Poner una barra en la parte inferiror que contenga informacion actualizada de los resultados de todos los partidos jugados.  
-2. Poder comparar su pronostico con el resultado una vez que haya terminado el partido.
-3. En la parte de partidos ademas de la informacion de la fecha y hora, tambien poner en que cancha se va a jugar.  
-
+Le mostramos a varios usuarios el prototipo, con los bocetos de interfaz y pudimos concluir que haría falta:  
+1. Poner una barra en la parte inferior que contenga información actualizada de los resultados de todos los partidos jugados.  
+2. Poder comparar su pronóstico con el resultado una vez que haya terminado el partido.
+3. En la parte de partidos además de la información de la fecha y hora, también poner en que cancha se va a jugar.  
+4. Luego de marcar la predicción, mostrar porcentaje de cuantos votaron a ambos equipos.
+5. Posibilidades de ver que jugadores participarían en que selección para cada partido.
+6. En tablas, ordenar las selecciones dentro de cada grupo segun el que tiene mas puntos.
 # Reflexión
 ## Detalle del trabajo individual 
 Trabajamos bastante juntos, pero más cerca de la fecha de entrega nos dividimos algunas de las actividades y nos consultábamos lo que íbamos avanzando y si faltaba agregar algo o no.
 
-|Fecha| Actividad| Esfuerzo|Responable|  
-|-----|----------|---------|----------|  
-|25 Setiembre|Entrevistas|        |Ambos|  
-|27 Setiembre|Ingeniería Inversa| |Ambos|  
-|30 Setiembre|Investigación|      |Romina|  
-|25 Setiembre|User personas|       |Ambos|  
-|30 Setiembre|Modelo conceptual del problema|         |Maximiliano|  
-|30 Setiembre|Requerimientos funcionales|             |Romina|  
-|1 Octubre|Requerimientos no funcionales|          |Maximiliano|  
-|1 Octubre|User stories|       |Romina|  
-|30 Setiembre|Use cases|          |Maximiliano|  
-|30 Setiembre|Bocetos de IU|      |Maximiliano|  
-|2 Octubre|Validación|         |Ambos|  
-|2 Octubre|Verificación|       |Ambos|  
+|Fecha| Actividad|Responable|  
+|-----|----------|----------|  
+|25 Setiembre|Entrevistas|Ambos|  
+|27 Setiembre|Ingeniería Inversa|Ambos|  
+|30 Setiembre|Investigación|Romina|  
+|25 Setiembre|User personas|Ambos|  
+|30 Setiembre|Modelo conceptual del problema|Maximiliano|  
+|30 Setiembre|Requerimientos funcionales|Romina|  
+|1 Octubre|Requerimientos no funcionales|Maximiliano|  
+|1 Octubre|User stories|Romina|  
+|30 Setiembre|Use cases|Maximiliano|  
+|30 Setiembre|Bocetos de IU|Maximiliano|  
+|2 Octubre|Validación|Ambos|  
+|2 Octubre|Verificación|Ambos|  
 
 ## Técnicas aplicadas y aprendizajes
 Utilizamos varios conceptos dados en clase y la gran mayoría los aplicamos para esta entrega, entre ellas lo aprendido sobre git y github, técnicas de elicitación, todo lo que tiene que ver con User Stories, Use Cases y User Profiles, etc.  
