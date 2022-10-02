@@ -26,9 +26,9 @@ El repositorio cuenta con dos ramas, la rama "main" siendo la principal, y la ra
 El uso de la rama dev es para ir actualizando los cambios hechos sin modificar la rama original. Una vez que consideremos que los cambios estén bien hechos y completos, ahí lo pasamos a la rama main.
 
 ## Evolución del proyecto y resumen de commits  
-![22](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/22.png)  
+![22](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/22.jpg)  
 
-![23](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/23.png)  
+![23](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/23.jpg)  
 
 
 # Elicitación
