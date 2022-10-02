@@ -256,7 +256,7 @@ En todos los requerimientos funcionales el actor va a ser el usuario.
 
 ## Validación
 Le mostramos a varios usuarios el prototipo, con los bocetos de interfaz y pudimos concluir que haría falta:  
-1. Poner una barra en la parte inferior que contenga información actualizada de los resultados de todos los partidos jugados.  
+1. Poner una barra en la parte inferior que contenga información actualizada de los resultados de todos los partidos recientes jugados.  
 2. Poder comparar su pronóstico con el resultado una vez que haya terminado el partido.
 3. En la parte de partidos además de la información de la fecha y hora, también poner en que cancha se va a jugar.  
 4. Luego de marcar la predicción, mostrar porcentaje de cuantos votaron a ambos equipos.
