@@ -25,6 +25,12 @@ Los que más usamos fueron:
 El repositorio cuenta con dos ramas, la rama "main" siendo la principal, y la rama "dev" que es con la que mas trabajamos luego de crearla.
 El uso de la rama dev es para ir actualizando los cambios hechos sin modificar la rama original. Una vez que consideremos que los cambios estén bien hechos y completos, ahí lo pasamos a la rama main.
 
+## Evolución del proyecto y resumen de commits  
+![22](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/22.png)  
+
+![23](https://github.com/ORT-FIS-2022S2/proyecto-arour-gimenez/blob/dev/docs/investigacion/23.png)  
+
+
 # Elicitación
 ## Entrevista
 Hicimos entrevistas a 3 personas con diferente conocimiento sobre cómo va a ser el mundial y cuando. Todos los entrevistados son de mas o menos edad similar (alrededor de los 20).
