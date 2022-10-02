@@ -1,4 +1,4 @@
-# 1c Informe académico 1
+# Informe académico 1
 
 | Identificación del proyecto
 |-----------
