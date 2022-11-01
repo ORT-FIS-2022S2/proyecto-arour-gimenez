@@ -1,5 +1,4 @@
 export default class ListaPeliculas {
-
   constructor() {
     this.peliculas = [];
   }
@@ -17,3 +16,4 @@ export default class ListaPeliculas {
     return this.peliculas;
   }
 }
+z
