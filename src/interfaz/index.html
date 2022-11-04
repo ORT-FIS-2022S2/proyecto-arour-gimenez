@@ -61,12 +61,233 @@
 
   <main class="mdc-top-app-bar--fixed-adjust">
     <section class="content">
-      <h1>Peliculas</h1>
+      <h1>Selecciones</h1>
+      <div class="mdc-select mdc-select--outlined">
+        <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
+          <span class="mdc-notched-outline">
+            <span class="mdc-notched-outline__leading"></span>
+            <span class="mdc-notched-outline__notch">
+              <span id="outlined-select-label" class="mdc-floating-label">Elegir</span>
+            </span>
+            <span class="mdc-notched-outline__trailing"></span>
+          </span>
+          <span class="mdc-select__selected-text-container">
+            <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+          </span>
+          <span class="mdc-select__dropdown-icon">
+            <svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false">
+              <polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd"
+                points="7 10 12 15 17 10">
+              </polygon>
+              <polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd"
+                points="7 15 12 10 17 15">
+              </polygon>
+            </svg>
+          </span>
+        </div>
 
-      <main id="peliculas"></main>
+        <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+          <ul class="mdc-list" role="listbox" aria-label="Genre picker listbox">
+            <li class="mdc-list-item mdc-list-item--selected" aria-selected="true" data-value="" role="option">
+              <span class="mdc-list-item__ripple"></span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Alemania" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Alemania
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Arabia Saudita" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Arabia Saudita
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Argentina" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Argentina
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Australia" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Australia
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Brasil" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Brasil
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Bélgica" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Bélgica
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Camerún" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Camerún
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Canadá" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Canadá
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Corea del Sur" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Corea del Sur
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Costa Rica" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Costa Rica
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Croacia" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Croacia
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Dinamarca" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Dinamarca
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Ecuador" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Ecuador
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="España" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                España
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Estados Unidos" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Estados Unidos
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Francia" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Francia
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Gales" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Gales
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Ghana" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Ghana
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Holanda" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Holanda
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Inglaterra" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Inglaterra
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Irán" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Irán
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Japón" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Japón
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Marruecos" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Marruecos
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="México" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                México
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Polonia" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Polonia
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Portugal" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Portugal
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Qatar" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Qatar
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Senegal" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Senegal
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Serbia" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Serbia
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Suiza" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Suiza
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Túnez" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Túnez
+              </span>
+            </li>
+            <li class="mdc-list-item" aria-selected="false" data-value="Uruguay" role="option">
+              <span class="mdc-list-item__ripple"></span>
+              <span class="mdc-list-item__text">
+                Uruguay
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h1>Partidos</h1>
 
-
-      <!-- esta esta buena -->
      
 
     
@@ -155,56 +376,7 @@
 
     <section class="content sample-content--hidden">
       <h1>Tus pronosticos</h1>
-      <div class="mdc-select mdc-select--outlined">
-        <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
-          <span class="mdc-notched-outline">
-            <span class="mdc-notched-outline__leading"></span>
-            <span class="mdc-notched-outline__notch">
-              <span id="outlined-select-label" class="mdc-floating-label">Selecciones</span>
-            </span>
-            <span class="mdc-notched-outline__trailing"></span>
-          </span>
-          <span class="mdc-select__selected-text-container">
-            <span id="demo-selected-text" class="mdc-select__selected-text"></span>
-          </span>
-          <span class="mdc-select__dropdown-icon">
-            <svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false">
-              <polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd"
-                points="7 10 12 15 17 10">
-              </polygon>
-              <polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd"
-                points="7 15 12 10 17 15">
-              </polygon>
-            </svg>
-          </span>
-        </div>
-
-        <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
-          <ul class="mdc-list" role="listbox" aria-label="Genre picker listbox">
-            <li class="mdc-list-item mdc-list-item--selected" aria-selected="true" data-value="" role="option">
-              <span class="mdc-list-item__ripple"></span>
-            </li>
-            <li class="mdc-list-item" aria-selected="false" data-value="Suiza" role="option">
-              <span class="mdc-list-item__ripple"></span>
-              <span class="mdc-list-item__text">
-                Suiza
-              </span>
-            </li>
-            <li class="mdc-list-item" aria-selected="false" data-value="Tunez" role="option">
-              <span class="mdc-list-item__ripple"></span>
-              <span class="mdc-list-item__text">
-                Tunez
-              </span>
-            </li>
-            <li class="mdc-list-item" aria-selected="false" data-value="Uruguay" role="option">
-              <span class="mdc-list-item__ripple"></span>
-              <span class="mdc-list-item__text">
-                Uruguay
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      
 
     </section>
     
