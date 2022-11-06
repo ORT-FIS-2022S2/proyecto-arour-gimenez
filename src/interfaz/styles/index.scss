@@ -24,6 +24,12 @@
 @use "@material/select/styles";
 @use "@material/snackbar/mdc-snackbar";
 
+/* tabla */
+@use "@material/data-table/data-table";
+@include data-table.core-styles;
+@include data-table.theme-baseline;
+/* tabla */
+
 @include card.core-styles;
 @include textfield.core-styles;
 
@@ -59,7 +65,7 @@ section {
 }
 
 .mdc-tab {
-    background-color: #67daff;
+    background-color: #0288D1;
 }
 
 .mdc-tab__content .mdc-tab__text-label {
@@ -75,7 +81,7 @@ section {
 }
 
 .mdc-snackbar__actions .mdc-button__label {
-  color: #67daff;
+  color: #0288D1;
 }
 
 

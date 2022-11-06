@@ -7,6 +7,11 @@ import {MDCSnackbar} from '@material/snackbar';
 import ListaPeliculas from '../../dominio/lista-peliculas.mjs';
 import Pelicula from '../../dominio/pelicula.mjs';
 
+//tablas
+import {MDCDataTable} from '@material/data-table';
+const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
+//tablas
+
 const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
 const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
   return new MDCRipple(el);
