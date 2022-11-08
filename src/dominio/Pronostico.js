@@ -7,5 +7,8 @@ class Pronostico {
       ganador: this.ganador,
     };
   }
+  setPronostico(gana) {
+    this.ganador= gana;
+  }
 }
 module.exports = Pronostico;

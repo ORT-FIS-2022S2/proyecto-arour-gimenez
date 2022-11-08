@@ -23,9 +23,10 @@
 @use "@material/menu/mdc-menu";
 @use "@material/select/styles";
 @use "@material/snackbar/mdc-snackbar";
+@use "@material/data-table/data-table";
+
 
 /* tabla */
-@use "@material/data-table/data-table";
 @include data-table.core-styles;
 @include data-table.theme-baseline;
 /* tabla */

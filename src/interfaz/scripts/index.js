@@ -7,6 +7,14 @@ import {MDCSnackbar} from '@material/snackbar';
 import ListaPeliculas from '../../dominio/lista-peliculas.mjs';
 import Pelicula from '../../dominio/pelicula.mjs';
 
+//elegir seleccion
+const select = new MDCSelect(document.querySelector('.mdc-select'));
+
+select.listen('MDCSelect:change', () => {
+  alert(`Selected option at index ${select.selectedIndex} with value "${select.value}"`);
+});
+//elegir seleccion
+
 //tablas
 import {MDCDataTable} from '@material/data-table';
 const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
