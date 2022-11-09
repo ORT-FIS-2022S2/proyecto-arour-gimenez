@@ -6,12 +6,12 @@ import { MDCSelect } from '@material/select';
 import {MDCSnackbar} from '@material/snackbar';
 import ListaPeliculas from '../../dominio/lista-peliculas.mjs';
 import Pelicula from '../../dominio/pelicula.mjs';
-
+import {MDCList} from '@material/list';
 //elegir seleccion
 const select = new MDCSelect(document.querySelector('.mdc-select'));
 
 select.listen('MDCSelect:change', () => {
-  alert(`Selected option at index ${select.selectedIndex} with value "${select.value}"`);
+  
   genera_tabla(select.value);
 });
 //elegir seleccion
@@ -137,6 +137,8 @@ function cambiarContenidoCeldaTabla(valor, f ,c ,id) {
     }
 }
 
+
+
 function genera_tabla(select) {
   let partidos = listaPartidos.getPartidos();
   let lista = document.getElementById('partidos');
@@ -145,34 +147,33 @@ function genera_tabla(select) {
   for(let i = 0; i < partidos.length; i++){
     if(partidos[i] === select){
     let partido = partidos[i];
-
-    //div principal
-    let fila = document.createElement('div');
+      
+    //ul
+    let fila = document.createElement('ul');
     fila.className = "mdc-list";
 
-    //div primary action
-    let div = document.createElement('div');
-    div.className = "mdc-list-item__text";
+    //li
+    let li = document.createElement('li');
+    li.className = "mdc-list-item";
+    li.setAttribute("tabindex","0") ;
+
+    //span
+    let spann = document.createElement('span');
+    spann.setAttribute("class","mdc-list-item__ripple");   
+    li.appendChild(spann);
 
     //info partido
-    let informacion = document.createElement("h2")
-    informacion.innerHTML = partido.nombre + " (" + partido.hora + ")" + " - " + partido.fecha;
-    div.appendChild(informacion);
+    let informacionspan = document.createElement('span')
+    informacionspan.setAttribute("class","mdc-list-item__text");   
+    informacionspan.appendChild(document.createTextNode("datos del partido"));
 
-    
+    li.appendChild(informacionspan);
 
-    //div mdc ripple
-    let divRipple = document.createElement('div');
-    divRipple.className = "mdc-list-item__ripple";
-    div.appendChild(divRipple);
-
-    fila.appendChild(div);
+    fila.appendChild(li);
     lista.appendChild(fila);
 
     let saltoLinea = document.createElement('br');
     lista.appendChild(saltoLinea);
-    
-    
   }
   }
 }
