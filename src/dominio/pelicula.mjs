@@ -12,7 +12,8 @@ export default class Pelicula {
     if (anio >= MIN_ANIO && anio <= MAX_ANIO) {
       this.anio = anio;
     } else {
-      throw new Error(`El año ingresado es incorrecto. La pelicula debe ser de los años entre ${MIN_ANIO} y ${MAX_ANIO}`);
+      throw new Error(`El año ingresado es incorrecto. La pelicula debe ser
+      de los años entre ${MIN_ANIO} y ${MAX_ANIO}`);
     }
   }
 }

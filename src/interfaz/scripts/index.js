@@ -7,11 +7,14 @@ import {MDCSnackbar} from '@material/snackbar';
 import ListaPeliculas from '../../dominio/lista-peliculas.mjs';
 import Pelicula from '../../dominio/pelicula.mjs';
 import {MDCList} from '@material/list';
+
+import Partido from '../../dominio/Partido.js';
+// import Pronostico from '../../dominio/Pronostico';
+// import Seleccion from '../../dominio/Seleccion';
+
 //elegir seleccion
 const select = new MDCSelect(document.querySelector('.mdc-select'));
-
 select.listen('MDCSelect:change', () => {
-  
   genera_tabla(select.value);
 });
 //elegir seleccion
@@ -27,9 +30,13 @@ const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
   return new MDCRipple(el);
 });
 
+// let partido1 = new Partido();
+// partido1.setPartido('Qatar', 'Ecuador', '20-Nov-22', '13:00');
+// listaPartidos.agregar(partido1);
 
-const listaPeliculas = new ListaPeliculas();
+// const listaPeliculas = new ListaPeliculas();
 const listaPartidos = new ListaPartidos();
+const partido = new Partido();
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
@@ -122,15 +129,12 @@ function cargarListaPeliculas(){
 
     let saltoLinea = document.createElement('br');
     lista.appendChild(saltoLinea);
-    
-    
-
   }
 }
+
 function cambiarContenidoCeldaTabla(valor, f ,c ,id) {
     let fila = f;
     let columna = c;
-
     if ((fila >= 1 && fila <= 3) && (columna >= 1 && columna <= 4)) {
         let celdas = document.getElementById(id).rows[fila - 1].cells;
         celdas[columna - 1] = valor;
@@ -138,42 +142,52 @@ function cambiarContenidoCeldaTabla(valor, f ,c ,id) {
 }
 
 
+let partido1;
+partido1.setPartido('Qatar', 'Ecuador', '20-Nov-22', '13:00');
+listaPartidos.agregar(partido1);
 
 function genera_tabla(select) {
+  
   let partidos = listaPartidos.getPartidos();
   let lista = document.getElementById('partidos');
   lista.innerHTML = "";
-
+  
   for(let i = 0; i < partidos.length; i++){
-    if(partidos[i] === select){
-    let partido = partidos[i];
+    
+    //if(partidos[i].getPartido.nombre1 === select){
+      let partido = partidos[i];
+        
+      //ul
+      let fila = document.createElement('ul');
+      fila.className = "mdc-list";
+
+      //li
+      let li = document.createElement('li');
+      li.className = "mdc-list-item";
+      li.setAttribute("tabindex","0") ;
       
-    //ul
-    let fila = document.createElement('ul');
-    fila.className = "mdc-list";
+      //span
+      let spann = document.createElement('span');
+      spann.setAttribute("class","mdc-list-item__ripple");   
+      li.appendChild(spann);
 
-    //li
-    let li = document.createElement('li');
-    li.className = "mdc-list-item";
-    li.setAttribute("tabindex","0") ;
+      //info partido
+      let informacionspan = document.createElement('span')
+      informacionspan.setAttribute("class","mdc-list-item__text");   
+      informacionspan.appendChild(document.createTextNode("Datos del Partido "));
+      li.appendChild(informacionspan);
 
-    //span
-    let spann = document.createElement('span');
-    spann.setAttribute("class","mdc-list-item__ripple");   
-    li.appendChild(spann);
+      let datos = document.createElement('span')
+      datos.setAttribute("class","mdc-list-item__text");   
+      datos.appendChild(document.createTextNode(partido.getPartido.nombre1));
+      li.appendChild(datos);
+      
 
-    //info partido
-    let informacionspan = document.createElement('span')
-    informacionspan.setAttribute("class","mdc-list-item__text");   
-    informacionspan.appendChild(document.createTextNode("datos del partido"));
+      fila.appendChild(li);
+      lista.appendChild(fila);
 
-    li.appendChild(informacionspan);
-
-    fila.appendChild(li);
-    lista.appendChild(fila);
-
-    let saltoLinea = document.createElement('br');
-    lista.appendChild(saltoLinea);
-  }
+      let saltoLinea = document.createElement('br');
+      lista.appendChild(saltoLinea);
+    // }
   }
 }

@@ -1,7 +1,7 @@
 @use "@material/theme" with (
   $primary: #1B5E20,
   $secondary: #0288D1,
-  $background: #c7c7c7,
+  $background: #4c8c4a, //#c7c7c7,
 );
 @use '@material/button/mdc-button';
 @use '@material/button';
@@ -41,6 +41,7 @@ html {
 body {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0px auto;
+  background-color: #5eb8ff;
 }
 
 .app-bar {
@@ -77,9 +78,9 @@ section {
     margin: 1rem auto;
 }
 
-.button {
-  margin-top: 1rem;
-}
+// .button {
+//   margin-top: 1rem;
+// }
 
 .mdc-snackbar__actions .mdc-button__label {
   color: #0288D1;
@@ -91,11 +92,9 @@ section {
   height: 435px;
   width: 700px;
   margin: 0 auto;
-
-  
 }
 
 .mdc-card__media-content {
-  background-image: url("https://www.nationalgeographic.com.es/medio/2019/05/30/alan-turing_8c5d84c7_1200x630.jpg");
+  //background-image: url("https://www.nationalgeographic.com.es/medio/2019/05/30/alan-turing_8c5d84c7_1200x630.jpg");
   background-size: contain;
 }
