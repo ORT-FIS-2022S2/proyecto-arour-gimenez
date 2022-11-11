@@ -58,5 +58,4 @@ const qatar = new Seleccion('Qatar');
 // const tuñez = new Seleccion('Tuñez');
 const uruguay = new Seleccion('Uruguay');
 
-console.log(uruguay);
 module.exports = Seleccion;

@@ -7,7 +7,7 @@ import {MDCSnackbar} from '@material/snackbar';
 import ListaPeliculas from '../../dominio/lista-peliculas.mjs';
 import Pelicula from '../../dominio/pelicula.mjs';
 import {MDCList} from '@material/list';
-
+import ListaPartidos from '../../dominio/lista-partidos.js';
 import Partido from '../../dominio/Partido.js';
 // import Pronostico from '../../dominio/Pronostico';
 // import Seleccion from '../../dominio/Seleccion';
@@ -21,7 +21,7 @@ select.listen('MDCSelect:change', () => {
 
 //tablas
 import {MDCDataTable} from '@material/data-table';
-import ListaPartidos from '../../dominio/lista-partidos.js';
+
 const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
 //tablas
 
@@ -36,6 +36,7 @@ const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
 
 // const listaPeliculas = new ListaPeliculas();
 const listaPartidos = new ListaPartidos();
+listaPartidos.cargarListaPartidos();
 const partido = new Partido();
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
@@ -64,7 +65,7 @@ addButton.listen('click', () => {
   borrarCampos();
 
   try {
-    let newPelicula = new Pelicula(title, genre, year);
+    let newPelicula = new Pelicula('title', genre, year);
     listaPeliculas.agregar(newPelicula);
     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
     snackbar.labelText = 'Pelicula agregada correctamente';
@@ -142,20 +143,24 @@ function cambiarContenidoCeldaTabla(valor, f ,c ,id) {
 }
 
 
-let partido1;
-partido1.setPartido('Qatar', 'Ecuador', '20-Nov-22', '13:00');
-listaPartidos.agregar(partido1);
-
-function genera_tabla(select) {
   
-  let partidos = listaPartidos.getPartidos();
+  
+function genera_tabla(select) {
+  // const partido1 = new Partido('Qatar', 'Ecuador', '20 Nov 22', '13:00');
+  // listaPartidos.agrega(partido1);
+  
+  let partidos =listaPartidos.getPartidos(); 
+ 
   let lista = document.getElementById('partidos');
   lista.innerHTML = "";
+
   
   for(let i = 0; i < partidos.length; i++){
     
-    //if(partidos[i].getPartido.nombre1 === select){
+     if(partidos[i].nombre1 === select || partidos[i].nombre2 === select){
       let partido = partidos[i];
+      
+      
         
       //ul
       let fila = document.createElement('ul');
@@ -174,13 +179,13 @@ function genera_tabla(select) {
       //info partido
       let informacionspan = document.createElement('span')
       informacionspan.setAttribute("class","mdc-list-item__text");   
-      informacionspan.appendChild(document.createTextNode("Datos del Partido "));
+      informacionspan.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 +' - ' + partido.fecha +' - '+ partido.hora));
       li.appendChild(informacionspan);
 
-      let datos = document.createElement('span')
-      datos.setAttribute("class","mdc-list-item__text");   
-      datos.appendChild(document.createTextNode(partido.getPartido.nombre1));
-      li.appendChild(datos);
+      // let datos = document.createElement('span')
+      // datos.setAttribute("class","mdc-list-item__text");   
+      // datos.appendChild(document.createTextNode(partido.getPartido.nombre1));
+      // li.appendChild(datos);
       
 
       fila.appendChild(li);
@@ -188,6 +193,6 @@ function genera_tabla(select) {
 
       let saltoLinea = document.createElement('br');
       lista.appendChild(saltoLinea);
-    // }
+    }
   }
 }

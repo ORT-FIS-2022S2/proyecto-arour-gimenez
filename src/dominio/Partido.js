@@ -1,11 +1,10 @@
-// import ListaPartidos from './lista-partidos.js';
-class Partido {
-  constructor(dataArray) {
-    this.nombre1 = '';
-    this.nombre2 = '';
+export default class Partido {
+  constructor(nombre1, nombre2, fecha, hora) {
+    this.nombre1 = nombre1;
+    this.nombre2 = nombre2;
     // this.selecciones = [];
-    this.fecha = '';
-    this.hora = '';
+    this.fecha = fecha;
+    this.hora = hora;
   }
   getPartido() {
     return {
@@ -24,7 +23,4 @@ class Partido {
     this.hora = hora;
   }
 }
-// const partido1 = new Partido();
-// partido1.setPartido('Qatar', 'Ecuador', '20-Nov-22', '13:00');
-// ListaPartidos.
-export default Partido;
+
