@@ -37,7 +37,7 @@ class Seleccion {
 // const costaRica = new Seleccion('Costa Rica');
 // const croacia = new Seleccion('Croacia');
 // const dinamarca = new Seleccion('Dinamarca');
-const ecuador = new Seleccion('Ecuador');
+// const ecuador = new Seleccion('Ecuador');
 // const spain = new Seleccion('España');
 // const usa = new Seleccion('Estados Unidos');
 // const francia = new Seleccion('Francia');
@@ -51,11 +51,11 @@ const ecuador = new Seleccion('Ecuador');
 // const mexico = new Seleccion('México');
 // const polonia = new Seleccion('Polonia');
 // const portugal = new Seleccion('Portugal');
-const qatar = new Seleccion('Qatar');
+// const qatar = new Seleccion('Qatar');
 // const senegal = new Seleccion('Senegal');
 // const serbia = new Seleccion('Serbia');
 // const suiza = new Seleccion('Suiza');
 // const tuñez = new Seleccion('Tuñez');
-const uruguay = new Seleccion('Uruguay');
+// const uruguay = new Seleccion('Uruguay');
 
 module.exports = Seleccion;

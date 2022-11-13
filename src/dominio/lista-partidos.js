@@ -53,13 +53,15 @@ export default class ListaPartidos {
     this.partidos.push(j2);
     const j3=new Partido('Inglaterra', 'Irán', 'Lun 21 Nov 22', '10:00 hs');
     this.partidos.push(j3);
-    const j4=new Partido('Estados Unidos', 'Gales', 'Lun 21 Nov 22', '16:00 hs');
+    const j4=new Partido('Estados Unidos', 'Gales',
+        'Lun 21 Nov 22', '16:00 hs');
     this.partidos.push(j4);
-    const j5=new Partido('Argentina', 'Arabia Saudita', 'Mar 22 Nov 22' , '7:00 hs');
+    const j5=new Partido('Argentina', 'Arabia Saudita',
+        'Mar 22 Nov 22', '7:00 hs');
     this.partidos.push(j5);
     const j6=new Partido('Dinamarca', 'Túnez', 'Mar 22 Nov 22', '10:00 hs');
     this.partidos.push(j6);
-    const j7=new Partido('México', 'Polonia', 'Mar 22 Nov 22' , ' hs' , 'Mar 22 Nov 22' , '13:00 hs');
+    const j7=new Partido('México', 'Polonia', 'Mar 22 Nov 22', '13:00 hs');
     this.partidos.push(j7);
     const j8=new Partido('Francia', 'Australia', 'Mar 22 Nov 22', '16:00 hs' );
     this.partidos.push(j8);
@@ -73,7 +75,8 @@ export default class ListaPartidos {
     this.partidos.push(j12);
     const j13=new Partido('Suiza', 'Camerún', 'Jue 24 Nov 22', '7:00 hs');
     this.partidos.push(j13);
-    const j14=new Partido('Uruguay', 'Corea del Sur', 'Jue 24 Nov 22', '10:00 hs');
+    const j14=new Partido('Uruguay', 'Corea del Sur',
+        'Jue 24 Nov 22', '10:00 hs');
     this.partidos.push(j14);
     const j15=new Partido('Portugal', 'Ghana', 'Jue 24 Nov 22', '13:00 hs' );
     this.partidos.push(j15);
@@ -85,11 +88,13 @@ export default class ListaPartidos {
     this.partidos.push(j18);
     const j19=new Partido('Holanda', 'Ecuador', 'Vie 25 Nov 22', '13:00 hs');
     this.partidos.push(j19);
-    const j20=new Partido('Inglaterra', 'Estados Unidos', 'Vie 25 Nov 22', '16:00 hs');
+    const j20=new Partido('Inglaterra', 'Estados Unidos',
+        'Vie 25 Nov 22', '16:00 hs');
     this.partidos.push(j20);
     const j21=new Partido('Túnez', 'Australia', 'Sab 26 Nov 22', '7:00 hs' );
     this.partidos.push(j21);
-    const j22=new Partido('Polonia', 'Arabia Saudita', 'Sab 26 Nov 22', '10:00 hs');
+    const j22=new Partido('Polonia', 'Arabia Saudita',
+        'Sab 26 Nov 22', '10:00 hs');
     this.partidos.push(j22);
     const j23=new Partido('Francia', 'Dinamarca', 'Sab 26 Nov 22', '13:00 hs');
     this.partidos.push(j23);
@@ -105,7 +110,8 @@ export default class ListaPartidos {
     this.partidos.push(j28);
     const j29=new Partido('Camerún', 'Serbia', 'Lun 28 Nov 22', '7:00 hs' );
     this.partidos.push(j29);
-    const j30=new Partido('Corea del Sur', 'Ghana', 'Lun 28 Nov 22', '10:00 hs');
+    const j30=new Partido('Corea del Sur', 'Ghana',
+        'Lun 28 Nov 22', '10:00 hs');
     this.partidos.push(j30);
     const j31=new Partido('Brasil', 'Suiza', 'Lun 28 Nov 22', '13:00 hs');
     this.partidos.push(j31);
@@ -117,15 +123,18 @@ export default class ListaPartidos {
     this.partidos.push(j34);
     const j35=new Partido('Gales', 'Inglaterra', 'Mar 29 Nov 22', '16:00 hs');
     this.partidos.push(j35);
-    const j36=new Partido('Irán', 'Estados Unidos', 'Mar 29 Nov 22', '16:00 hs');
+    const j36=new Partido('Irán', 'Estados Unidos',
+        'Mar 29 Nov 22', '16:00 hs');
     this.partidos.push(j36);
     const j37=new Partido('Túnez', 'Francia', 'Mie 30 Nov 22', '12:00 hs');
     this.partidos.push(j37);
-    const j38=new Partido('Australia', 'Dinamarca', 'Mie 30 Nov 22', '12:00 hs');
+    const j38=new Partido('Australia', 'Dinamarca',
+        'Mie 30 Nov 22', '12:00 hs');
     this.partidos.push(j38);
     const j39=new Partido('Polonia', 'Argentina', 'Mie 30 Nov 22', '16:00 hs');
     this.partidos.push(j39);
-    const j40=new Partido('Arabia Saudita', 'México', 'Mie 30 Nov 22', '16:00 hs');
+    const j40=new Partido('Arabia Saudita', 'México',
+        'Mie 30 Nov 22', '16:00 hs');
     this.partidos.push(j40);
     const j41=new Partido('Croacia', 'Bélgica', 'Jue 1 Dic 22', '12:00 hs' );
     this.partidos.push(j41);
@@ -135,7 +144,8 @@ export default class ListaPartidos {
     this.partidos.push(j43);
     const j44=new Partido('Costa Rica', 'Alemania', 'Jue 1 Dic 22', '16:00 hs');
     this.partidos.push(j44);
-    const j45=new Partido('Corea del Sur', 'Portugal', 'Vie 2 Dic 22', '12:00 hs');
+    const j45=new Partido('Corea del Sur', 'Portugal',
+        'Vie 2 Dic 22', '12:00 hs');
     this.partidos.push(j45);
     const j46=new Partido('Ghana', 'Uruguay', 'Vie 2 Dic 22', '12:00 hs');
     this.partidos.push(j46);

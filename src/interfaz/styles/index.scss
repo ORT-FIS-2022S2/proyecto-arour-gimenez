@@ -36,12 +36,14 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: large;
 }
 
 body {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0px auto;
   background-color: #5eb8ff;
+  text-align: center;
 }
 
 .app-bar {
@@ -57,8 +59,7 @@ section {
 }
 
 .content {
-  margin: 10rem auto;
-  padding-bottom: 20rem;
+  margin: 5rem auto;
   text-align: center;
 }
 
@@ -86,8 +87,6 @@ section {
   color: #0288D1;
 }
 
-
-
 .mdc-card {
   height: 435px;
   width: 700px;
@@ -97,4 +96,14 @@ section {
 .mdc-card__media-content {
   //background-image: url("https://www.nationalgeographic.com.es/medio/2019/05/30/alan-turing_8c5d84c7_1200x630.jpg");
   background-size: contain;
+}
+
+ul, li { margin: 0; padding: 0; list-style-type: none }
+
+.mdc-list-item__primary-text{
+  color: black;
+}
+
+.mdc-list-item__secondary-text{
+  color: #1b1b1b;
 }
