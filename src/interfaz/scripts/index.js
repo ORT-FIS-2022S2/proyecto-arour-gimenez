@@ -152,49 +152,60 @@ function genera_tabla(select) {
  
   let lista = document.getElementById('partidos');
   lista.innerHTML = "";
-
   
+  //ul
+  let fila = document.createElement('ul');
+  fila.className = "mdc-list mdc-list--two-line";
+
+  //linea separadora
+  let li2 = document.createElement('li');
+  li2.role = "separator";
+  li2.className = "mdc-list-divider";
+  li2.setAttribute("tabindex","0");
+  li2.style.textAlign = "center";
+
+  fila.appendChild(li2);
+  //linea separadora
+  let saltoLinea2 = document.createElement('br');
+  fila.appendChild(saltoLinea2);
+      
   for(let i = 0; i < partidos.length; i++){
     
      if(partidos[i].nombre1 === select || partidos[i].nombre2 === select){
       let partido = partidos[i];
 
-      let main = document.getElementById("partidos");
-      
-      //ul
-      let fila = document.createElement('ul');
-      fila.className = "mdc-list";
-      main.appendChild(fila);
-
       //li
       let li = document.createElement('li');
-      li.className = "mdc-list-item.";
+      li.className = "mdc-list-item";
       li.setAttribute("tabindex","0");
       
       //span
       let spann = document.createElement('span');
       spann.setAttribute("class","mdc-list-item__ripple");   
       li.appendChild(spann);
+      
+      //span2
+      let span2 = document.createElement('span');
+      span2.setAttribute("class","mdc-list-item__text");   
 
       //info partido
       let informacionspan1 = document.createElement('span')
       informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
       informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
       //informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 +' - ' + partido.fecha +' - '+ partido.hora));
-      
+      span2.appendChild(informacionspan1);
+
       //fecha y hora del partido
       let informacionspan2 = document.createElement('span')
       informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
       informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
-      
-      li.appendChild(informacionspan1);
-      li.appendChild(informacionspan2);
-      
+      span2.appendChild(informacionspan2);
+
+      li.appendChild(span2);
       fila.appendChild(li);
-      lista.appendChild(fila);
 
       let saltoLinea = document.createElement('br');
-      lista.appendChild(saltoLinea);
+      fila.appendChild(saltoLinea);
 
       //linea separadora
       let li2 = document.createElement('li');
@@ -203,12 +214,13 @@ function genera_tabla(select) {
       li2.setAttribute("tabindex","0");
       li2.style.textAlign = "center";
 
-      lista.appendChild(li2);
+      fila.appendChild(li2);
       //linea separadora
 
       let saltoLinea2 = document.createElement('br');
-      lista.appendChild(saltoLinea2);
+      fila.appendChild(saltoLinea2);
 
     }
+    lista.appendChild(fila);
   }
 }
