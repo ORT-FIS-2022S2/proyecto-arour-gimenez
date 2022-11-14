@@ -34,15 +34,19 @@
 @include card.core-styles;
 @include textfield.core-styles;
 
+// @media 
+// only screen and (max-width: 462px){
+// (min-device-width: 280px) and (max-device-width: 600px)  {
+
 html {
   scroll-behavior: smooth;
-  font-size: large;
+  font-size: medium;
 }
 
 body {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0px auto;
-  background-color: #5eb8ff;
+  background-color: #0288d1;
   text-align: center;
 }
 
@@ -67,8 +71,8 @@ section {
   display: none;
 }
 
-.mdc-tab {
-    background-color: #0288D1;
+.mdc-tab{
+  background-color: #4c8c4a;
 }
 
 .mdc-tab__content .mdc-tab__text-label {
@@ -98,8 +102,9 @@ section {
   background-size: contain;
 }
 
-ul, li { margin: 0; padding: 0; list-style-type: none;flex-direction: column;
-  align-items: center; }
+ul, li { margin: 0; padding: 0; list-style-type: none; flex-direction: column;
+  align-items: center; 
+}
 
 .mdc-list-item__primary-text{
   color: black;
@@ -108,3 +113,28 @@ ul, li { margin: 0; padding: 0; list-style-type: none;flex-direction: column;
 .mdc-list-item__secondary-text{
   color: #1b1b1b;
 }
+
+.mdc-data-table__content{
+  background-color: #5eb8ff;
+}
+
+// table {
+//   //width: 90%;
+//   margin: auto;
+//   border-collapse: collapse;
+// }
+
+// table, th, td {
+//   border-width: 1px;
+//   //border-collapse: collapse;
+// }
+
+// th, td {
+//   padding: 1px;
+// }
+
+// .mdc-data-table{
+//   margin: auto;
+
+// }
+// }

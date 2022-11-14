@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="bundle.css">
 </head>
@@ -295,14 +296,14 @@
     <section class="content sample-content--hidden">
       <h1>Grupo A</h1>
       <div class="mdc-data-table">
-        <div class="mdc-data-table__table-container">
+        <div class="mdc-data-table__table-container" style="overflow-x:auto;">
           <table id ="TablaA" class="mdc-data-table__table" aria-label="Grupo A">
             
             <thead> <!-- titulos de cada columna -->
               <tr class="mdc-data-table__header-row">
-                
                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
-                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Partidos jugados</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Jugados</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Diferencia</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Puntos</th>
               </tr>
@@ -310,25 +311,29 @@
             <tbody class="mdc-data-table__content">
               <!-- lo que hay en cada fila -->
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Qatar</th>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-              </tr>
-              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/1280px-Flag_of_Ecuador.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Ecuador</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Senegal</th>
+                <td class="mdc-data-table__cell"><img src= "http://images.wikia.com/althistory/es/images/4/4a/Bandera_Holanda.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Holanda</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Holanda</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/1920px-Flag_of_Qatar.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Qatar</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Senegal.svg/1920px-Flag_of_Senegal.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Senegal</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
@@ -342,12 +347,11 @@
       <div class="mdc-data-table">
         <div class="mdc-data-table__table-container">
           <table class="mdc-data-table__table" aria-label="Grupo B">
-            
             <thead> <!-- titulos de cada columna -->
               <tr class="mdc-data-table__header-row">
-                
                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
-                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Partidos jugados</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Jugados</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Diferencia</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Puntos</th>
               </tr>
@@ -355,25 +359,29 @@
             <tbody class="mdc-data-table__content">
               <!-- lo que hay en cada fila -->
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Inglaterra</th>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-              </tr>
-              <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Irán</th>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-              </tr>
-              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Estados Unidos</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/1920px-Flag_of_Wales.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Gales</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/1920px-Flag_of_England.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Inglaterra</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/1920px-Flag_of_Iran.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Irán</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
@@ -390,9 +398,9 @@
             
             <thead> <!-- titulos de cada columna -->
               <tr class="mdc-data-table__header-row">
-                
                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
-                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Partidos jugados</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Jugados</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Diferencia</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Puntos</th>
               </tr>
@@ -400,24 +408,28 @@
             <tbody class="mdc-data-table__content">
               <!-- lo que hay en cada fila -->
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Argentina</th>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-              </tr>
-              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Saudi_Arabia_%28type_2%29.svg/1280px-Flag_of_Saudi_Arabia_%28type_2%29.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Arabia Saudita</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/800px-Flag_of_Argentina.svg.png?20120912082242" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Argentina</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/800px-Flag_of_Mexico.svg.png?20220723052800" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">México</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Polonia</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
@@ -435,9 +447,9 @@
             
             <thead> <!-- titulos de cada columna -->
               <tr class="mdc-data-table__header-row">
-                
                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
-                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Partidos jugados</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Jugados</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Diferencia</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Puntos</th>
               </tr>
@@ -445,25 +457,29 @@
             <tbody class="mdc-data-table__content">
               <!-- lo que hay en cada fila -->
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Francia</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1920px-Flag_of_Australia_%28converted%29.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Australia</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1280px-Flag_of_Denmark.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Dinamarca</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Túnez</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/1280px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Francia</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Australia</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/1280px-Flag_of_Tunisia.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Túnez</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
@@ -480,9 +496,9 @@
             
             <thead> <!-- titulos de cada columna -->
               <tr class="mdc-data-table__header-row">
-                
                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
-                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Partidos jugados</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Jugados</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Diferencia</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Puntos</th>
               </tr>
@@ -490,25 +506,29 @@
             <tbody class="mdc-data-table__content">
               <!-- lo que hay en cada fila -->
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">España</th>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-              </tr>
-              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Alemania</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Japón</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/1920px-Flag_of_Costa_Rica.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Costa Rica</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Costa Rica</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1280px-Bandera_de_Espa%C3%B1a.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">España</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Japón</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
@@ -525,9 +545,9 @@
             
             <thead> <!-- titulos de cada columna -->
               <tr class="mdc-data-table__header-row">
-                
                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
-                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Partidos jugados</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Jugados</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Diferencia</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Puntos</th>
               </tr>
@@ -535,25 +555,29 @@
             <tbody class="mdc-data-table__content">
               <!-- lo que hay en cada fila -->
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/1280px-Flag_of_Belgium_%28civil%29.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Bélgica</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1920px-Flag_of_Canada_%28Pantone%29.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Canada</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Marruecos</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/1920px-Flag_of_Croatia.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Croacia</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Croacia</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/1280px-Flag_of_Morocco.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Marruecos</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
@@ -570,9 +594,9 @@
             
             <thead> <!-- titulos de cada columna -->
               <tr class="mdc-data-table__header-row">
-                
                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
-                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Partidos jugados</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Jugados</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Diferencia</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Puntos</th>
               </tr>
@@ -580,25 +604,29 @@
             <tbody class="mdc-data-table__content">
               <!-- lo que hay en cada fila -->
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Brasil</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flag_of_Cameroon.svg/1280px-Flag_of_Cameroon.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Camerún</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/1280px-Flag_of_Serbia.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Serbia</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/1024px-Flag_of_Switzerland.svg.png" height=24 width=24></td>
                 <th class="mdc-data-table__cell" scope="row">Suiza</th>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
-              </tr>
-              <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Camerún</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
@@ -615,9 +643,9 @@
             
             <thead> <!-- titulos de cada columna -->
               <tr class="mdc-data-table__header-row">
-                
                 <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
-                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Partidos jugados</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Jugados</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Diferencia</th>
                 <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Puntos</th>
               </tr>
@@ -625,25 +653,29 @@
             <tbody class="mdc-data-table__content">
               <!-- lo que hay en cada fila -->
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Portugal</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/1280px-Flag_of_South_Korea.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Corea del Sur</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1280px-Flag_of_Ghana.svg.png" height=24 width=36></td>
                 <th class="mdc-data-table__cell" scope="row">Ghana</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Uruguay</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1280px-Flag_of_Portugal.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Portugal</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
               </tr>
               <tr class="mdc-data-table__row">
-                <th class="mdc-data-table__cell" scope="row">Corea del Sur</th>
+                <td class="mdc-data-table__cell"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/1280px-Flag_of_Uruguay.svg.png" height=24 width=36></td>
+                <th class="mdc-data-table__cell" scope="row">Uruguay</th>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
                 <td class="mdc-data-table__cell mdc-data-table__cell--numeric">0</td>
