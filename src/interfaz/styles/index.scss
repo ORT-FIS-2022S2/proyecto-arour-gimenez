@@ -76,11 +76,11 @@ section {
 }
 
 .mdc-tab__content .mdc-tab__text-label {
-    color: black;
+  color: black;
 }
 
 .mdc-text-field {
-    margin: 1rem auto;
+  margin: 1rem auto;
 }
 
 // .button {
@@ -116,6 +116,17 @@ ul, li { margin: 0; padding: 0; list-style-type: none; flex-direction: column;
 
 .mdc-data-table__content{
   background-color: #5eb8ff;
+}
+
+.mdc-data-table{
+  width: 60%;
+}
+
+@media (max-width: 800px){
+  .mdc-data-table{
+    width: 95%;
+    //354, 266
+  }
 }
 
 // table {
