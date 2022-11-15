@@ -1,47 +1,19 @@
 import Partido from '../dominio/Partido.js';
 
-// import Partido from '../dominio/Partido.js';
 export default class ListaPartidos {
   constructor() {
-    // this.partidos = ['Alemania', 'Arabia Saudita', 'Argentina', 'Australia',
-    //   'Brasil',
-    //   'Bélgica',
-    //   'Camerún',
-    //   'Canadá',
-    //   'Corea del Sur',
-    //   'Costa Rica',
-    //   'Croacia',
-    //   'Dinamarca',
-    //   'Ecuador',
-    //   'España',
-    //   'Estados Unidos',
-    //   'Francia',
-    //   'Gales',
-    //   'Ghana',
-    //   'Holanda',
-    //   'Inglaterra',
-    //   'Irán',
-    //   'Japón',
-    //   'Marruecos',
-    //   'México',
-    //   'Polonia',
-    //   'Portugal',
-    //   'Qatar',
-    //   'Senegal',
-    //   'Serbia',
-    //   'Suiza',
-    //   'Túnez',
-    //   'Uruguay'];
     this.partidos = [];
   }
-  agrega(partido) {
-    // const actual = this.partidos;
-    // if (!actual) {
-    this.partidos.push(partido);
-    // } else {
-    //   throw new Error(`No se pudo agregar.
-    //     ${pelicula.titulo} ya se encuentra en cartelera.`);
-    // }
+  setPartidos(partido) {
+    const actual = this.partidos.some( (m) => (m.fecha == partido.fecha) &&
+     (m.hora == partido.hora) && (((m.nombre1 == partido.nombre1)||
+     (m.nombre1 == partido.nombre2)) || ((m.nombre2 == partido.nombre2)||(
+      m.nombre2==partido.nombre1))));
+    if (!actual) {
+      this.partidos.push(partido);
+    } else {
+      throw new Error(`No se pudo agregar.Ya existe el partido o por lo menos una de las seleccionesya tiene partido en esa fecha.`)
+    }
   }
   getPartidos() {
     return this.partidos;
