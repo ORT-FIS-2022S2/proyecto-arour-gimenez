@@ -1,3 +1,5 @@
+import Seleccion from './Seleccion.js';
+const seleccion= new Seleccion();
 export default class Partido {
   constructor(nombre1, nombre2, fecha, hora) {
     this.nombre1 = nombre1;
@@ -16,11 +18,16 @@ export default class Partido {
     };
   }
   setPartido(seleccion1, seleccion2, fecha, hora) {
-    this.nombre1 = seleccion1;
-    this.nombre2 = seleccion2;
-    // this.selecciones.push(seleccion1, seleccion2);
-    this.fecha = fecha;
-    this.hora = hora;
+    if (seleccion.esSeleccion(seleccion1) &&
+      seleccion.esSeleccion(seleccion2)) {
+      this.nombre1 = seleccion1;
+      this.nombre2 = seleccion2;
+      // this.selecciones.push(seleccion1, seleccion2);
+      this.fecha = fecha;
+      this.hora = hora;
+    } else {
+      throw new Error('Nombre de seleccion no valido.');
+    }
   }
 }
 

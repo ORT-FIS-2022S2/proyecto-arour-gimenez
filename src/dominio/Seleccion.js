@@ -1,4 +1,4 @@
-import ListaSelecciones from './lista-selecciones';
+import ListaSelecciones from './lista-selecciones.js';
 export default class Seleccion {
   constructor(nombrePais) {
     if (this.esSeleccion(nombrePais) === true) {

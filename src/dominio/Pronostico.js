@@ -10,7 +10,8 @@ class Pronostico {
     if (!ganador) {
       this.pronosticos.push(gana);
     } else {
-      throw new Error(`No se pudo agregar. ${gana.nombre} ya se encuentra en pronosticos.`);
+      throw new Error(`No se pudo agregar. 
+      ${gana.nombre} ya se encuentra en pronosticos.`);
     }
   }
 }
