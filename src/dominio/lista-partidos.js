@@ -12,7 +12,9 @@ export default class ListaPartidos {
     if (!actual) {
       this.partidos.push(partido);
     } else {
-      throw new Error(`No se pudo agregar.Ya existe el partido o por lo menos una de las seleccionesya tiene partido en esa fecha.`)
+      throw new Error(`No se pudo agregar.
+       Ya existe el partido o por lo menos una de las selecciones 
+       ya tiene partido en esa fecha.`);
     }
   }
   getPartidos() {
