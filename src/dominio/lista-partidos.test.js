@@ -6,6 +6,10 @@ describe('ListaPartidos', ()=>{
   const partido1 = new Partido('Qatar', 'Ecuador', 'Lun 20 Nov 22', '13:00 hs');
   const partido2 = new Partido('Qatar', 'Ecuador', 'Lun 21 Nov 22', '13:00 hs');
   const partido3 = new Partido('Qatar', 'Ecuador', 'Lun 21 Nov 22', '16:00 hs');
+  const partido4 = new Partido('Qatar', 'Senegal', 'Lun 20 Nov 22', '13:00 hs');
+  const partido5 = new Partido('Holanda'
+      , 'Senegal', 'Lun 20 Nov 22', '13:00 hs');
+  const partido6 = new Partido('Ghana', 'Uruguay', 'Lun 20 Nov 22', '13:00 hs');
   beforeEach(()=>{
     listapartido = new ListaPartidos();
   });
@@ -34,5 +38,21 @@ describe('ListaPartidos', ()=>{
   test('agregar todos los partidos', ()=>{
     expect(listapartido.cargarListaPartidos()).
         toBe(listapartido.getPartidos());
+  });
+
+  test('partido valido y otro con una misma sele pero con la misma fecha', ()=>{
+    listapartido.setPartidos(partido1);
+    expect(()=>listapartido.setPartidos(partido4)).toThrow();
+  });
+
+  test('partido valido y otro con una misma sele pero con la misma fecha', ()=>{
+    listapartido.setPartidos(partido4);
+    expect(()=>listapartido.setPartidos(partido5)).toThrow();
+  });
+
+  test('dos partidos diferentes con la misma fecha', ()=>{
+    listapartido.setPartidos(partido4);
+    expect(listapartido.setPartidos(partido6)).
+        toBe(listapartido[listapartido.length-1]);
   });
 });

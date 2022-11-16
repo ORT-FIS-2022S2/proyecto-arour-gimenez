@@ -45,14 +45,12 @@ export default class Seleccion {
     let selecciones=new ListaSelecciones();
     selecciones= selecciones.getSelecciones();
     let res;
-    if (selecciones!=null) {
-      if (selecciones.find((element) => element == equipo) === equipo) {
-        res= true;
-      } else {
-        res= false;
-      }
-      return res;
+    if (selecciones.find((element) => element == equipo) === equipo) {
+      res= true;
+    } else {
+      res= false;
     }
+    return res;
   }
 }
 // const alemania = new Seleccion('Alemania');
