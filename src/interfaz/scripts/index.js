@@ -187,14 +187,34 @@ function genera_tabla(select) {
       
       //span2
       let span2 = document.createElement('span');
-      span2.setAttribute("class","mdc-list-item__text");   
+      span2.setAttribute("class","mdc-list-item__text");  
+      
+      // let banderas = new ListaSelecciones();
+      // let paises = new ListaSelecciones();
+      // // let paises, banderas;
+      // banderas.getBanderas();
+      // let img = document.createElement("mcd-list--image-list"); 
+      // let img2 = document.createElement("mcd-list--image-list"); 
+      // for (let j = 0; j < banderas.length(); j++){
+      //   if(partido.nombre1 == paises[j]) img.src = banderas[j]; 
+      //   else if (partido.nombre2 == paises[j]) img2.src = banderas[j];
+      // }
+      // img.width=20;
+      // img.height=20;
+      // img2.width=20;
+      // img2.height=20;
+
 
       //info partido
       let informacionspan1 = document.createElement('span');
       informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
       informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
-      //informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 +' - ' + partido.fecha +' - '+ partido.hora));
+      
+      // informacionspan1.appendChild(img);
+
       span2.appendChild(informacionspan1);
+
+      // informacionspan1.appendChild(img2);
 
       //fecha y hora del partido
       let informacionspan2 = document.createElement('span');
