@@ -12,6 +12,7 @@ import ListaPartidos from '../../dominio/lista-partidos.js';
 // import Pronostico from '../../dominio/Pronostico';
 // import Seleccion from '../../dominio/Seleccion';
 
+
 //elegir seleccion
 const select = new MDCSelect(document.querySelector('.mdc-select'));
 select.listen('MDCSelect:change', () => {
@@ -156,7 +157,7 @@ function genera_tabla(select) {
   //ul
   let fila = document.createElement('ul');
   fila.className = "mdc-list mdc-list--two-line";
-
+  fila.setAttribute("id", "select");
   //linea separadora
   let li2 = document.createElement('li');
   li2.role = "separator";
@@ -189,14 +190,14 @@ function genera_tabla(select) {
       span2.setAttribute("class","mdc-list-item__text");   
 
       //info partido
-      let informacionspan1 = document.createElement('span')
+      let informacionspan1 = document.createElement('span');
       informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
       informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
       //informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 +' - ' + partido.fecha +' - '+ partido.hora));
       span2.appendChild(informacionspan1);
 
       //fecha y hora del partido
-      let informacionspan2 = document.createElement('span')
+      let informacionspan2 = document.createElement('span');
       informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
       informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
       span2.appendChild(informacionspan2);
@@ -223,4 +224,174 @@ function genera_tabla(select) {
     }
     lista.appendChild(fila);
   }
+}
+
+genera_Pronostico();
+
+//////////////////////
+function genera_Pronostico() {
+  let partidos = listaPartidos.getPartidos(); 
+ 
+  let lista = document.getElementById('pronosticos');
+  lista.innerHTML = "";
+  
+  //ul
+  let fila = document.createElement('ul');
+  fila.className = "mdc-list mdc-list--two-line";
+  fila.setAttribute("id","lista2");
+
+  //linea separadora
+  let li2 = document.createElement('li');
+  li2.role = "separator";
+  li2.className = "mdc-list-divider";
+  li2.setAttribute("tabindex","0");
+  li2.style.textAlign = "center";
+
+  fila.appendChild(li2);
+  //linea separadora
+  let saltoLinea2 = document.createElement('br');
+  fila.appendChild(saltoLinea2);
+      
+  for(let i = 0; i < partidos.length; i++){
+    
+     
+      let partido = partidos[i];
+
+      let divporfura = document.createElement('div');
+
+      //li
+      let li = document.createElement('li');
+      li.className = "mdc-list-item";
+      li.setAttribute("tabindex","0");
+      li.setAttribute("id","lista1");
+      
+      //span
+      let spann = document.createElement('span');
+      spann.setAttribute("class","mdc-list-item__ripple");   
+      li.appendChild(spann);
+      
+      //span2
+      let span2 = document.createElement('span');
+      span2.setAttribute("class","mdc-list-item__text");   
+
+      //info partido
+      let informacionspan1 = document.createElement('span');
+      informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
+      informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
+      //informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 +' - ' + partido.fecha +' - '+ partido.hora));
+      span2.appendChild(informacionspan1);
+
+      //fecha y hora del partido
+      let informacionspan2 = document.createElement('span');
+      informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
+      informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
+      span2.appendChild(informacionspan2);
+      
+      //radio button
+      
+      let texto = document.createElement('h4');
+      texto.textContent="Elegir ganador:";
+      span2.appendChild(texto);
+      let div1 = document.createElement('div');
+      radioButton(i,partido.nombre1,partido.nombre2,div1);
+      span2.appendChild(div1);
+      
+
+      li.appendChild(span2);
+      divporfura.appendChild(li);
+      fila.appendChild(divporfura);
+
+      let saltoLinea = document.createElement('br');
+      fila.appendChild(saltoLinea);
+
+      //linea separadora
+      let li2 = document.createElement('li');
+      li2.role = "separator";
+      li2.className = "mdc-list-divider";
+      li2.setAttribute("tabindex","0");
+      li2.style.textAlign = "center";
+
+      fila.appendChild(li2);
+      //linea separadora
+
+      let saltoLinea2 = document.createElement('br');
+      fila.appendChild(saltoLinea2);
+
+    
+    
+  }
+  lista.appendChild(fila);
+  
+}
+
+function radioButton(i,nom1,nom2,div){
+
+  //radio button
+  div.setAttribute("class","mdc-touch-target-wrapper");
+  let div2 = document.createElement('div');
+  div2.setAttribute("class","mdc-radio mdc-radio--touch");
+
+  
+
+  
+
+  let inputgana = document.createElement('input');
+  inputgana.setAttribute("class","mdc-radio__native-control");
+  inputgana.setAttribute("type","radio");
+  inputgana.setAttribute("id","radio-1");
+  inputgana.setAttribute("name",i);
+  div2.appendChild(inputgana);
+  let lavelgana = document.createElement('lavel');
+  lavelgana.setAttribute("for","radio-1");
+  lavelgana.textContent=nom1;
+  div2.appendChild(lavelgana);
+  
+  
+  let inputpierde = document.createElement('input');
+  inputpierde.setAttribute("class","mdc-radio__native-control");
+  inputpierde.setAttribute("type","radio");
+  inputpierde.setAttribute("id","radio-2");
+  inputpierde.setAttribute("name",i);
+  div2.appendChild(inputpierde);
+
+  let lavelpierde = document.createElement('lavel');
+  lavelpierde.setAttribute("for","radio-2");
+  lavelpierde.textContent= nom2;
+  div2.appendChild(lavelpierde);
+
+  let inputempata = document.createElement('input');
+  inputempata.setAttribute("class","mdc-radio__native-control");
+  inputempata.setAttribute("type","radio");
+  inputempata.setAttribute("id","radio-3");
+  inputempata.setAttribute("name",i);
+  div2.appendChild(inputempata);
+
+  let lavelempata = document.createElement('lavel');
+  lavelempata.setAttribute("for","radio-3");
+  lavelempata.textContent="Empate";
+  
+  div2.appendChild(lavelempata); 
+
+  
+
+  let div3 = document.createElement('div');
+  div3.setAttribute("class","mdc-radio__background");
+  let div4 = document.createElement('div');
+  div4.setAttribute("class","mdc-radio__outer-circle");
+  div3.appendChild(div4);
+  let div5 = document.createElement('div');
+  div5.setAttribute("class","mdc-radio__inner-circle");
+  div3.appendChild(div5);
+  div2.appendChild(div3);
+  let div6 = document.createElement('div');
+  div6.setAttribute("class","mdc-radio__ripple");
+  div2.appendChild(div6);
+  div.appendChild(div2);
+
+ 
+  
+  
+
+   
+ 
 }

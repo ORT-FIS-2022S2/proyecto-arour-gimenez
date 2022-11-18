@@ -25,6 +25,10 @@
 @use "@material/snackbar/mdc-snackbar";
 @use "@material/data-table/data-table";
 
+@use "@material/radio";
+@use "@material/form-field";
+
+@include form-field.core-styles;
 
 /* tabla */
 @include data-table.core-styles;
@@ -104,6 +108,9 @@ section {
 
 ul, li { margin: 0; padding: 0; list-style-type: none; flex-direction: column;
   align-items: center; 
+}
+#lista1 { 
+  display: inline-block; 
 }
 
 .mdc-list-item__primary-text{
