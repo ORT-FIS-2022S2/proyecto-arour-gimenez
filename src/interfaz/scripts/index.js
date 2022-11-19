@@ -11,6 +11,9 @@ import ListaPartidos from '../../dominio/lista-partidos.js';
 // import Partido from '../../dominio/Partido.js';
 // import Pronostico from '../../dominio/Pronostico';
 // import Seleccion from '../../dominio/Seleccion';
+import {MDCFormField} from '@material/form-field';
+import {MDCRadio} from '@material/radio';
+
 
 
 //elegir seleccion
@@ -189,22 +192,6 @@ function genera_tabla(select) {
       let span2 = document.createElement('span');
       span2.setAttribute("class","mdc-list-item__text");  
       
-      // let banderas = new ListaSelecciones();
-      // let paises = new ListaSelecciones();
-      // // let paises, banderas;
-      // banderas.getBanderas();
-      // let img = document.createElement("mcd-list--image-list"); 
-      // let img2 = document.createElement("mcd-list--image-list"); 
-      // for (let j = 0; j < banderas.length(); j++){
-      //   if(partido.nombre1 == paises[j]) img.src = banderas[j]; 
-      //   else if (partido.nombre2 == paises[j]) img2.src = banderas[j];
-      // }
-      // img.width=20;
-      // img.height=20;
-      // img2.width=20;
-      // img2.height=20;
-
-
       //info partido
       let informacionspan1 = document.createElement('span');
       informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
@@ -213,8 +200,6 @@ function genera_tabla(select) {
       // informacionspan1.appendChild(img);
 
       span2.appendChild(informacionspan1);
-
-      // informacionspan1.appendChild(img2);
 
       //fecha y hora del partido
       let informacionspan2 = document.createElement('span');
@@ -273,10 +258,7 @@ function genera_Pronostico() {
   fila.appendChild(saltoLinea2);
       
   for(let i = 0; i < partidos.length; i++){
-    
-     
       let partido = partidos[i];
-
       let divporfura = document.createElement('div');
 
       //li
@@ -309,14 +291,16 @@ function genera_Pronostico() {
       
       //radio button
       
+      
+      let div1 = document.createElement('div');
       let texto = document.createElement('h4');
       texto.textContent="Elegir ganador:";
-      span2.appendChild(texto);
-      let div1 = document.createElement('div');
-      radioButton(i,partido.nombre1,partido.nombre2,div1);
+      div1.appendChild(texto);
+      radioButton(i,partido.nombre2,div1);
+      radioButton(i,partido.nombre2,div1);
+      radioButton(i,"Empata",div1);
       span2.appendChild(div1);
       
-
       li.appendChild(span2);
       divporfura.appendChild(li);
       fila.appendChild(divporfura);
@@ -336,24 +320,19 @@ function genera_Pronostico() {
 
       let saltoLinea2 = document.createElement('br');
       fila.appendChild(saltoLinea2);
-
-    
-    
   }
   lista.appendChild(fila);
   
 }
 
-function radioButton(i,nom1,nom2,div){
 
+function radioButton(i,nom1,div){
   //radio button
-  div.setAttribute("class","mdc-touch-target-wrapper");
+ 
+
+  div.setAttribute("class","mdc-form-field");
   let div2 = document.createElement('div');
-  div2.setAttribute("class","mdc-radio mdc-radio--touch");
-
-  
-
-  
+  div2.setAttribute("class","mdc-radio");
 
   let inputgana = document.createElement('input');
   inputgana.setAttribute("class","mdc-radio__native-control");
@@ -361,38 +340,32 @@ function radioButton(i,nom1,nom2,div){
   inputgana.setAttribute("id","radio-1");
   inputgana.setAttribute("name",i);
   div2.appendChild(inputgana);
-  let lavelgana = document.createElement('lavel');
-  lavelgana.setAttribute("for","radio-1");
-  lavelgana.textContent=nom1;
-  div2.appendChild(lavelgana);
   
   
-  let inputpierde = document.createElement('input');
-  inputpierde.setAttribute("class","mdc-radio__native-control");
-  inputpierde.setAttribute("type","radio");
-  inputpierde.setAttribute("id","radio-2");
-  inputpierde.setAttribute("name",i);
-  div2.appendChild(inputpierde);
+  // let inputpierde = document.createElement('input');
+  // inputpierde.setAttribute("class","mdc-radio__native-control");
+  // inputpierde.setAttribute("type","radio");
+  // inputpierde.setAttribute("id","radio-2");
+  // inputpierde.setAttribute("name",i);
+  // div2.appendChild(inputpierde);
 
-  let lavelpierde = document.createElement('lavel');
-  lavelpierde.setAttribute("for","radio-2");
-  lavelpierde.textContent= nom2;
-  div2.appendChild(lavelpierde);
+  // let lavelpierde = document.createElement('lavel');
+  // lavelpierde.setAttribute("for","radio-2");
+  // lavelpierde.textContent= nom2;
+  // div2.appendChild(lavelpierde);
 
-  let inputempata = document.createElement('input');
-  inputempata.setAttribute("class","mdc-radio__native-control");
-  inputempata.setAttribute("type","radio");
-  inputempata.setAttribute("id","radio-3");
-  inputempata.setAttribute("name",i);
-  div2.appendChild(inputempata);
+  // let inputempata = document.createElement('input');
+  // inputempata.setAttribute("class","mdc-radio__native-control");
+  // inputempata.setAttribute("type","radio");
+  // inputempata.setAttribute("id","radio-3");
+  // inputempata.setAttribute("name",i);
+  // div2.appendChild(inputempata);
 
-  let lavelempata = document.createElement('lavel');
-  lavelempata.setAttribute("for","radio-3");
-  lavelempata.textContent="Empate";
+  // let lavelempata = document.createElement('lavel');
+  // lavelempata.setAttribute("for","radio-3");
+  // lavelempata.textContent="Empate";
   
-  div2.appendChild(lavelempata); 
-
-  
+  // div2.appendChild(lavelempata); 
 
   let div3 = document.createElement('div');
   div3.setAttribute("class","mdc-radio__background");
@@ -407,11 +380,8 @@ function radioButton(i,nom1,nom2,div){
   div6.setAttribute("class","mdc-radio__ripple");
   div2.appendChild(div6);
   div.appendChild(div2);
-
- 
-  
-  
-
-   
- 
+  let lavelgana = document.createElement('lavel');
+  lavelgana.setAttribute("for","radio-1");
+  lavelgana.textContent=nom1;
+  div.appendChild(lavelgana);  
 }

@@ -1,4 +1,4 @@
-class Pronostico {
+export default class Pronostico {
   constructor(dataArray) {
     this.pronosticos = [];
   }
@@ -15,4 +15,4 @@ class Pronostico {
     }
   }
 }
-module.exports = Pronostico;
+

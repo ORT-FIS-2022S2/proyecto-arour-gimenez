@@ -1,6 +1,6 @@
 @use "@material/theme" with (
   $primary: #1B5E20,
-  $secondary: #0288D1,
+  $secondary: #e21111,
   $background: #4c8c4a, //#c7c7c7,
 );
 @use '@material/button/mdc-button';
@@ -24,8 +24,7 @@
 @use "@material/select/styles";
 @use "@material/snackbar/mdc-snackbar";
 @use "@material/data-table/data-table";
-
-@use "@material/radio";
+@use "@material/radio/styles" as radio-styles;
 @use "@material/form-field";
 
 @include form-field.core-styles;
@@ -109,6 +108,7 @@ section {
 ul, li { margin: 0; padding: 0; list-style-type: none; flex-direction: column;
   align-items: center; 
 }
+
 #lista1 { 
   display: inline-block; 
 }
@@ -135,6 +135,10 @@ ul, li { margin: 0; padding: 0; list-style-type: none; flex-direction: column;
 }
 
 h1{
+  color: rgba(255, 255, 255, 0.932);
+}
+
+h4{
   color: rgba(255, 255, 255, 0.932);
 }
 
