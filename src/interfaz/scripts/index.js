@@ -40,7 +40,7 @@ function baseListas(lista){
   return fila;
 }
 
-function generaElemento(partidos, i, fila){
+function generaElemento(partidos, i, fila, largo, altura, ratio){
   let partido = partidos[i];
 
   //li
@@ -62,47 +62,94 @@ function generaElemento(partidos, i, fila){
   img.setAttribute("id","izq");
   img.setAttribute("style","float:left");
   img.src = '/banderas/'+partido.nombre1+'.png';
-  img.width=59;
-  img.height=44;
+  img.width=largo;
+  img.height=altura;
   fila.appendChild(img);
 
   let img2 = document.createElement("img");
   img2.setAttribute("id","der");
   img2.setAttribute("style","float:right");
   img2.src = '/banderas/'+partido.nombre2+'.png';
-  img2.width=59;
-  img2.height=44;
+  img2.width=largo;
+  img2.height=altura;
   fila.appendChild(img2);
 
-  //info partido
-  let informacionspan1 = document.createElement('span');
-  informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
-  informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
+  if(ratio){
+    let divporfura = document.createElement('div');
 
-  span2.appendChild(informacionspan1);
+    //info partido
+    let informacionspan1 = document.createElement('span');
+    informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
+    span2.appendChild(informacionspan1);
 
-  //fecha y hora del partido
-  let informacionspan2 = document.createElement('span');
-  informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
-  informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
-  span2.appendChild(informacionspan2);
+    //radio button
+    let div1 = document.createElement('div');
+    let texto = document.createElement('h4');
+    texto.textContent="Elegir ganador:";
 
-  li.appendChild(span2);
-  fila.appendChild(li);
+    div1.appendChild(texto);
+    span2.appendChild(div1);
+    li.appendChild(span2);
+    divporfura.appendChild(li);
+    fila.appendChild(divporfura);
 
-  let saltoLinea = document.createElement('br');
-  fila.appendChild(saltoLinea);
+    //esto queda en la siguiente linea 
+    let div2 = document.createElement('div');
+    radioButton(i,partido.nombre1,div2);
+    radioButton(i,partido.nombre2,div2);
+    radioButton(i,"Empata",div2);
+    span2.appendChild(div2);
+    
+    li.appendChild(span2);
+    divporfura.appendChild(li);
+    fila.appendChild(divporfura);
 
-  //linea separadora
-  let li2 = document.createElement('li');
-  li2.role = "separator";
-  li2.className = "mdc-list-divider";
-  li2.setAttribute("tabindex","0");
-  li2.style.textAlign = "center";
-  fila.appendChild(li2);
+    let saltoLinea = document.createElement('br');
+    fila.appendChild(saltoLinea);
 
-  let saltoLinea2 = document.createElement('br');
-  fila.appendChild(saltoLinea2);
+    //linea separadora
+    let li2 = document.createElement('li');
+    li2.role = "separator";
+    li2.className = "mdc-list-divider";
+    li2.setAttribute("tabindex","0");
+    li2.style.textAlign = "center";
+
+    fila.appendChild(li2);
+    
+    //Break
+    let saltoLinea2 = document.createElement('br');
+    fila.appendChild(saltoLinea2);
+  }else{
+    //info partido
+    let informacionspan1 = document.createElement('span');
+    informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
+    informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
+
+    span2.appendChild(informacionspan1);
+
+    //fecha y hora del partido
+    let informacionspan2 = document.createElement('span');
+    informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
+    informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
+    span2.appendChild(informacionspan2);
+
+    li.appendChild(span2);
+    fila.appendChild(li);
+
+    let saltoLinea = document.createElement('br');
+    fila.appendChild(saltoLinea);
+
+    //linea separadora
+    let li2 = document.createElement('li');
+    li2.role = "separator";
+    li2.className = "mdc-list-divider";
+    li2.setAttribute("tabindex","0");
+    li2.style.textAlign = "center";
+    fila.appendChild(li2);
+
+    let saltoLinea2 = document.createElement('br');
+    fila.appendChild(saltoLinea2);
+  }
 }
 
 tablaInicio();
@@ -116,7 +163,7 @@ function tablaInicio(){
   let fila = baseListas("lista1");
 
   for(let i = 0; i < partidos.length; i++){
-    generaElemento(partidos, i, fila);
+    generaElemento(partidos, i, fila, 58, 44, false);
     lista.appendChild(fila);
   }
 }
@@ -134,7 +181,7 @@ function genera_tabla(select) {
     if (select === "Todos") generaElemento(partidos, i, fila);
     else {
       if(partidos[i].nombre1 === select || partidos[i].nombre2 === select){
-        generaElemento(partidos, i, fila);
+        generaElemento(partidos, i, fila, 58, 44, false);
       }
     }
     lista.appendChild(fila);
@@ -154,85 +201,7 @@ function genera_Pronostico() {
   let fila = baseListas("lista2");
       
   for(let i = 0; i < partidos.length; i++){
-      let partido = partidos[i];
-      let divporfura = document.createElement('div');
-
-      //li
-      let li = document.createElement('li');
-      li.className = "mdc-list-item";
-      li.setAttribute("tabindex","0");
-      li.setAttribute("id","lista2");
-      
-      //span
-      let spann = document.createElement('span');
-      spann.setAttribute("class","mdc-list-item__ripple");   
-      li.appendChild(spann);
-      
-      //span2
-      let span2 = document.createElement('span');
-      span2.setAttribute("class","mdc-list-item__text");   
-
-
-      // imagenes
-      let img = document.createElement("img");
-      img.setAttribute("id","izq");
-      img.setAttribute("style","float:left");
-      img.src = '/banderas/'+partido.nombre1+'.png';
-      img.width=62;
-      img.height=44;
-      span2.appendChild(img);
-
-      let img2 = document.createElement("img");
-      img2.setAttribute("id","der");
-      img2.setAttribute("style","float:right");
-      img2.src = '/banderas/'+partido.nombre2+'.png';
-      img2.width=62;
-      img2.height=44;
-      span2.appendChild(img2);
-
-      //info partido
-      let informacionspan1 = document.createElement('h3'); 
-      informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
-      span2.appendChild(informacionspan1);
-
-      
-      //radio button
-      let div1 = document.createElement('div');
-      let texto = document.createElement('h4');
-      texto.textContent="Elegir ganador:";
-
-      div1.appendChild(texto);
-      span2.appendChild(div1);
-      li.appendChild(span2);
-      divporfura.appendChild(li);
-      fila.appendChild(divporfura);
-
-      //esto queda en la siguiente linea 
-      let div2 = document.createElement('div');
-      radioButton(i,partido.nombre1,div2);
-      radioButton(i,partido.nombre2,div2);
-      radioButton(i,"Empata",div2);
-      span2.appendChild(div2);
-      
-      li.appendChild(span2);
-      divporfura.appendChild(li);
-      fila.appendChild(divporfura);
-
-      let saltoLinea = document.createElement('br');
-      fila.appendChild(saltoLinea);
-
-      //linea separadora
-      let li2 = document.createElement('li');
-      li2.role = "separator";
-      li2.className = "mdc-list-divider";
-      li2.setAttribute("tabindex","0");
-      li2.style.textAlign = "center";
-
-      fila.appendChild(li2);
-      
-      //Break
-      let saltoLinea2 = document.createElement('br');
-      fila.appendChild(saltoLinea2);
+    generaElemento(partidos, i, fila, 62, 44, true); 
   }
   lista.appendChild(fila);
   
