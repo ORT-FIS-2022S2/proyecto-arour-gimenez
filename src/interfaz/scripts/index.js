@@ -21,29 +21,9 @@ const select = new MDCSelect(document.querySelector('.mdc-select'));
 select.listen('MDCSelect:change', () => {
   genera_tabla(select.value);
 });
-//elegir seleccion
 
-//tablas
-// import {MDCDataTable} from '@material/data-table';
-//const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
-//tablas
-
-// const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
-// const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
-//   return new MDCRipple(el);
-// });
-
-// let partido1 = new Partido();
-// partido1.setPartido('Qatar', 'Ecuador', '20-Nov-22', '13:00');
-// listaPartidos.agregar(partido1);
-
-// const listaPeliculas = new ListaPeliculas();
 const listaPartidos = new ListaPartidos();
 listaPartidos.cargarListaPartidos();
-// const partido = new Partido();
-
-// const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-// const topAppBar = new MDCTopAppBar(topAppBarElement);
 
 const tabBar = new MDCTabBar(document.querySelector(".mdc-tab-bar"));
 tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
@@ -56,103 +36,11 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
   });
 });
 
-// const textFieldTitle = new MDCTextField(document.getElementById('title'));
-// const textFieldYear = new MDCTextField(document.getElementById('year'));
-// const selectGenre = new MDCSelect(document.querySelector('.mdc-select'));
 
-// const addButton = new MDCRipple(document.getElementById('addButton'));
-// addButton.listen('click', () => {
-//   let title = textFieldTitle.value;
-//   let year = textFieldYear.value;
-//   let genre = selectGenre.value;
-//   borrarCampos();
+tablaInicio();
 
-//   try {
-//     let newPelicula = new Pelicula('title', genre, year);
-//     listaPeliculas.agregar(newPelicula);
-//     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
-//     snackbar.labelText = 'Pelicula agregada correctamente';
-//     snackbar.open();
-
-//   } catch (error) {
-//     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
-//     snackbar.labelText = error.message;
-//     snackbar.open();
-//   } finally {
-//     let peliculas = listaPeliculas.getPeliculas();
-//     console.log(peliculas);
-//     cargarListaPeliculas();
-
-//   }
-// })
-
-// function borrarCampos(){
-//   textFieldTitle.value = "";
-//   textFieldYear.value = "";
-//   selectGenre.value = "";
-// }
-
-// function cargarListaPeliculas(){
-//   let peliculas = listaPeliculas.getPeliculas();
-//   let lista = document.getElementById('peliculas');
-//   lista.innerHTML = "";
-
-//   for(let i = 0; i < peliculas.length; i++){
-//     let pelicula = peliculas[i];
-
-//     //div principal
-//     let fila = document.createElement('div');
-//     fila.className = "mdc-card";
-
-//     //div primary action
-//     let div = document.createElement('div');
-//     div.className = "mdc-card__primary-action";
-
-//     //info pelicula
-//     let informacion = document.createElement("h2")
-//     informacion.innerHTML = pelicula.titulo + " (" + pelicula.anio + ")" + " - " + pelicula.genero;
-//     div.appendChild(informacion);
-
-//     //div mdc-card media square
-//     let divMediaSquare = document.createElement('div');
-//     divMediaSquare.className = "mdc-card__media mdc-card__media--square";
-//     div.appendChild(divMediaSquare);
-
-//     //div mdc-card media content
-//     let divMediaContent = document.createElement('div');
-//     divMediaContent.className = "mdc-card__media-content";
-//     divMediaSquare.appendChild(divMediaContent);
-
-//     //div mdc ripple
-//     let divRipple = document.createElement('div');
-//     divRipple.className = "mdc-card__ripple";
-//     div.appendChild(divRipple);
-
-//     fila.appendChild(div);
-//     lista.appendChild(fila);
-
-//     let saltoLinea = document.createElement('br');
-//     lista.appendChild(saltoLinea);
-//   }
-// }
-
-// function cambiarContenidoCeldaTabla(valor, f ,c ,id) {
-//     let fila = f;
-//     let columna = c;
-//     if ((fila >= 1 && fila <= 3) && (columna >= 1 && columna <= 4)) {
-//         let celdas = document.getElementById(id).rows[fila - 1].cells;
-//         celdas[columna - 1] = valor;
-//     }
-// }
-
-
-  
-  
-function genera_tabla(select) {
+function tablaInicio() {
   let partidos = listaPartidos.getPartidos(); 
-
-  // let bandera = listaBanderas.getBanderas();
-  // let pais = listaPaises.getSelecciones();
  
   let lista = document.getElementById('partidos');
   lista.innerHTML = "";
@@ -174,78 +62,175 @@ function genera_tabla(select) {
   fila.appendChild(saltoLinea2);
       
   for(let i = 0; i < partidos.length; i++){
+    let partido = partidos[i];
+
+    //li
+    let li = document.createElement('li');
+    li.className = "mdc-list-item";
+    li.setAttribute("tabindex","0");
     
-     if(partidos[i].nombre1 === select || partidos[i].nombre2 === select){
-      let partido = partidos[i];
+    //span
+    let spann = document.createElement('span');
+    spann.setAttribute("class","mdc-list-item__ripple");   
+    li.appendChild(spann);
+    
+    //span2
+    let span2 = document.createElement('span');
+    span2.setAttribute("class","mdc-list-item__text");  
 
-      //li
-      let li = document.createElement('li');
-      li.className = "mdc-list-item";
-      li.setAttribute("tabindex","0");
+    // imagenes
+    let img = document.createElement("img");
+    img.setAttribute("id","izq");
+    img.setAttribute("style","float:left");
+    img.src = '/banderas/'+partido.nombre1+'.png';
+    img.width=59;
+    img.height=44;
+    fila.appendChild(img);
+
+    let img2 = document.createElement("img");
+    img2.setAttribute("id","der");
+    img2.setAttribute("style","float:right");
+    img2.src = '/banderas/'+partido.nombre2+'.png';
+    img2.width=59;
+    img2.height=44;
+    fila.appendChild(img2);
+
+    //info partido
+    let informacionspan1 = document.createElement('span');
+    informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
+    informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
+    span2.appendChild(informacionspan1);
+
+    //fecha y hora del partido
+    let informacionspan2 = document.createElement('span');
+    informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
+    informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
+    span2.appendChild(informacionspan2);
+
+    li.appendChild(span2);
+    fila.appendChild(li);
+
+    let saltoLinea = document.createElement('br');
+    fila.appendChild(saltoLinea);
+
+    //linea separadora
+    let li2 = document.createElement('li');
+    li2.role = "separator";
+    li2.className = "mdc-list-divider";
+    li2.setAttribute("tabindex","0");
+    li2.style.textAlign = "center";
+    fila.appendChild(li2);
+
+    let saltoLinea2 = document.createElement('br');
+    fila.appendChild(saltoLinea2);
+  }
+  lista.appendChild(fila);
+}
+  
+ //////////////////////////////////////////////////// 
+function genera_tabla(select) {
+  if(select === "Todos") tablaInicio();
+  else{
+    let partidos = listaPartidos.getPartidos(); 
+
+    // let bandera = listaBanderas.getBanderas();
+    // let pais = listaPaises.getSelecciones();
+  
+    let lista = document.getElementById('partidos');
+    lista.innerHTML = "";
+    
+    //ul
+    let fila = document.createElement('ul');
+    fila.className = "mdc-list mdc-list--two-line";
+    fila.setAttribute("id", "select");
+    //linea separadora
+    let li2 = document.createElement('li');
+    li2.role = "separator";
+    li2.className = "mdc-list-divider";
+    li2.setAttribute("tabindex","0");
+    li2.style.textAlign = "center";
+
+    fila.appendChild(li2);
+    //linea separadora
+    let saltoLinea2 = document.createElement('br');
+    fila.appendChild(saltoLinea2);
+        
+    for(let i = 0; i < partidos.length; i++){
       
-      //span
-      let spann = document.createElement('span');
-      spann.setAttribute("class","mdc-list-item__ripple");   
-      li.appendChild(spann);
-      
-      //span2
-      let span2 = document.createElement('span');
-      span2.setAttribute("class","mdc-list-item__text");  
+      if(partidos[i].nombre1 === select || partidos[i].nombre2 === select){
+        let partido = partidos[i];
+
+        //li
+        let li = document.createElement('li');
+        li.className = "mdc-list-item";
+        li.setAttribute("tabindex","0");
+        
+        //span
+        let spann = document.createElement('span');
+        spann.setAttribute("class","mdc-list-item__ripple");   
+        li.appendChild(spann);
+        
+        //span2
+        let span2 = document.createElement('span');
+        span2.setAttribute("class","mdc-list-item__text");  
 
 
-      // imagenes
-      let img = document.createElement("img");
-      img.setAttribute("id","izq");
-      img.src = '/banderas/'+partido.nombre1+'.png';
-      img.width=59;
-      img.height=44;
-      fila.appendChild(img);
+        // imagenes
+        let img = document.createElement("img");
+        img.setAttribute("id","izq");
+        img.setAttribute("style","float:left");
+        img.src = '/banderas/'+partido.nombre1+'.png';
+        img.width=59;
+        img.height=44;
+        fila.appendChild(img);
 
-      let img2 = document.createElement("img");
-      img2.setAttribute("id","der");
-      img2.src = '/banderas/'+partido.nombre2+'.png';
-      img2.width=59;
-      img2.height=44;
-      fila.appendChild(img2);
+        let img2 = document.createElement("img");
+        img2.setAttribute("id","der");
+        img2.setAttribute("style","float:right");
+        img2.src = '/banderas/'+partido.nombre2+'.png';
+        img2.width=59;
+        img2.height=44;
+        fila.appendChild(img2);
 
 
 
-      //info partido
-      let informacionspan1 = document.createElement('span');
-      informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
-      informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
-      
-      // informacionspan1.appendChild(img);
+        //info partido
+        let informacionspan1 = document.createElement('span');
+        informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
+        informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
+        
+        // informacionspan1.appendChild(img);
 
-      span2.appendChild(informacionspan1);
+        span2.appendChild(informacionspan1);
 
-      //fecha y hora del partido
-      let informacionspan2 = document.createElement('span');
-      informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
-      informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
-      span2.appendChild(informacionspan2);
+        //fecha y hora del partido
+        let informacionspan2 = document.createElement('span');
+        informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
+        informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
+        span2.appendChild(informacionspan2);
 
-      li.appendChild(span2);
-      fila.appendChild(li);
+        li.appendChild(span2);
+        fila.appendChild(li);
 
-      let saltoLinea = document.createElement('br');
-      fila.appendChild(saltoLinea);
+        let saltoLinea = document.createElement('br');
+        fila.appendChild(saltoLinea);
 
-      //linea separadora
-      let li2 = document.createElement('li');
-      li2.role = "separator";
-      li2.className = "mdc-list-divider";
-      li2.setAttribute("tabindex","0");
-      li2.style.textAlign = "center";
+        //linea separadora
+        let li2 = document.createElement('li');
+        li2.role = "separator";
+        li2.className = "mdc-list-divider";
+        li2.setAttribute("tabindex","0");
+        li2.style.textAlign = "center";
 
-      fila.appendChild(li2);
-      //linea separadora
+        fila.appendChild(li2);
+        //linea separadora
 
-      let saltoLinea2 = document.createElement('br');
-      fila.appendChild(saltoLinea2);
+        let saltoLinea2 = document.createElement('br');
+        fila.appendChild(saltoLinea2);
 
+      }
+      lista.appendChild(fila);
     }
-    lista.appendChild(fila);
   }
 }
 
