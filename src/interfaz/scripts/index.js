@@ -10,9 +10,9 @@ import { MDCSelect } from '@material/select';
 import ListaPartidos from '../../dominio/lista-partidos.js';
 // import Partido from '../../dominio/Partido.js';
 // import Pronostico from '../../dominio/Pronostico';
-// import Seleccion from '../../dominio/Seleccion';
-import {MDCFormField} from '@material/form-field';
-import {MDCRadio} from '@material/radio';
+// import ListaSelecciones from '../../dominio/lista-selecciones';
+// import {MDCFormField} from '@material/form-field';
+// import {MDCRadio} from '@material/radio';
 
 
 
@@ -149,10 +149,10 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
   
   
 function genera_tabla(select) {
-  // const partido1 = new Partido('Qatar', 'Ecuador', '20 Nov 22', '13:00');
-  // listaPartidos.agrega(partido1);
-  
   let partidos = listaPartidos.getPartidos(); 
+
+  // let bandera = listaBanderas.getBanderas();
+  // let pais = listaPaises.getSelecciones();
  
   let lista = document.getElementById('partidos');
   lista.innerHTML = "";
@@ -191,7 +191,37 @@ function genera_tabla(select) {
       //span2
       let span2 = document.createElement('span');
       span2.setAttribute("class","mdc-list-item__text");  
-      
+
+
+      // imagenes
+      let img = document.createElement("img"); 
+      img.setAttribute("id","izq");
+      let img2 = document.createElement("img"); 
+      img2.setAttribute("id","der");
+      let b1 = 'sad.png';
+      let b2= 'sad.png';
+
+      // for(let j = 0; j < pais.length(); j++){
+      //   if(partidos[i].nombre1 === pais[j]){
+      //     b1 = bandera[j];
+      //   } else if(partidos[i].nombre2 === pais[j]){
+      //     b2 = bandera[j];
+      //   }
+      // }
+
+      let img3 = document.createElement("img");
+      img3.src = b1;
+      img3.width=250;
+      img3.height=250;
+      fila.appendChild(img3);
+      let img4 = document.createElement("img");
+      img4.src = b2;
+      img4.width=250;
+      img4.height=250;
+      fila.appendChild(img4);
+
+
+
       //info partido
       let informacionspan1 = document.createElement('span');
       informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
