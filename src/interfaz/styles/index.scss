@@ -82,10 +82,6 @@ section {
   color: black;
 }
 
-.mdc-text-field {
-  margin: 1rem auto;
-}
-
 .mdc-snackbar__actions .mdc-button__label {
   color: #0288D1;
 }
@@ -156,6 +152,7 @@ h4{
     width: 95%;
   }
   #pronosticos{
+    padding-left: 0;
     width: 90%;
     margin-left: auto;
     margin-right: auto;

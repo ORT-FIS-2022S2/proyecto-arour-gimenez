@@ -194,31 +194,19 @@ function genera_tabla(select) {
 
 
       // imagenes
-      let img = document.createElement("img"); 
+      let img = document.createElement("img");
       img.setAttribute("id","izq");
-      let img2 = document.createElement("img"); 
+      img.src = '/banderas/'+partido.nombre1+'.png';
+      img.width=59;
+      img.height=44;
+      fila.appendChild(img);
+
+      let img2 = document.createElement("img");
       img2.setAttribute("id","der");
-      // let b1 = 'sad.png';
-      // let b2= 'sad.png';
-
-      // for(let j = 0; j < pais.length(); j++){
-      //   if(partidos[i].nombre1 === pais[j]){
-      //     b1 = bandera[j];
-      //   } else if(partidos[i].nombre2 === pais[j]){
-      //     b2 = bandera[j];
-      //   }
-      // }
-
-      let img3 = document.createElement("img");
-      img3.src = '/banderas/'+partido.nombre1+'.png';
-      img3.width=59;
-      img3.height=44;
-      fila.appendChild(img3);
-      let img4 = document.createElement("img");
-      img4.src = '/banderas/'+partido.nombre2+'.png';
-      img4.width=59;
-      img4.height=44;
-      fila.appendChild(img4);
+      img2.src = '/banderas/'+partido.nombre2+'.png';
+      img2.width=59;
+      img2.height=44;
+      fila.appendChild(img2);
 
 
 
@@ -295,7 +283,7 @@ function genera_Pronostico() {
       let li = document.createElement('li');
       li.className = "mdc-list-item";
       li.setAttribute("tabindex","0");
-      li.setAttribute("id","lista1");
+      li.setAttribute("id","lista2");
       
       //span
       let spann = document.createElement('span');
@@ -308,29 +296,21 @@ function genera_Pronostico() {
 
 
       // imagenes
-      let img = document.createElement("img"); 
+      let img = document.createElement("img");
       img.setAttribute("id","izq");
       img.setAttribute("style","float:left");
-      let img2 = document.createElement("img"); 
+      img.src = '/banderas/'+partido.nombre1+'.png';
+      img.width=62;
+      img.height=44;
+      span2.appendChild(img);
+
+      let img2 = document.createElement("img");
       img2.setAttribute("id","der");
       img2.setAttribute("style","float:right");
-      // for(let j = 0; j < pais.length(); j++){
-      //   if(partidos[i].nombre1 === pais[j]){
-      //     b1 = bandera[j];
-      //   } else if(partidos[i].nombre2 === pais[j]){
-      //     b2 = bandera[j];
-      //   }
-      // }
-      let img3 = document.createElement("img");
-      img3.src = '/banderas/'+partido.nombre1+'.png';
-      img3.width=59;
-      img3.height=44;
-      fila.appendChild(img3);
-      let img4 = document.createElement("img");
-      img4.src = '/banderas/'+partido.nombre2+'.png';
-      img4.width=59;
-      img4.height=44;
-      fila.appendChild(img4);
+      img2.src = '/banderas/'+partido.nombre2+'.png';
+      img2.width=62;
+      img2.height=44;
+      span2.appendChild(img2);
 
       //info partido
       let informacionspan1 = document.createElement('h3'); 
@@ -342,11 +322,19 @@ function genera_Pronostico() {
       let div1 = document.createElement('div');
       let texto = document.createElement('h4');
       texto.textContent="Elegir ganador:";
+
       div1.appendChild(texto);
-      radioButton(i,partido.nombre2,div1);
-      radioButton(i,partido.nombre2,div1);
-      radioButton(i,"Empata",div1);
       span2.appendChild(div1);
+      li.appendChild(span2);
+      divporfura.appendChild(li);
+      fila.appendChild(divporfura);
+
+      //esto queda en la siguiente linea 
+      let div2 = document.createElement('div');
+      radioButton(i,partido.nombre1,div2);
+      radioButton(i,partido.nombre2,div2);
+      radioButton(i,"Empata",div2);
+      span2.appendChild(div2);
       
       li.appendChild(span2);
       divporfura.appendChild(li);
@@ -364,7 +352,7 @@ function genera_Pronostico() {
 
       fila.appendChild(li2);
       
-      //linea separadora
+      //Break
       let saltoLinea2 = document.createElement('br');
       fila.appendChild(saltoLinea2);
   }
