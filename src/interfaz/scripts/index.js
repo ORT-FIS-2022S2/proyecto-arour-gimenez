@@ -178,7 +178,7 @@ function genera_tabla(select) {
   let fila = baseListas("lista1");
       
   for(let i = 0; i < partidos.length; i++){
-    if (select === "Todos") generaElemento(partidos, i, fila);
+    if (select === "Todos") generaElemento(partidos, i, fila, 58, 40, false);
     else {
       if(partidos[i].nombre1 === select || partidos[i].nombre2 === select){
         generaElemento(partidos, i, fila, 58, 40, false);
