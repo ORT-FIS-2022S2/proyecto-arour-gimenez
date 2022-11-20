@@ -78,7 +78,7 @@ function generaElemento(partidos, i, fila, largo, altura, ratio){
     let divporfura = document.createElement('div');
 
     //info partido
-    let informacionspan1 = document.createElement('span');
+    let informacionspan1 = document.createElement('h3');
     informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
     span2.appendChild(informacionspan1);
 
