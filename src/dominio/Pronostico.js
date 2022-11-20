@@ -1,17 +1,17 @@
 export default class Pronostico {
-  constructor(dataArray) {
+  constructor() {
     this.pronosticos = [];
   }
   getPronostico() {
     return this.pronosticos;
   }
-  setPronostico(gana) {
-    const ganador = this.pronosticos.some((m) => m.nombre == gana.nombre);
-    if (!ganador) {
-      this.pronosticos.push(gana);
+  setPronostico(res) {
+    const resultado = this.pronosticos.some((m) => m.nombre == res.nombre);
+    if (!resultado) {
+      this.pronosticos.push(res);
     } else {
       throw new Error(`No se pudo agregar. 
-      ${gana.nombre} ya se encuentra en pronosticos.`);
+      ${res.nombre} ya se encuentra en pronosticos.`);
     }
   }
 }
