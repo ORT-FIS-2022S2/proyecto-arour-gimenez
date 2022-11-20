@@ -22,192 +22,124 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
   });
 });
 
-tablaInicio();
-
-function tablaInicio() {
-  let partidos = listaPartidos.getPartidos(); 
- 
-  let lista = document.getElementById('partidos');
-  lista.innerHTML = "";
-  
+function baseListas(lista){  
   //ul
   let fila = document.createElement('ul');
   fila.className = "mdc-list mdc-list--two-line";
-  fila.setAttribute("id", "select");
+  fila.setAttribute("id", lista);
   //linea separadora
   let li2 = document.createElement('li');
   li2.role = "separator";
   li2.className = "mdc-list-divider";
   li2.setAttribute("tabindex","0");
   li2.style.textAlign = "center";
-
   fila.appendChild(li2);
-  //linea separadora
+
   let saltoLinea2 = document.createElement('br');
   fila.appendChild(saltoLinea2);
-      
+  return fila;
+}
+
+function generaElemento(partidos, i, fila){
+  let partido = partidos[i];
+
+  //li
+  let li = document.createElement('li');
+  li.className = "mdc-list-item";
+  li.setAttribute("tabindex","0");
+  
+  //span
+  let spann = document.createElement('span');
+  spann.setAttribute("class","mdc-list-item__ripple");   
+  li.appendChild(spann);
+  
+  //span2
+  let span2 = document.createElement('span');
+  span2.setAttribute("class","mdc-list-item__text");  
+
+  // imagenes
+  let img = document.createElement("img");
+  img.setAttribute("id","izq");
+  img.setAttribute("style","float:left");
+  img.src = '/banderas/'+partido.nombre1+'.png';
+  img.width=59;
+  img.height=44;
+  fila.appendChild(img);
+
+  let img2 = document.createElement("img");
+  img2.setAttribute("id","der");
+  img2.setAttribute("style","float:right");
+  img2.src = '/banderas/'+partido.nombre2+'.png';
+  img2.width=59;
+  img2.height=44;
+  fila.appendChild(img2);
+
+  //info partido
+  let informacionspan1 = document.createElement('span');
+  informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
+  informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
+
+  span2.appendChild(informacionspan1);
+
+  //fecha y hora del partido
+  let informacionspan2 = document.createElement('span');
+  informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
+  informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
+  span2.appendChild(informacionspan2);
+
+  li.appendChild(span2);
+  fila.appendChild(li);
+
+  let saltoLinea = document.createElement('br');
+  fila.appendChild(saltoLinea);
+
+  //linea separadora
+  let li2 = document.createElement('li');
+  li2.role = "separator";
+  li2.className = "mdc-list-divider";
+  li2.setAttribute("tabindex","0");
+  li2.style.textAlign = "center";
+  fila.appendChild(li2);
+
+  let saltoLinea2 = document.createElement('br');
+  fila.appendChild(saltoLinea2);
+}
+
+tablaInicio();
+
+function tablaInicio(){
+  let partidos = listaPartidos.getPartidos(); 
+
+  let lista = document.getElementById('partidos');
+  lista.innerHTML = "";
+
+  let fila = baseListas("lista1");
+
   for(let i = 0; i < partidos.length; i++){
-    let partido = partidos[i];
-
-    //li
-    let li = document.createElement('li');
-    li.className = "mdc-list-item";
-    li.setAttribute("tabindex","0");
-    
-    //span
-    let spann = document.createElement('span');
-    spann.setAttribute("class","mdc-list-item__ripple");   
-    li.appendChild(spann);
-    
-    //span2
-    let span2 = document.createElement('span');
-    span2.setAttribute("class","mdc-list-item__text");  
-
-    // imagenes
-    let img = document.createElement("img");
-    img.setAttribute("id","izq");
-    img.setAttribute("style","float:left");
-    img.src = '/banderas/'+partido.nombre1+'.png';
-    img.width=59;
-    img.height=44;
-    fila.appendChild(img);
-
-    let img2 = document.createElement("img");
-    img2.setAttribute("id","der");
-    img2.setAttribute("style","float:right");
-    img2.src = '/banderas/'+partido.nombre2+'.png';
-    img2.width=59;
-    img2.height=44;
-    fila.appendChild(img2);
-
-    //info partido
-    let informacionspan1 = document.createElement('span');
-    informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
-    informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
-    span2.appendChild(informacionspan1);
-
-    //fecha y hora del partido
-    let informacionspan2 = document.createElement('span');
-    informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
-    informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
-    span2.appendChild(informacionspan2);
-
-    li.appendChild(span2);
-    fila.appendChild(li);
-
-    let saltoLinea = document.createElement('br');
-    fila.appendChild(saltoLinea);
-
-    //linea separadora
-    let li2 = document.createElement('li');
-    li2.role = "separator";
-    li2.className = "mdc-list-divider";
-    li2.setAttribute("tabindex","0");
-    li2.style.textAlign = "center";
-    fila.appendChild(li2);
-
-    let saltoLinea2 = document.createElement('br');
-    fila.appendChild(saltoLinea2);
+    generaElemento(partidos, i, fila);
+    lista.appendChild(fila);
   }
-  lista.appendChild(fila);
 }
   
  //////////////////////////////////////////////////// 
 function genera_tabla(select) {
-  if(select === "Todos") tablaInicio();
-  else{
-    let partidos = listaPartidos.getPartidos(); 
+  let partidos = listaPartidos.getPartidos(); 
+
+  let lista = document.getElementById('partidos');
+  lista.innerHTML = "";
   
-    let lista = document.getElementById('partidos');
-    lista.innerHTML = "";
-    
-    //ul
-    let fila = document.createElement('ul');
-    fila.className = "mdc-list mdc-list--two-line";
-    fila.setAttribute("id", "select");
-    //linea separadora
-    let li2 = document.createElement('li');
-    li2.role = "separator";
-    li2.className = "mdc-list-divider";
-    li2.setAttribute("tabindex","0");
-    li2.style.textAlign = "center";
-    fila.appendChild(li2);
-
-    let saltoLinea2 = document.createElement('br');
-    fila.appendChild(saltoLinea2);
-        
-    for(let i = 0; i < partidos.length; i++){
+  let fila = baseListas("lista1");
       
+  for(let i = 0; i < partidos.length; i++){
+    if (select === "Todos") generaElemento(partidos, i, fila);
+    else {
       if(partidos[i].nombre1 === select || partidos[i].nombre2 === select){
-        let partido = partidos[i];
-
-        //li
-        let li = document.createElement('li');
-        li.className = "mdc-list-item";
-        li.setAttribute("tabindex","0");
-        
-        //span
-        let spann = document.createElement('span');
-        spann.setAttribute("class","mdc-list-item__ripple");   
-        li.appendChild(spann);
-        
-        //span2
-        let span2 = document.createElement('span');
-        span2.setAttribute("class","mdc-list-item__text");  
-
-        // imagenes
-        let img = document.createElement("img");
-        img.setAttribute("id","izq");
-        img.setAttribute("style","float:left");
-        img.src = '/banderas/'+partido.nombre1+'.png';
-        img.width=59;
-        img.height=44;
-        fila.appendChild(img);
-
-        let img2 = document.createElement("img");
-        img2.setAttribute("id","der");
-        img2.setAttribute("style","float:right");
-        img2.src = '/banderas/'+partido.nombre2+'.png';
-        img2.width=59;
-        img2.height=44;
-        fila.appendChild(img2);
-
-        //info partido
-        let informacionspan1 = document.createElement('span');
-        informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
-        informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
-
-        span2.appendChild(informacionspan1);
-
-        //fecha y hora del partido
-        let informacionspan2 = document.createElement('span');
-        informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
-        informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
-        span2.appendChild(informacionspan2);
-
-        li.appendChild(span2);
-        fila.appendChild(li);
-
-        let saltoLinea = document.createElement('br');
-        fila.appendChild(saltoLinea);
-
-        //linea separadora
-        let li2 = document.createElement('li');
-        li2.role = "separator";
-        li2.className = "mdc-list-divider";
-        li2.setAttribute("tabindex","0");
-        li2.style.textAlign = "center";
-
-        fila.appendChild(li2);
-        //linea separadora
-
-        let saltoLinea2 = document.createElement('br');
-        fila.appendChild(saltoLinea2);
-
+        generaElemento(partidos, i, fila);
       }
-      lista.appendChild(fila);
     }
+    lista.appendChild(fila);
   }
+
 }
 
 genera_Pronostico();
@@ -219,22 +151,7 @@ function genera_Pronostico() {
   let lista = document.getElementById('pronosticos');
   lista.innerHTML = "";
   
-  //ul
-  let fila = document.createElement('ul');
-  fila.className = "mdc-list mdc-list--two-line";
-  fila.setAttribute("id","lista2");
-
-  //linea separadora
-  let li2 = document.createElement('li');
-  li2.role = "separator";
-  li2.className = "mdc-list-divider";
-  li2.setAttribute("tabindex","0");
-  li2.style.textAlign = "center";
-
-  fila.appendChild(li2);
-  //linea separadora
-  let saltoLinea2 = document.createElement('br');
-  fila.appendChild(saltoLinea2);
+  let fila = baseListas("lista2");
       
   for(let i = 0; i < partidos.length; i++){
       let partido = partidos[i];
