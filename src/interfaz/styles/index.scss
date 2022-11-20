@@ -152,6 +152,10 @@ h1, h2, h3, h4{
   margin-right: auto;
 }
 
+.mdc-radio__outer-circle  {
+  background-color:#f6f8f6;
+}
+
 //entre medio de desktop y mobile
 @media (max-width: 1200px){
   .mdc-data-table{
