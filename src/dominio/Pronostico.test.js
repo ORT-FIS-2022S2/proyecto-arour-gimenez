@@ -15,8 +15,7 @@ describe('Pronostico', ()=>{
 
   test('probar get', ()=>{
     pronostico.setPronostico('Uruguay-Jue 24 Nov 22 - 10:00 hs');
-    expect(pronostico.getPronostico()).
-        toBe(pronostico);
+    expect(pronostico.getPronostico()).toEqual(pronostico);
   });
 
   test('agregar un pronostico ya ingresado', ()=>{

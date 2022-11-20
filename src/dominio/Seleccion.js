@@ -43,6 +43,7 @@ export default class Seleccion {
   }
   esSeleccion(equipo) {
     let selecciones=new ListaSelecciones();
+    selecciones.cargarListaSelecciones();
     selecciones= selecciones.getSelecciones();
     let res;
     if (selecciones.find((element) => element == equipo) === equipo) {

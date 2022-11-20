@@ -22,13 +22,14 @@ export default class ListaSelecciones {
     this.selecciones.push('Costa Rica');
     this.selecciones.push('Croacia');
     this.selecciones.push('Dinamarca');
+    this.selecciones.push('Ecuador');
     this.selecciones.push('España');
     this.selecciones.push('Estados Unidos');
     this.selecciones.push('Francia');
     this.selecciones.push('Gales');
     this.selecciones.push('Ghana');
     this.selecciones.push('Holanda');
-    this.selecciones.push('Ilaterra');
+    this.selecciones.push('Inglaterra');
     this.selecciones.push('Irán');
     this.selecciones.push('Japón');
     this.selecciones.push('Marruecos');
@@ -62,7 +63,7 @@ export default class ListaSelecciones {
     this.banderas.push('../interfaz/banderas/Gales.png');
     this.banderas.push('../interfaz/banderas/Ghana.png');
     this.banderas.push('../interfaz/banderas/Holanda.png');
-    this.banderas.push('../interfaz/banderas/Ilaterra.png');
+    this.banderas.push('../interfaz/banderas/Inglaterra.png');
     this.banderas.push('../interfaz/banderas/Irán.png');
     this.banderas.push('../interfaz/banderas/Japón.png');
     this.banderas.push('../interfaz/banderas/Marruecos.png');
