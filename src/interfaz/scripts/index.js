@@ -1,20 +1,6 @@
-// import { MDCRipple } from '@material/ripple';
-// import { MDCTopAppBar } from '@material/top-app-bar';
 import { MDCTabBar } from '@material/tab-bar';
-// import { MDCTextField } from '@material/textfield';
 import { MDCSelect } from '@material/select';
-// import {MDCSnackbar} from '@material/snackbar';
-// import ListaPeliculas from '../../dominio/lista-peliculas.mjs';
-// import Pelicula from '../../dominio/pelicula.mjs';
-// import {MDCList} from '@material/list';
 import ListaPartidos from '../../dominio/lista-partidos.js';
-// import Partido from '../../dominio/Partido.js';
-// import Pronostico from '../../dominio/Pronostico';
-// import ListaSelecciones from '../../dominio/lista-selecciones';
-// import {MDCFormField} from '@material/form-field';
-// import {MDCRadio} from '@material/radio';
-
-
 
 //elegir seleccion
 const select = new MDCSelect(document.querySelector('.mdc-select'));
@@ -35,7 +21,6 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
     }
   });
 });
-
 
 tablaInicio();
 
@@ -132,9 +117,6 @@ function genera_tabla(select) {
   if(select === "Todos") tablaInicio();
   else{
     let partidos = listaPartidos.getPartidos(); 
-
-    // let bandera = listaBanderas.getBanderas();
-    // let pais = listaPaises.getSelecciones();
   
     let lista = document.getElementById('partidos');
     lista.innerHTML = "";
@@ -149,9 +131,8 @@ function genera_tabla(select) {
     li2.className = "mdc-list-divider";
     li2.setAttribute("tabindex","0");
     li2.style.textAlign = "center";
-
     fila.appendChild(li2);
-    //linea separadora
+
     let saltoLinea2 = document.createElement('br');
     fila.appendChild(saltoLinea2);
         
@@ -174,7 +155,6 @@ function genera_tabla(select) {
         let span2 = document.createElement('span');
         span2.setAttribute("class","mdc-list-item__text");  
 
-
         // imagenes
         let img = document.createElement("img");
         img.setAttribute("id","izq");
@@ -192,14 +172,10 @@ function genera_tabla(select) {
         img2.height=44;
         fila.appendChild(img2);
 
-
-
         //info partido
         let informacionspan1 = document.createElement('span');
         informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
         informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
-        
-        // informacionspan1.appendChild(img);
 
         span2.appendChild(informacionspan1);
 
@@ -348,7 +324,6 @@ function genera_Pronostico() {
 
 function radioButton(i,nom1,div){
   //radio button
- 
   div.setAttribute("class","mdc-form-field");
   let div2 = document.createElement('div');
   div2.setAttribute("class","mdc-radio");
@@ -359,32 +334,6 @@ function radioButton(i,nom1,div){
   inputgana.setAttribute("id","radio-1");
   inputgana.setAttribute("name",i);
   div2.appendChild(inputgana);
-  
-  
-  // let inputpierde = document.createElement('input');
-  // inputpierde.setAttribute("class","mdc-radio__native-control");
-  // inputpierde.setAttribute("type","radio");
-  // inputpierde.setAttribute("id","radio-2");
-  // inputpierde.setAttribute("name",i);
-  // div2.appendChild(inputpierde);
-
-  // let lavelpierde = document.createElement('lavel');
-  // lavelpierde.setAttribute("for","radio-2");
-  // lavelpierde.textContent= nom2;
-  // div2.appendChild(lavelpierde);
-
-  // let inputempata = document.createElement('input');
-  // inputempata.setAttribute("class","mdc-radio__native-control");
-  // inputempata.setAttribute("type","radio");
-  // inputempata.setAttribute("id","radio-3");
-  // inputempata.setAttribute("name",i);
-  // div2.appendChild(inputempata);
-
-  // let lavelempata = document.createElement('lavel');
-  // lavelempata.setAttribute("for","radio-3");
-  // lavelempata.textContent="Empate";
-  
-  // div2.appendChild(lavelempata); 
 
   let div3 = document.createElement('div');
   div3.setAttribute("class","mdc-radio__background");
@@ -399,7 +348,7 @@ function radioButton(i,nom1,div){
   div6.setAttribute("class","mdc-radio__ripple");
   div2.appendChild(div6);
   div.appendChild(div2);
-  let lavelgana = document.createElement('lavel');
+  let lavelgana = document.createElement('label');
   lavelgana.setAttribute("for","radio-1");
   lavelgana.textContent=nom1;
   div.appendChild(lavelgana);  

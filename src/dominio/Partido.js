@@ -4,7 +4,6 @@ export default class Partido {
   constructor(nombre1, nombre2, fecha, hora) {
     this.nombre1 = nombre1;
     this.nombre2 = nombre2;
-    // this.selecciones = [];
     this.fecha = fecha;
     this.hora = hora;
   }
@@ -12,7 +11,6 @@ export default class Partido {
     return {
       nombre1: this.nombre1,
       nombre2: this.nombre2,
-      // selecciones: this.selecciones,
       fecha: this.fecha,
       hora: this.hora,
     };
@@ -22,7 +20,6 @@ export default class Partido {
       seleccion.esSeleccion(seleccion2)) {
       this.nombre1 = seleccion1;
       this.nombre2 = seleccion2;
-      // this.selecciones.push(seleccion1, seleccion2);
       this.fecha = fecha;
       this.hora = hora;
     } else {

@@ -28,17 +28,10 @@
 @use "@material/form-field";
 
 @include form-field.core-styles;
-/* tabla */
 @include data-table.core-styles;
 @include data-table.theme-baseline;
-/* tabla */
-
 @include card.core-styles;
 @include textfield.core-styles;
-
-// @media 
-// only screen and (max-width: 462px){
-// (min-device-width: 280px) and (max-device-width: 600px)  {
 
 html {
   scroll-behavior: smooth;
@@ -48,7 +41,7 @@ html {
 body {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0px auto;
-  background-color: #0288d1;
+  background-color: #4c8c4a;
   text-align: center;
 }
 
@@ -81,7 +74,7 @@ section {
 }
 
 .mdc-tab{
-  background-color: #4c8c4a;
+  background-color: #0288d1;
 }
 
 // los titulos de 'Inicio' 'Tablas' y 'Pronostico'
@@ -91,7 +84,7 @@ section {
 }
 
 .mdc-snackbar__actions .mdc-button__label {
-  color: #0288D1;
+  color: #005b9f;
 }
 
 ul, li { 
@@ -103,17 +96,17 @@ ul, li {
 }
 
 .mdc-list-item__primary-text{
-  color: black;
+  color: white;
   font-size: large;
   font-weight: 700;
 }
 
 .mdc-list-item__secondary-text{
-  color: #1b1b1b;
+  color: #a8a8a8;
 }
 
 .mdc-data-table__content{
-  background-color: #5eb8ff;
+  background-color: #0288d1;
 }
 
 .mdc-data-table{
@@ -122,7 +115,7 @@ ul, li {
 }
 
 .mdc-data-table__header-cell{
-  background-color:#4c8c4a;
+  background-color:#1B5E20;
 }
 
 h1, h2, h3, h4{
@@ -138,7 +131,7 @@ h1, h2, h3, h4{
 }
 
 #partidos{
-  background-color: #0090dd;
+  background-color: #003300;
   width:35%;
   margin-left: auto;
   margin-right: auto;
@@ -169,7 +162,6 @@ h1, h2, h3, h4{
     padding-right: 1%;
   }
 }
-
 
 // mobile
 @media (max-width: 800px){
