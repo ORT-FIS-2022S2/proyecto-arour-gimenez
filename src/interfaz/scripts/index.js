@@ -198,8 +198,8 @@ function genera_tabla(select) {
       img.setAttribute("id","izq");
       let img2 = document.createElement("img"); 
       img2.setAttribute("id","der");
-      let b1 = 'sad.png';
-      let b2= 'sad.png';
+      // let b1 = 'sad.png';
+      // let b2= 'sad.png';
 
       // for(let j = 0; j < pais.length(); j++){
       //   if(partidos[i].nombre1 === pais[j]){
@@ -210,14 +210,14 @@ function genera_tabla(select) {
       // }
 
       let img3 = document.createElement("img");
-      img3.src = b1;
-      img3.width=250;
-      img3.height=250;
+      img3.src = '/banderas/'+partido.nombre1+'.png';
+      img3.width=59;
+      img3.height=44;
       fila.appendChild(img3);
       let img4 = document.createElement("img");
-      img4.src = b2;
-      img4.width=250;
-      img4.height=250;
+      img4.src = '/banderas/'+partido.nombre2+'.png';
+      img4.width=59;
+      img4.height=44;
       fila.appendChild(img4);
 
 
@@ -263,7 +263,7 @@ function genera_tabla(select) {
 
 genera_Pronostico();
 
-//////////////////////
+/////////////////////////////////////////////////////////////
 function genera_Pronostico() {
   let partidos = listaPartidos.getPartidos(); 
  
@@ -306,22 +306,39 @@ function genera_Pronostico() {
       let span2 = document.createElement('span');
       span2.setAttribute("class","mdc-list-item__text");   
 
+
+      // imagenes
+      let img = document.createElement("img"); 
+      img.setAttribute("id","izq");
+      img.setAttribute("style","float:left");
+      let img2 = document.createElement("img"); 
+      img2.setAttribute("id","der");
+      img2.setAttribute("style","float:right");
+      // for(let j = 0; j < pais.length(); j++){
+      //   if(partidos[i].nombre1 === pais[j]){
+      //     b1 = bandera[j];
+      //   } else if(partidos[i].nombre2 === pais[j]){
+      //     b2 = bandera[j];
+      //   }
+      // }
+      let img3 = document.createElement("img");
+      img3.src = '/banderas/'+partido.nombre1+'.png';
+      img3.width=59;
+      img3.height=44;
+      fila.appendChild(img3);
+      let img4 = document.createElement("img");
+      img4.src = '/banderas/'+partido.nombre2+'.png';
+      img4.width=59;
+      img4.height=44;
+      fila.appendChild(img4);
+
       //info partido
-      let informacionspan1 = document.createElement('span');
-      informacionspan1.setAttribute("class","mdc-list-item__primary-text");   
+      let informacionspan1 = document.createElement('h3'); 
       informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 + " "));
-      //informacionspan1.appendChild(document.createTextNode(partido.nombre1+' vs ' + partido.nombre2 +' - ' + partido.fecha +' - '+ partido.hora));
       span2.appendChild(informacionspan1);
 
-      //fecha y hora del partido
-      let informacionspan2 = document.createElement('span');
-      informacionspan2.setAttribute("class","mdc-list-item__secondary-text");
-      informacionspan2.appendChild(document.createTextNode(" " + partido.fecha +' - '+ partido.hora))
-      span2.appendChild(informacionspan2);
       
       //radio button
-      
-      
       let div1 = document.createElement('div');
       let texto = document.createElement('h4');
       texto.textContent="Elegir ganador:";
@@ -346,8 +363,8 @@ function genera_Pronostico() {
       li2.style.textAlign = "center";
 
       fila.appendChild(li2);
+      
       //linea separadora
-
       let saltoLinea2 = document.createElement('br');
       fila.appendChild(saltoLinea2);
   }
@@ -359,7 +376,6 @@ function genera_Pronostico() {
 function radioButton(i,nom1,div){
   //radio button
  
-
   div.setAttribute("class","mdc-form-field");
   let div2 = document.createElement('div');
   div2.setAttribute("class","mdc-radio");
