@@ -163,7 +163,7 @@ function tablaInicio(){
   let fila = baseListas("lista1");
 
   for(let i = 0; i < partidos.length; i++){
-    generaElemento(partidos, i, fila, 58, 44, false);
+    generaElemento(partidos, i, fila, 58, 40, false);
     lista.appendChild(fila);
   }
 }
@@ -181,7 +181,7 @@ function genera_tabla(select) {
     if (select === "Todos") generaElemento(partidos, i, fila);
     else {
       if(partidos[i].nombre1 === select || partidos[i].nombre2 === select){
-        generaElemento(partidos, i, fila, 58, 44, false);
+        generaElemento(partidos, i, fila, 58, 40, false);
       }
     }
     lista.appendChild(fila);
@@ -201,7 +201,7 @@ function genera_Pronostico() {
   let fila = baseListas("lista2");
       
   for(let i = 0; i < partidos.length; i++){
-    generaElemento(partidos, i, fila, 62, 44, true); 
+    generaElemento(partidos, i, fila, 62, 42, true); 
   }
   lista.appendChild(fila);
   
