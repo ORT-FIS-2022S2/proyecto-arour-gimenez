@@ -47,6 +47,7 @@ function generaElemento(partidos, i, fila, largo, altura, ratio){
   let li = document.createElement('li');
   li.className = "mdc-list-item";
   li.setAttribute("tabindex","0");
+  if(ratio) li.setAttribute("id","lista2");
   
   //span
   let spann = document.createElement('span');
@@ -181,7 +182,7 @@ function genera_tabla(select) {
     if (select === "Todos") generaElemento(partidos, i, fila, 58, 40, false);
     else {
       if(partidos[i].nombre1 === select || partidos[i].nombre2 === select){
-        generaElemento(partidos, i, fila, 58, 40, false);
+        generaElemento(partidos, i, fila, 56, 40, false);
       }
     }
     lista.appendChild(fila);
@@ -201,7 +202,7 @@ function genera_Pronostico() {
   let fila = baseListas("lista2");
       
   for(let i = 0; i < partidos.length; i++){
-    generaElemento(partidos, i, fila, 62, 42, true); 
+    generaElemento(partidos, i, fila, 58, 40, true); 
   }
   lista.appendChild(fila);
   

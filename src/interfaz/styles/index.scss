@@ -149,10 +149,15 @@ h1, h2, h3, h4{
   background-color:#f6f8f6;
 }
 
-//entre medio de desktop y mobile
+//entre medio de desktop y mobile (tablets ?)
 @media (max-width: 1200px){
   .mdc-data-table{
     width: 60%;
+  }
+  #pronosticos{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
   #partidos{
     width:80%;
@@ -169,10 +174,9 @@ h1, h2, h3, h4{
     width: 95%;
   }
   #pronosticos{
-    padding-left: 0;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   #partidos{
     width:97%;
@@ -185,5 +189,16 @@ h1, h2, h3, h4{
     text-align: center;
     font-size: medium;
     font-weight: 500;
+  }
+  .mdc-radio{
+    padding-left: 0;
+    width:3%;
+    margin-left:0cm;
+  }
+  .mdc-form-field{
+    text-align:start;
+    width:100%;
+    text-align: left;
+    font-size: small
   }
 }
