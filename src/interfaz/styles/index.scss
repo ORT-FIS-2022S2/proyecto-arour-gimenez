@@ -1,7 +1,7 @@
 @use "@material/theme" with (
-  $primary: #00bcd4,
-  $secondary: #f44336,
-  $background: #c7c7c7,
+  $primary: #1B5E20,
+  $secondary:  #0288d1,
+  $background: #4c8c4a,
 );
 @use '@material/button/mdc-button';
 @use '@material/button';
@@ -23,17 +23,26 @@
 @use "@material/menu/mdc-menu";
 @use "@material/select/styles";
 @use "@material/snackbar/mdc-snackbar";
+@use "@material/data-table/data-table";
+@use "@material/radio/styles" as radio-styles;
+@use "@material/form-field";
 
+@include form-field.core-styles;
+@include data-table.core-styles;
+@include data-table.theme-baseline;
 @include card.core-styles;
 @include textfield.core-styles;
 
 html {
   scroll-behavior: smooth;
+  font-size: medium;
 }
 
 body {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0px auto;
+  background-color: #4c8c4a;
+  text-align: center;
 }
 
 .app-bar {
@@ -44,51 +53,178 @@ body {
   z-index: 7;
 }
 
+//titulo 'Mundial'
+.mdc-top-app-bar__title{
+  font-size: x-large;
+  font-weight: 700;
+}
+
 section {
   text-align: center;
 }
 
 .content {
-  margin: 10rem auto;
-  padding-bottom: 20rem;
+  margin: 5rem auto;
   text-align: center;
 }
 
+// que (el contendido de) tablas y pronostico quede oculto
 .sample-content--hidden {
   display: none;
 }
 
-.mdc-tab {
-    background-color: #67daff;
+.mdc-tab{
+  background-color: #0288d1;
 }
 
+// los titulos de 'Inicio' 'Tablas' y 'Pronostico'
 .mdc-tab__content .mdc-tab__text-label {
-    color: black;
-}
-
-.mdc-text-field {
-    margin: 1rem auto;
-}
-
-.button {
-  margin-top: 1rem;
+  color: black;
+  font-weight: 700;
 }
 
 .mdc-snackbar__actions .mdc-button__label {
-  color: #67daff;
+  color: #005b9f;
 }
 
-
-
-.mdc-card {
-  height: 435px;
-  width: 700px;
-  margin: 0 auto;
-
-  
+ul, li { 
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+  flex-direction: column;
+  align-items: center; 
 }
 
-.mdc-card__media-content {
-  background-image: url("https://www.nationalgeographic.com.es/medio/2019/05/30/alan-turing_8c5d84c7_1200x630.jpg");
-  background-size: contain;
+.mdc-list-item__primary-text{
+  color: white;
+  font-size: large;
+  font-weight: 700;
+}
+
+.mdc-list-item__secondary-text{
+  color: #a8a8a8;
+}
+
+.mdc-data-table__content{
+  background-color: #0288d1;
+}
+
+.mdc-data-table{
+  width: 35%;
+  background-color:#1B5E20;
+}
+
+.mdc-data-table__header-cell{
+  background-color:#1B5E20;
+}
+
+h1, h2, h3, h4{
+  color: rgba(255, 255, 255, 0.932);
+}
+
+.mdc-notched-outline{
+  background-color: #4c8c4a;
+}
+
+#colorListaPaises{
+  background-color: #4c8c4a;
+}
+
+#partidos{
+  background-color: #003300;
+  width:35%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+#pronosticos{
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mdc-radio__outer-circle  {
+  background-color:#f6f8f6;
+}
+
+//entre medio de desktop y mobile (tablets ?)
+@media (max-width: 1200px){
+  .mdc-data-table{
+    width: 60%;
+  }
+  #pronosticos{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #partidos{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+
+// mobile
+@media (max-width: 800px){
+  #partidos img{
+    width: 15%;
+    height: 15%;
+  }
+  #pronosticos img{
+    width: 15%;
+    height: 15%;
+  }
+  .mdc-data-table{
+    width: 95%;
+  }
+  #pronosticos{
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  #partidos{
+    width:97%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .mdc-list-item__primary-text{
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+  }
+  .mdc-radio{
+    padding-left: 0;
+    width:3%;
+    margin-left:0cm;
+  }
+  .mdc-form-field{
+    text-align:start;
+    width:100%;
+    text-align: left;
+    font-size: small;
+  }
+}
+
+@media (max-width: 300px){
+  html {
+    font-size:x-small;
+  }
+  #partidos img{
+    width: 10%;
+    height: 10%;
+  }
+  #pronosticos img{
+    max-width: 13%;
+    height: auto;
+  }
+  label {
+    font-size: x-small;
+  }
+
 }
