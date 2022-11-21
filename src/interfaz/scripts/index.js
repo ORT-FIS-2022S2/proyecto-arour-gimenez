@@ -62,6 +62,7 @@ function generaElemento(partidos, i, fila, largo, altura, ratio){
   let img = document.createElement("img");
   img.setAttribute("id","izq");
   img.setAttribute("style","float:left");
+  img.setAttribute("alt",'Bandera '+partido.nombre1);
   img.src = '/banderas/'+partido.nombre1+'.png';
   img.width=largo;
   img.height=altura;
@@ -70,6 +71,7 @@ function generaElemento(partidos, i, fila, largo, altura, ratio){
   let img2 = document.createElement("img");
   img2.setAttribute("id","der");
   img2.setAttribute("style","float:right");
+  img2.setAttribute("alt",'Bandera '+partido.nombre2);
   img2.src = '/banderas/'+partido.nombre2+'.png';
   img2.width=largo;
   img2.height=altura;
