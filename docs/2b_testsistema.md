@@ -2,6 +2,37 @@
 
 Proyecto asingado para testear: ______
 
+
+Partidos no realizados = Partidos que ya se jugaron.
+
+En partidos pendientes selecciona por día y no por hora.
+Ej:24/11/2022 a la hora 15:00 URU vs COR sigue apareciendo en partidos pendientes y no en la otra sección.
+
+En sección resultados-tabla de posiciones: la parte para poner filtros no es responsive, para tamaños menores o iguales a 426px no se puede elegir grupo.
+Lo mismo para sección favoritos.
+
+
+En sección resultados-resultados la parte para poner filtros no es responsive, para tamaños menores o iguales a 667px no se puede elegir categoría, para tamaños menores o iguales a 960px no se puede elegir grupo y para tamaños menores o iguales a 341px no se puede elegir país.
+Lo mismo para sección favoritos.
+
+
+Al variar el ancho el botón de reset queda por arriba de los filtros en sección favoritos y sección resultados.
+
+
+
+En sección favoritos: para anchos menores a 730px, en las listas de partidos pendientes y partidos no realizados no se activa la barra de desplazamiento horizontal, no es visible la información completa.
+
+
+Al seleccionar una opción de categoría en la sección resultado-resultado y cambiar a resultado-tabla de posiciones no se resetea como si lo hacen los otros campos cuando se seleccionan solos.
+
+
+En sección resultado-resultado al tocar la estrella se pone en amarillo, pero al tocarlo otra vez para deseleccionar no cambia el color (hay que tocarlo dos veces para que esto pase, sin embargo, la funcionalidad está bien al tocarlo de a una vez).
+
+
+En sección resultado-resultado al poner el filtro de fecha y cambiar a sección resultado-tabla de posiciones y volver no resetea los partidos con esa fecha, como si lo hace con otros filtros o con el mismo filtro de fecha, pero con otro/s filtros seleccionados.
+
+
+
 ## Test de sistema
 
 Realizar test de sistema en un entorno separado del desarrollo
