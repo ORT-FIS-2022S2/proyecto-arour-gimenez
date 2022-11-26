@@ -42,22 +42,26 @@ Al variar el ancho el botón de reset queda por arriba de los filtros en secció
 
 ## Test de sistema
 
-Realizar test de sistema en un entorno separado del desarrollo
+### Realizar test de sistema en un entorno separado del desarrollo
 
-Generar casos de prueba aplicando técnica partición equivalente
+### Generar casos de prueba aplicando técnica partición equivalente
 
-Detallar sesiones de prueba exploratoria
+### Detallar sesiones de prueba exploratoria
+
+
 
 ## Reporte de issues
 
-Reportar issues (bugs, improvements, missing features) en GitHub 
+### Reportar issues (bugs, improvements, missing features) en GitHub 
 
-Definir labels para tipos de issue y niveles de severidad
+### Definir labels para tipos de issue y niveles de severidad
 
-Aplicar buenas prácticas de reporte de issues y presentar ejemplos
+### Aplicar buenas prácticas de reporte de issues y presentar ejemplos
+
+
 
 ## Reporte de calidad del sistema
 
-Sumarizar número de issues reportados por tipo
+### Sumarizar número de issues reportados por tipo
 
-Realizar una evaluación global de la calidad del sistema
+### Realizar una evaluación global de la calidad del sistema
