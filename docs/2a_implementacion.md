@@ -86,7 +86,7 @@ Test Suites: 5 passed, 5 total
 Tests:       22 passed, 22 total  
 
 
-###Casos significativos:  
+### Casos significativos:  
 Ejemplo de test para clase Partido:  
   test('agregar en un partido una seleccion invalida', ()=>{
     expect(()=>partido.setPartido('Chile', 'Ecuador',
