@@ -27,12 +27,7 @@ Proyecto asingado para testear: ______
 ### Resumen de los issues que hicimos en Github:
 
 #### Severidad Grave
-1) En Todas las Secciones - 
-tabla de posiciones: la parte para poner filtros no es responsive, para tamaños menores o iguales a 426px no se puede elegir grupo.
-Lo mismo para sección favoritos.
-resultados la parte para poner filtros no es responsive, para tamaños menores o iguales a 667px no se puede elegir categoría, para tamaños menores o iguales a 960px no se puede elegir grupo y para tamaños menores o iguales a 341px no se puede elegir país.
-Lo mismo para sección favoritos.
-Al variar el ancho el botón de reset queda por arriba de los filtros en sección favoritos y sección resultados.
+1) En Todas las Secciones - La parte para poner filtros no es responsive, para tamaños menores o iguales a 426px no se puede elegir grupo. Al variar el width de pantalla, el botón de reset queda por arriba de los campos de filtros.
 
 2) En sección Favoritos y Predicciones: para anchos menores a 730px, en las listas de partidos pendientes y partidos no realizados no se activa la barra de desplazamiento horizontal, no es visible la información completa.
 
