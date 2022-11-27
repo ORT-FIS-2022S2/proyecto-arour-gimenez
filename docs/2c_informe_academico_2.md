@@ -20,7 +20,7 @@ Fecha, actividad, esfuerzo, responsable
 ### Esfuerzo:  
 Maximiliano: Para la parte de funciones implementadas y test unitario no tuve grandes inconvenientes y logré implementar funciones rápidamente.  
 Para interfaz de usuario al no tener tanto conocimiento de HTML y scss, hacía que me tranque con facilidad y al tratar de hacer modificaciones sí que me tomaba mucho tiempo resolverlo.  
-Luego para reporte de issues hice sesiones de test exploratorio de 30 minutos cada uno.  
+Luego para reporte de issues hice sesiones de test exploratorio de 60 minutos cada uno.  
   
 Romina:
  

@@ -13,6 +13,7 @@ Proyecto asingado para testear: ______
 
 
 | Caso de Prueba | Numero Izquierda | Numero Derecha | Resultado Esperado | Clases de Prueba Cubiertas |
+|----------------|------------------|----------------|--------------------|----------------------------|
 | CP1 | 5 | 3 |  | 1, 2 |
 | CP2 | -2 | 6 |  | 3, 2 |
 | CP3 | 4 | -7 |  | 1, 4 |
@@ -21,12 +22,14 @@ Proyecto asingado para testear: ______
 
 ### Detallar sesiones de prueba exploratoria
 | Fecha | Duración* |  Misión | Tester |
+|-------|---------|---------|--------|
 | 23 Noviembre | 1 Hora | Probar si sección Partidos es responsive | Romina |
 | 24 Noviembre | 1 Hora y Media | Probar si Partidos y Prediccion es Responsive | Romina |
 | 24 Noviembre | 1/2 Hora | Probar funcionamiento de Predicciones | Romina |
-|  |  |  |  |
+| 23 Noviembre  | 1 hora |Probar funcionamiento de favoritos  | Maximiliano |
+| 23 Noviembre | 1 hora |Probar funcionamiento de resultados  | Maximiliano |
 
-*Tomamos la duración aproximada 
+*Tomamos la duración aproximada. 
 
 ## Reporte de issues
 ### Resumen de los issues que hicimos en Github:
