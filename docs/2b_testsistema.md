@@ -20,8 +20,13 @@ Proyecto asingado para testear: ______
 | CP5 | 1 | 23 |  | 1, 4 |
 
 ### Detallar sesiones de prueba exploratoria
+| Fecha | Duración* |  Misión | Tester |
+| 23 Noviembre | 1 Hora | Probar si sección Partidos es responsive | Romina |
+| 24 Noviembre | 1 Hora y Media | Probar si Partidos y Prediccion es Responsive | Romina |
+| 24 Noviembre | 1/2 Hora | Probar funcionamiento de Predicciones | Romina |
+|  |  |  |  |
 
-
+*Tomamos la duración aproximada 
 
 ## Reporte de issues
 ### Resumen de los issues que hicimos en Github:
