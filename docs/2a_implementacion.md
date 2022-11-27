@@ -30,34 +30,16 @@ Por último, y bien a la derecha, tenemos Predicción. En esta sección tenemos 
 
 
 ### Implementación: Material Design Web Components
-
-### Aplicar un sistema de diseño y principios de usabilidad
-
-### Cumplimiento de estándar de accesibilidad WCAG
-
-### Seguir especificación de estilo
-
-
+Pata todos los tipos de elementos que usabamos (listas, tablas) usamos Material Design de Google.
 
 
 ## Codificación
 
-### IDE Visual Studio Code: configuración común del equipo
+Usamos IDE Visual Studio Code en las maquinas de cada uno para hacer el proyecto. Tuvimos en cuenta los estandares de codificacón de Google y usamos eslint para asegurarnos que el formato del codigo cumpla con lo esperado y nos ayudaba a ver si alguna funcion o variable no la estabamos usando. 
 
-### Estándares de codificación Google (HTML, CSS, JavaScript)
-
-### Buenas prácticas de OOP: separación de lógica e interfaz
-
-### Análisis estático de código: mostrar reducción de problemas
-
-
+Usamos buenas practicas de OOP, dejando separada la logica y la interfaz del proyecto.
 
 ## Test unitario
-
-### Test unitarios en Jest 
-
-### Detallar cantidad e incluir ejemplos significativos
-
 ### 100% cobertura en clases de dominio   
 ** **  
 
