@@ -58,17 +58,20 @@ Por último, y bien a la derecha, tenemos Predicción. En esta sección tenemos 
 
 ### Detallar cantidad e incluir ejemplos significativos
 
-### 100% cobertura en clases de dominio
+### 100% cobertura en clases de dominio   
+** **  
 
 Usamos la herramienta Jest de JavaScript para realizar el testing unitario.  
-Se creó un test por clase de dominio, alcanzando 100% de cobertura. Dichos test están en el directorio dominio.
+Se creó un test por clase de dominio para comprobar su funcionamiento, alcanzando 100% de cobertura. Dichos test están en el directorio dominio.  
+Además de llegar al 100% de cobertura, realizamos más test que prueban los casos límites y casos donde se espera un resultado incorrecto.  
 
- PASS  ./Pronostico.test.js (6.242 s)
- PASS  ./Seleccion.test.js (6.838 s)
- PASS  ./lista-partidos.test.js (7.033 s)
- PASS  ./Partido.test.js
- PASS  ./lista-selecciones.test.js
-----------------------|---------|----------|---------|---------|-------------------
+ PASS  ./Pronostico.test.js (6.242 s)  
+ PASS  ./Seleccion.test.js (6.838 s)  
+ PASS  ./lista-partidos.test.js (7.033 s)  
+ PASS  ./Partido.test.js  
+ PASS  ./lista-selecciones.test.js  
+   
+
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------|---------|----------|---------|---------|-------------------
 All files             |     100 |      100 |     100 |     100 |                   
@@ -77,10 +80,22 @@ All files             |     100 |      100 |     100 |     100 |
  Seleccion.js         |     100 |      100 |     100 |     100 |                   
  lista-partidos.js    |     100 |      100 |     100 |     100 | 
  lista-selecciones.js |     100 |      100 |     100 |     100 | 
-----------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 5 passed, 5 total
-Tests:       22 passed, 22 total
+
+Test Suites: 5 passed, 5 total  
+Tests:       22 passed, 22 total  
+
+
+###Casos significativos:  
+Ejemplo de test para clase Partido:  
+  test('agregar en un partido una seleccion invalida', ()=>{
+    expect(()=>partido.setPartido('Chile', 'Ecuador',
+        'Lun 21 Nov 22', '13:00 hs')).toThrow();
+  });  
+  test('agregar un partido valido', ()=>{
+    partido.setPartido('Qatar', 'Ecuador', 'Lun 20 Nov 22', '13:00 hs');
+    expect(partido.getPartido()).toEqual(partido);
+  });
 
 > ## Code freeze
 > En la semana previa a la entrega final se debe congelar el desarrollo.
