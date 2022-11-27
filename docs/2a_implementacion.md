@@ -60,6 +60,27 @@ Por último, y bien a la derecha, tenemos Predicción. En esta sección tenemos 
 
 ### 100% cobertura en clases de dominio
 
+Usamos la herramienta Jest de JavaScript para realizar el testing unitario.  
+Se creó un test por clase de dominio, alcanzando 100% de cobertura. Dichos test están en el directorio dominio.
+
+ PASS  ./Pronostico.test.js (6.242 s)
+ PASS  ./Seleccion.test.js (6.838 s)
+ PASS  ./lista-partidos.test.js (7.033 s)
+ PASS  ./Partido.test.js
+ PASS  ./lista-selecciones.test.js
+----------------------|---------|----------|---------|---------|-------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------|---------|----------|---------|---------|-------------------
+All files             |     100 |      100 |     100 |     100 |                   
+ Partido.js           |     100 |      100 |     100 |     100 |                   
+ Pronostico.js        |     100 |      100 |     100 |     100 |                   
+ Seleccion.js         |     100 |      100 |     100 |     100 |                   
+ lista-partidos.js    |     100 |      100 |     100 |     100 | 
+ lista-selecciones.js |     100 |      100 |     100 |     100 | 
+----------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 5 passed, 5 total
+Tests:       22 passed, 22 total
 
 > ## Code freeze
 > En la semana previa a la entrega final se debe congelar el desarrollo.
