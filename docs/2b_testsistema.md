@@ -7,6 +7,20 @@ Proyecto asingado para testear: ______
 ### Realizar test de sistema en un entorno separado del desarrollo
 
 ### Generar casos de prueba aplicando técnica partición equivalente
+|  | Clases Válidas | Clases Invalidas |
+| --------------------- | --------------------- |--------------------- |
+| Numero Izquierda | Números mayores o iguales a 0, menores o iguales a 20 (1)| Números negativos, números mayores a 20 (3)|
+| Numero Derecha | Números mayores o iguales a 0, menores o iguales a 20 (2)| Números negativos, números mayores a 20 (4)|
+
+
+
+| Caso de Prueba | Numero Izquierda | Numero Derecha | Resultado Esperado | Clases de Prueba Cubiertas |
+| CP1 | 5 | 3 |  | 1, 2 |
+| CP2 | -2 | 6 |  | 3, 2 |
+| CP3 | 4 | -7 |  | 1, 4 |
+| CP4 | 21 | 2 |  | 3, 2 |
+| CP5 | 1 | 23 |  | 1, 4 |
+
 
 ### Detallar sesiones de prueba exploratoria
 
