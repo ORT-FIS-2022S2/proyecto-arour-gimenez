@@ -12,10 +12,12 @@ Fecha, actividad, esfuerzo, responsable
 |Nov 6, Nov 7, Nov 10, Nov 13, Nov 14, Nov 15, Nov 18, Nov 19, Nov 20|Interfaz de usuario|Romina|     
 |Nov 15, Nov 16, Nov 20|Test unitario|Maximiliano| 
 |Nov 7, Nov 20|Test unitario|Romina|  
-||Test de sistema|  
+|Nov 23, Nov 24|Test de sistema|Maximiliano|  
+|Nov 23, Nov 24|Test de sistema|Romina| 
 |Nov 26|Reporte de issues|Maximiliano|
 |Nov 27|Reporte de issues|Romina|  
-||Reporte de calidad del sistema||  
+|Nov 28|Reporte de calidad del sistema|Maximiliano||  
+|Nov 27|Reporte de calidad del sistema|Romina| 
   
 ### Esfuerzo:  
 Maximiliano: Para la parte de funciones implementadas y test unitario no tuve grandes inconvenientes y logré implementar funciones rápidamente.  
