@@ -1,6 +1,6 @@
 # 2a Test de sistema
 
-Proyecto asingado para testear: ______
+Proyecto asingado para testear: Bañales Cabrera Cooper
 
 ## Test de sistema
 
