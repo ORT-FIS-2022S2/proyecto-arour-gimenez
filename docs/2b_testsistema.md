@@ -4,7 +4,11 @@ Proyecto asingado para testear: ______
 
 ## Test de sistema
 
-### Generar casos de prueba aplicando técnica partición equivalente
+### Generar casos de prueba aplicando técnica partición equivalente  
+  
+
+Utilizamos la técnica de partición equivalente para la parte de ingresar predicciones, y así poder comprobar su funcionamiento.  
+
 | Entrada | Clases Válidas | Clases Invalidas |
 | --------------------- | --------------------- |--------------------- |
 | Numero Izquierda | Números mayores o iguales a 0, menores o iguales a 20 (1)| Números negativos, números mayores a 20 (3)|
@@ -27,7 +31,7 @@ Proyecto asingado para testear: ______
 | 24 Noviembre | 1 Hora y Media | Probar si Partidos y Prediccion es Responsive | Romina |
 | 24 Noviembre | 1/2 Hora | Probar funcionamiento de Predicciones | Romina |
 | 23 Noviembre  | 1 hora |Probar funcionamiento de favoritos  | Maximiliano |
-| 23 Noviembre | 1 hora |Probar funcionamiento de resultados  | Maximiliano |
+| 24 Noviembre | 1 hora |Probar funcionamiento de resultados  | Maximiliano |
 
 *Tomamos la duración aproximada. 
 
@@ -62,8 +66,9 @@ Ej:24/11/2022 a la hora 15:00 URU vs COR sigue apareciendo en partidos pendiente
 ## Reporte de calidad del sistema
 
 ### Sumarizar número de issues reportados por tipo
-De los issues que publicamos, 4 estaban relacionados con que tan responsive es la página. Estos se centraban mas que nada sobre si en mobile se adaptaba todo bien a la pantalla o no.
-El resto se centraban mas en el funcionamiento mismo de cada sección de la página, de como funcionaban los filtros o como los valores ingresados actuaban en ciertas condiciones.
+De los issues que publicamos, 4 estaban relacionados con que tan responsive es la página. Estos se centraban más que nada sobre si en mobile se adaptaba bien a la pantalla o no.
+El resto se centraban más en el funcionamiento mismo de cada sección de la página, de cómo funcionaban los filtros o como los valores ingresados actuaban en ciertas condiciones.
+
 
 ### Realizar una evaluación global de la calidad del sistema
-En nuestra opinion la página está bien hecha, mas que nada para usarla desde la web. En cuanto a diseño se usó los colores y fonts pedidos en la letra y por como fue diseñado la forma en que se llega a la información lleva un par de pasos pero no es nada abrumador. El problema mayor es como se vería en dispositivos móviles, ya que en varias secciones no es muy intuitivo y en otras no se puede ver mucho si la pantalla tiene width muy chico.
+En nuestra opinión la página está bien hecha y cumple con su cometido, que es mostrar información de partidos y poder hacer predicciones de resultados, más que nada para usarla desde la web de una computadora ya que su pantalla es más grande y aquí no tiene problemas de responsive. En cuanto a diseño se usó los colores y fonts pedidos en la letra y por cómo fue diseñado la forma en que se llega a la información lleva un par de pasos, pero no es nada abrumador. El problema mayor es como se vería en dispositivos móviles, ya que en varias secciones no es muy intuitivo y además no se puede ver muy bien la información si la pantalla tiene un width muy chico.
