@@ -25,11 +25,3 @@ Luego para reporte de issues hice sesiones de test exploratorio de 60 minutos ca
 Romina:
  
 ## Técnicas aplicadas y aprendizajes
-
-
-## Presentación en clase
-
-Práctica o tecnología de ingeniería de software aplicada en el proyecto
-Mostrar ejemplos de aplicación y recomendaciones útiles
-
-Adjuntar material usado para la presentación

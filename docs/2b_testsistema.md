@@ -14,11 +14,11 @@ Proyecto asingado para testear: ______
 
 | Caso de Prueba | Numero Izquierda | Numero Derecha | Resultado Esperado | Clases de Prueba Cubiertas |
 |----------------|------------------|----------------|--------------------|----------------------------|
-| CP1 | 5 | 3 |  | 1, 2 |
-| CP2 | -2 | 6 |  | 3, 2 |
-| CP3 | 4 | -7 |  | 1, 4 |
-| CP4 | 21 | 2 |  | 3, 2 |
-| CP5 | 1 | 23 |  | 1, 4 |
+| CP1 | 5 | 3 | Resultado correcto | 1, 2 |
+| CP2 | -2 | 6 | Mensaje: Numero Izquierda no esta dentro del rango | 3, 2 |
+| CP3 | 4 | -7 | Mensaje: Numero Derecha no esta dentro del rango | 1, 4 |
+| CP4 | 21 | 2 | Mensaje: Numero Izquierda no esta dentro del rango | 3, 2 |
+| CP5 | 1 | 23 | Mensaje: Numero Derecha no esta dentro del rango | 1, 4 |
 
 ### Detallar sesiones de prueba exploratoria
 | Fecha | Duración* |  Misión | Tester |
