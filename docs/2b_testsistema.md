@@ -5,7 +5,7 @@ Proyecto asingado para testear: ______
 ## Test de sistema
 
 ### Generar casos de prueba aplicando técnica partición equivalente
-|  | Clases Válidas | Clases Invalidas |
+| Entrada | Clases Válidas | Clases Invalidas |
 | --------------------- | --------------------- |--------------------- |
 | Numero Izquierda | Números mayores o iguales a 0, menores o iguales a 20 (1)| Números negativos, números mayores a 20 (3)|
 | Numero Derecha | Números mayores o iguales a 0, menores o iguales a 20 (2)| Números negativos, números mayores a 20 (4)|
@@ -14,11 +14,11 @@ Proyecto asingado para testear: ______
 
 | Caso de Prueba | Numero Izquierda | Numero Derecha | Resultado Esperado | Clases de Prueba Cubiertas |
 |----------------|------------------|----------------|--------------------|----------------------------|
-| CP1 | 5 | 3 | Resultado correcto | 1, 2 |
-| CP2 | -2 | 6 | Mensaje: Numero Izquierda no esta dentro del rango | 3, 2 |
-| CP3 | 4 | -7 | Mensaje: Numero Derecha no esta dentro del rango | 1, 4 |
-| CP4 | 21 | 2 | Mensaje: Numero Izquierda no esta dentro del rango | 3, 2 |
-| CP5 | 1 | 23 | Mensaje: Numero Derecha no esta dentro del rango | 1, 4 |
+| CP1 | 5 | 3 | Mensaje: Prediccion realizada con éxito. | 1, 2 |
+| CP2 | -2 | 6 | Mensaje: Los valores de la predicción ingresada deben ser menores a 20 y mayores que 0. | 3, 2 |
+| CP3 | 4 | -7 | Mensaje: Los valores de la predicción ingresada deben ser menores a 20 y mayores que 0. | 1, 4 |
+| CP4 | 21 | 2 | Mensaje: Los valores de la predicción ingresada deben ser menores a 20 y mayores que 0. | 3, 2 |
+| CP5 | 1 | 23 | Mensaje: Los valores de la predicción ingresada deben ser menores a 20 y mayores que 0. | 1, 4 |
 
 ### Detallar sesiones de prueba exploratoria
 | Fecha | Duración* |  Misión | Tester |
